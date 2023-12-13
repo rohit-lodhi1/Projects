@@ -1,0 +1,16 @@
+package com.blog.app.service;
+
+import java.util.List;
+
+import com.blog.app.entity.Comments;
+
+public interface ICommentsService {
+    
+	public List<Comments> getCommentsByPostId(Long id);
+	
+	public Comments addComment(Comments comment);
+	
+	public Comments getCommentById(Long cid,Long pid);
+	
+	public Comments updateCommentofPostById(Comments comment,Long postId);
+}

@@ -1,0 +1,47 @@
+package com.commerce.app.Impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.commerce.app.Repository.IProductRepository;
+import com.commerce.app.Repository.IUserRepositoty;
+import com.commerce.app.Service.IProductService;
+import com.commerce.app.entities.Product;
+
+public class ProductServiceImpl implements IProductService {
+
+	@Autowired
+	private IProductRepository productRepo;
+	
+	@Override
+	public Product addProduct(Product Product) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product updateProduct(Product Product) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean deleteProduct(Integer id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Product getProduct(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> getProducts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

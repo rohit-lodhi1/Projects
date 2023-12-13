@@ -1,0 +1,66 @@
+package com.blog.app.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.blog.app.Exceptions.UserFoundException;
+import com.blog.app.entity.User;
+import com.blog.app.repository.IUserRepository;
+import com.blog.app.service.IUserService;
+
+@Service
+public class UserServiceImpl implements IUserService{
+
+	@Autowired
+	private IUserRepository userRepo;
+	
+	@Override
+	public User addUser(User user) {
+		// TODO Auto-generated method stub
+		try {
+        return	this.userRepo.save(user);
+		}catch (Exception e) {
+             throw new UserFoundException("UserName Already exists");
+		}
+		
+		
+	}
+
+	@Override
+	public User login(String username, String password) {
+		// TODO Auto-generated method stub
+		Optional<User> user = this.userRepo.findByUserNameAndPassword(username, password);
+		if(user.isPresent()) 
+     	   return user.get();
+		throw new UserFoundException();
+		
+	}
+
+	@Override
+	public User getUserById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User updateUser(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean deleteUser(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

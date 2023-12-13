@@ -1,0 +1,141 @@
+package com.pract;
+
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+// 
+//interface A{
+//	public void sort(int a,int b);
+//}
+// 
+// public class Main {
+//  
+//  public static void stringPermutation(String permutation,String input) {
+//		if (input.length() == 0)
+//			System.out.println(permutation);
+//		else {
+//			for (int i = 0; i < input.length(); i++)
+//				stringPermutation(permutation + input.charAt(i),
+//						input.substring(0, i) + input.substring(i + 1, input.length()));
+//		}
+//	}
+//  private static int a;
+//    public static  void main(String[] args) {
+//       List<String> l = List.of("HEAllo","","ABC","ALK","");
+//     System.out.println(++a);
+//    }
+//}
+
+
+import javax.sound.sampled.*;
+
+ class Dk{
+	static class  he{
+			
+		 public void show() {
+				System.out.println("hello");
+		}
+	}
+}
+public  class Main{
+	private static String h;
+	
+
+	
+	
+	public static void secondSmallets(int arr[]) {
+		int hs=0,h=0;
+		for(int  i=0;i<arr.length;i++) {
+			if(arr[h]<arr[i])
+			{
+			   hs=h;
+				h=i;
+			}
+			if(arr[i]<h && arr[i]>arr[hs])
+				hs=i;
+		}
+		System.out.println(arr[hs]);
+	}
+	
+	public static String reverseString(String s) {
+		if(s.length()<=0)
+			return " ";
+		String st = s.substring(s.length()-1);
+		
+		st = st+ reverseString(s.substring(0,s.length()-1));
+		
+		return st;
+	}
+	
+	
+	
+	public static void findDuplicate(int arr[],int arr2[]) {
+		int count=0;
+        for(int i=0;i<arr.length;i++) {
+        	count=0;
+        	for(int j =0;j<arr2.length;j++) {
+        		if(arr[i]==arr2[j])
+        		{
+        			count++;
+        		}
+        	}
+        	if(count>0)
+        	System.out.println(arr[i]+" -> "+count);
+        }
+	}	
+	
+	
+ public static void main(String[] args) {
+	int a[]= {7,2,3,0,1,4,7,7,7,8};
+	//secondSmallets(a);
+//	String s = "Hello";
+//	System.out.println(reverseString(s));
+ //	String revs = new StringBuilder(s).reverse().toString();
+//	System.out.println(revs);
+	//System.out.println(a[0]);
+	
+  //  findDuplicate(a,new int[]{3,9,3,4,0});
+  printDuplicates(a);
+ }
+
+ public static boolean isPreExists(int a[],int ch,int ind) {
+	  for(int i=ind;i>0;i--) {
+		  if(a[i]==ch)
+			  return true;
+	  }
+	  return false;
+ }
+ 
+ 
+private static void printDuplicates(int[] a) {
+	// TODO Auto-generated method stub
+	int count=0;
+	for(int i=0;i<a.length;i++) {
+		if(!isPreExists(a, a[i], i-1)) {
+			count=countVal(a,a[i]);
+			System.out.print(count>1?a[i]+"=>"+count:"");
+		}
+	}
+}
+
+private static int countVal(int[] a, int ch) {
+	int count=0;
+	   for(int i=0;i<a.length;i++) {
+		   if(a[i]==ch) {
+			  count++; 
+		   }
+	   }
+	return count;
+}
+}
+
+
+

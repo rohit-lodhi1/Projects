@@ -1,0 +1,349 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>   
+    <%@ page import="java.util.*" %>
+    <%@ page import="com.dollop.entity.Contacts" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+.overlay{
+width: 100%;
+height: 100vh;
+top: 0%;
+position: fixed;
+background: rgba(0, 0, 0, 0.5);
+z-index: -1;
+opacity: 0;
+transition:1s;
+}
+*{
+margin:0px;
+padding:0px;
+}
+
+.card {
+    border: 0.40rem solid #a5d2ff;
+    top: 10%;
+    background: #000000c7;
+    top: -109%;
+    box-shadow: 0px 0px 10px 3px rgb(255, 85, 229);
+    transition:1s;
+}
+.card span{
+position: absolute;
+right:0px;
+top:0px;
+color:white;
+background: red;
+text-align:center;
+line-height:30px;
+height:30px;
+width:30px;
+cursor:pointer;
+}
+
+h2{
+  padding-top: 1.5rem;
+}
+a:hover{
+  text-decoration: none;
+  color:white;
+    background-color: #df8c96;
+    border-color: #df8c96;
+  transition: .3s;
+}
+a{
+  color:white; 
+  padding: 0.6rem 1.2rem;
+  background: #da5767;
+  border: 2px solid #da5767;
+  transition:.3s;
+  border-radius:7px;
+  text-decoration: none;
+}
+.form-control{
+  background-color: #f8f9fa;
+  padding: 20px;
+  padding: 25px 15px;
+  margin-bottom: 1.3rem;
+}
+
+.form-control:focus {
+    color: #000000;
+    background-color: #ffffff;
+    border: 3px solid #da5767;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-control:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border: 3px solid #da5767;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn{
+  padding: 0.6rem 1.2rem;
+  background: #da5767;
+  border: 2px solid #da5767;
+}
+.btn-primary:hover {
+    background-color: #df8c96;
+    border-color: #df8c96;
+  transition: .3s;
+}
+.showoverlay{
+opacity:1;
+z-index:-1;
+}
+.showedit{
+top:15%;
+}
+
+body{
+ background: #fff;
+  background-image:url(https://media.istockphoto.com/id/1281751596/video/blue-purple-neon-laser-squares-technology-motion-background.jpg?s=640x640&k=20&c=epaW0qyxpCPje6n9eB89uKmiW7zld4nCf7__BkbNHgU=);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  font-family: 'PT Sans', sans-serif;
+}
+table.table.table-hover.table-dark {
+    position: absolute;
+    top: 28%;
+    left:15%;
+    width: 75%;
+}
+.table-dark {
+    color: white;
+    background-color: #212529;
+}#add-button {
+    position: absolute;
+    font-size: 20px;
+    background: #261c1ccc;
+    color: white;
+    height: 43px;
+    left: 17%;
+    top: 21%;
+    width: 15%;
+    text-align: center;
+    display: block;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+a#add-button:hover {
+    background: white;
+    color: black;
+    text-decoration: dotted;
+    transition: .6s;
+}
+img {
+    POSITION: ABSOLUTE;
+    left: 18%;
+    top: 3%;
+    border-radius: 13px;
+}
+
+input.form-control.rounded {
+    position: absolute;
+    top: 170%;
+    left: 64%;
+    width: 18%;
+}
+.btn-edit{
+background: transparent;
+    border: 2px solid #739aff
+}
+
+.btn-delete{
+background: transparent;
+}
+form.form-inline.my-2.my-lg-0 {
+    position: absolute;
+    top: 19%;
+    left: 54%;
+}
+button#search {
+    position: absolute;
+    top: 3%;
+    left: 96%;
+    background: #2d9ed3;
+    color: white;
+    height: 48px;
+    border: 2px solid #7ce9ff;
+}
+th#no_data {
+    position: relative;
+    left: 38%;
+}
+img#back {
+    position: absolute;
+    top: 67%;
+    height: 77px;
+    left: 85%;
+}
+#bck{
+background-color: transparent;
+border:0px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- <div class="input-group">
+  <input type="search"  id="name" name="name"  class="form-control rounded" placeholder="Search"  />
+  <a href="./ContactServlet?action=search"><button type="button" id="search-btn" class="btn btn-outline-primary">search</button></a>
+</div>
+ -->
+<form class="form-inline my-2 my-lg-0" action="./ContactServlet">
+      <input class="form-control mr-sm-2"  name="name" type="text" placeholder="Search" aria-label="Search">
+      <input type="hidden" name="action" id="search" value="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="submit">Search</button>
+    </form>
+
+<a href="./addContact.jsp" id="add-button" > ADD CONTACT</a>
+<img alt="" src="./imgtry/viewContact.png">
+<table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#ID</th>
+      <th scope="col">NAME</th>
+      <th scope="col">EMAIL</th>
+      <th scope="col">MOBILENO</th>
+      <th scope="col">ADDRESS</th>
+      <th scope="col">ACTION</th>
+    </tr>
+  </thead>
+  <tbody>
+  <%
+  try{
+    List<Contacts> list = (ArrayList)request.getAttribute("list");
+    List<Contacts> list_search = (ArrayList)request.getAttribute("list_search");
+    String msg="NO CONTACTS FOUND";
+    if(list==null && list_search==null)
+    {
+    %>	
+    <tr>
+      <th id="no_data" scope="row"><%=msg%></th>
+    </tr>
+    </div>
+    <% 
+    }
+    int i=0;
+    if(list_search!=null)
+    {
+        	list=list_search;
+    }
+    for(Contacts item:list)
+    {
+    %>
+    <tr>
+      <th scope="row"><%=i=i+1 %></th>
+      <td><%=item.getName() %></td>
+      <td><%=item.getEmail() %></td>
+      <td id="contact"><%=item.getMobile() %></td>
+      <td><%=item.getAddress() %></td>
+      <td> <a data-confirm="Are you sure?" class="btn-edit" href="./ContactServlet?action=editContact&id=<%=item.getId()%>" rel="nofollow">EDIT </a>
+      <a href="./ContactServlet?action=delete&id=<%=item.getId()%>" class="btn-delete" onclick="return confirm('Are you sure you want to delete this item?');">Delete</a>
+    </tr>
+    <%}}catch(Exception e){}%>
+  </tbody>
+</table>
+
+
+
+<%
+try{
+if((Boolean)request.getAttribute("on"))
+{
+Contacts con =(Contacts)request.getAttribute("Contact");
+if(con!=null)
+{
+	
+%>
+<div class="overlay" onclick="closeModel()" ></div>
+<div class="container">
+  <div class="row justify-content-center">
+  <div class="col-md-5">
+   <div class="card">
+   <span>&times;</span>
+      <h2 class="card-title text-center" style=color:indianred><b>EDIT-CONTACT</b></h2>
+       <div class="card-body py-md-4">
+        <form _lpchecked="1" action="./ContactServlet?action=saveContact&id=<%=con.getId() %>" method="post">
+          <div class="form-group">
+             <input type="text" class="form-control" id="name"  name="name" placeholder="name" value=<%=con.getName() %> required="required">
+        </div>
+        <div class="form-group">
+             <input type="email" class="form-control" id="email" placeholder="email"   name="email" value = <%=con.getEmail() %>  required="required">
+                            </div>                                               
+   <div class="form-group">
+     <input type="text" class="form-control" id="MobileNo" placeholder="Mobile Number"   name="MobileNo" value=<%=con.getMobile() %>  required="required">
+   </div>
+   <div class="form-group">
+      <input type="text" class="form-control" id="Address" placeholder="Address"  name="Address"  value=<%=con.getAddress() %>  required="required">
+   </div>
+   <div class="d-flex flex-row align-items-center justify-content-between">
+   
+      <input type="hidden" name="action" value="saveContact" >
+                                <button class="btn btn-primary">SAVE</button>   
+          </div>
+     <%}}}catch(Exception e){} %>  
+       </form>
+     </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<%
+try{
+if((Boolean)request.getAttribute("on"))
+{
+%>
+   <body onload="showModel()"></body>
+   
+   <%}}catch(Exception e){} %>
+        <a href="./dashboard.jsp" id="bck"><img alt=""  id="back" src="./imgtry/back.png"></a>
+
+</body>
+<script>
+
+var part = document.getElementById("contact");
+console.log(part);
+/* 
+function showModel(){
+	document.querySelector('.overlay').classList.add('showoverlay');
+	document.querySelector('.card').classList.add('showedit');
+}
+function closeModel(){
+	document.querySelector('.overlay').classList.remove('showoverlay');
+	document.querySelector('.card').classList.remove('showedit');
+}
+
+var btnedit = document.querySelector(".btn-edit");
+btnedit.addEventListener("click",showModel)
+
+var c = document.querySelector("span");
+c.addEventListener("click",closeModel) */
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>
+
+
+
+
+
+
+

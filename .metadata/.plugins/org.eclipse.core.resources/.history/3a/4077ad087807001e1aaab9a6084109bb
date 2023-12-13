@@ -1,0 +1,9 @@
+package com.blog.app.Exceptions.error;
+
+public class ErrorMessage {
+
+	public ErrorMessage() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

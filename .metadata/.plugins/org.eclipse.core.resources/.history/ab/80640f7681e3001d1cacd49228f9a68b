@@ -1,0 +1,25 @@
+package com.roverse.com.servicesImpl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.roverse.com.services.IEmployeService;
+import com.roverse.entity.Employee;
+
+public class EmployeServiceImpl implements IEmployeService{
+List<Employee> list;
+
+   public EmployeServiceImpl() {
+	   list = new ArrayList<Employee>();
+	   list.add(new Employee(1,"Rohit,","rohitlodhi123@gmail.com"));
+	   list.add(new Employee(2,"Sumit,","rohitlodhi124@gmail.com"));
+	   list.add(new Employee(3,"Lakhan,","saritalodhi123@gmail.com"));
+   }
+
+	@Override
+	public List<Employee> getEmployees() {
+        
+		return this.list;
+	}
+
+}

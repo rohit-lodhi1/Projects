@@ -1,0 +1,304 @@
+package com.pract;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+// 
+//interface A{
+//	public void sort(int a,int b);
+//}
+// 
+// public class Main {
+//  
+//  public static void stringPermutation(String permutation,String input) {
+//		if (input.length() == 0)
+//			System.out.println(permutation);
+//		else {
+//			for (int i = 0; i < input.length(); i++)
+//				stringPermutation(permutation + input.charAt(i),
+//						input.substring(0, i) + input.substring(i + 1, input.length()));
+//		}
+//	}
+//  private static int a;
+//    public static  void main(String[] args) {
+//       List<String> l = List.of("HEAllo","","ABC","ALK","");
+//     System.out.println(++a);
+//    }
+//}
+
+
+import javax.sound.sampled.*;
+//
+// class Dk{
+//	static class  he{
+//			
+//		 public void show() {
+//				System.out.println("hello");
+//		}
+//	}
+//}
+//public  class Main{
+//	private static String h;
+//	
+//
+//	
+//	
+//	public static void secondSmallets(int arr[]) {
+//		int hs=0,h=0;
+//		for(int  i=0;i<arr.length;i++) {
+//			if(arr[h]<arr[i])
+//			{
+//			   hs=h;
+//				h=i;
+//			}
+//			if(arr[i]<h && arr[i]>arr[hs])
+//				hs=i;
+//		}
+//		System.out.println(arr[hs]);
+//	}
+//	
+//	public static String reverseString(String s) {
+//		if(s.length()<=0)
+//			return " ";
+//		String st = s.substring(s.length()-1);
+//		
+//		st = st+ reverseString(s.substring(0,s.length()-1));
+//		
+//		return st;
+//	}
+//	
+//	
+//	
+//	public static void findDuplicate(int arr[],int arr2[]) {
+//		int count=0;
+//        for(int i=0;i<arr.length;i++) {
+//        	count=0;
+//        	for(int j =0;j<arr2.length;j++) {
+//        		if(arr[i]==arr2[j])
+//        		{
+//        			count++;
+//        		}
+//        	}
+//        	if(count>0)
+//        	System.out.println(arr[i]+" -> "+count);
+//        }
+//	}	
+//	
+//	
+// public static void main(String args) {
+//int a[]= {7,2,3,0,1,4,8,8,7,8};
+//	//secondSmallets(a);
+////	String s = "Hello";
+////	System.out.println(reverseString(s));
+// //	String revs = new StringBuilder(s).reverse().toString();
+////	System.out.println(revs);
+//	//System.out.println(a[0]);
+//	
+//  //  findDuplicate(a,new int[]{3,9,3,4,0});
+//
+//  //printDuplicates(a);
+//  
+// }
+//
+// public static boolean isPreExists(int a[],int ch,int ind) {
+//	  for(int i=ind;i>=0;i--) {
+//		  if(a[i]==ch)
+//			  return true;
+//	  }
+//	  return false;
+// }
+// 
+// 
+//private static void printDuplicates(int[] a) {
+//	// TODO Auto-generated method stub
+//	int count=0;
+//	for(int i=0;i<a.length;i++) {
+//		count=0;
+//		if(!isPreExists(a, a[i], i-1)) {
+//			count=countVal(a,a[i]);
+//			System.out.print(count>1?a[i]+"=>"+count+"\n":"");
+//		}
+//	}
+//}
+//
+//private static int countVal(int[] a, int ch) {
+//	int count=0;
+//	   for(int i=0;i<a.length;i++) {
+//		   if(a[i]==ch) {
+//			  count++; 
+//		   }
+//	   }
+//	   
+//	return count;
+//}
+//}
+//
+
+class C{
+	 private String prints() {
+		 System.out.println("this is private");
+		 return "private Returned";
+	 }
+}
+
+
+class Employee{
+	int id;
+	String name;
+	
+	public Employee(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + "]";
+	}
+	
+}
+
+public class Main{
+	   public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, Exception, IllegalArgumentException, InvocationTargetException {
+//		Class<?> c = Class.forName("com.pract.PrivateExample");
+//		Method m =c.getDeclaredMethod("multiply", int.class,int.class);
+//		    System.out.println(c.getClass().getName());
+//		m.setAccessible(true);
+//	Object s=	m.invoke(new PrivateExample(), 3,7);
+//		System.out.println((int)s);
+//		
+		 
+//		   
+//		  String s = "Hello what the fuck      what";
+//		 System.out.println(countWords(s, "what"));
+//		 
+//		 ArrayList a = new ArrayList<>();
+//		 a.add("hello");
+//		 a.add("by");
+//		 
+//		 Collections.sort(a,new Comparator<String>() {
+//
+//			@Override
+//			public int compare(String o1, String o2) {
+//				// TODO Auto-generated method stub
+//				return o1.compareTo(o2);
+//			}
+//			 
+//		});
+//		 System.out.println(a);
+		   
+		   Employee e = new Employee(1,"AAit");
+		   Employee e1 = new Employee(2,"Aohit");
+		   Employee e2 = new Employee(3,"ABhit");
+		   
+		   List<Employee> list = List.of(e1,e,e2);
+		  list =list.stream().sorted(new Comparator<Employee>() {
+
+			@Override
+			public int compare(Employee o1, Employee o2) {
+			         
+				return -(o1.name.compareTo(o2.name));
+			}
+		    
+		   }).collect(Collectors.toList());
+		  
+		   //System.out.println(list.toString());
+		//   System.out.println(savePrisoner(7, 19, 2));
+		  // System.out.println();
+		  //fibinaccoSeries(19);
+		  twoSum(new int[] {1,2,3,4},new int[] {1,2,3,4},6);
+	}
+	   
+	   public static void twoSum(int arr[],int arr2[] , int sum){
+		   for(int i = 0 ; i < arr.length ; i++) {
+			   
+			   for(int j = 0 ; j < arr2.length ; j++){
+				    
+				   if(arr[i]+arr[j] == sum)
+					   System.out.println(arr[i]+ " + "+ arr[j] + " = "+sum);
+			   }
+			   
+		   }
+	   }
+	   
+	   
+	   public static void fibinaccoSeries(int n) {
+		   int t = 0,t1=0,t2=1;
+		   for(int i = 0 ; i <= n ; i++) {
+			   
+			 
+			   
+			     t = t1 + t2;
+			     t1 = t2;
+			     t2 = t;
+			     if(t>=n)
+					   break;
+			     System.out.println(t);
+		   }
+	   }
+	   
+	   
+  
+	   public static int[] sorting(int [] arr) {
+		
+			int k = 0;
+			for (int i = 0; i < arr.length; i++) {
+				for (int j = 0; j < arr.length - i-1; j++) {
+					
+					if (arr[j] >= arr[j + 1]) {
+						int t = arr[j];
+						arr[j] = arr[j + 1];
+						arr[j + 1] = t;
+					}
+				}
+			}
+		   
+		   return arr;
+	   }
+	   
+	   
+	   
+	   public static int savePrisoner(int prisoner,int sweets ,  int seat) {
+		   int count=1;
+		   while(sweets>count) {
+			   if(seat==prisoner)
+			   {
+				   seat=0;
+			   }
+			   
+			   count++;
+			   seat++;
+			   
+		   } 
+		   return seat;
+	   }
+	   
+	   public static String countWords(String s,String s2) {
+        		   
+		  return "";
+	   }
+		 
+}
+

@@ -1,0 +1,8 @@
+package com.commerce.app.exceptionHandler;
+
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class CustomeExceptionHandler {
+
+}

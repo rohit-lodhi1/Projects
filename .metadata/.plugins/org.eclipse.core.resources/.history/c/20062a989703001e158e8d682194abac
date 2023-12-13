@@ -1,0 +1,7 @@
+package com.web.app.implementation;
+
+import com.web.app.service.IProductService;
+
+public class ProductServiceImpl implements IProductService{
+
+}

@@ -1,0 +1,15 @@
+package com.blog.app.service;
+
+import com.blog.app.entity.User;
+
+public interface IUserService {
+   public User signUp(User user);
+   
+   public User login(String username,String password);
+   
+   public User getUserById(Integer id);
+   
+   public User updateUser(User user);
+   
+   public List<User> getAllUsers();
+}

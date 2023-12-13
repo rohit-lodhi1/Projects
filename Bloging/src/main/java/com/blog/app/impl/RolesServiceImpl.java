@@ -1,0 +1,7 @@
+package com.blog.app.impl;
+
+import com.blog.app.service.IRolesService;
+
+public class RolesServiceImpl implements IRolesService{
+   
+}

@@ -1,0 +1,30 @@
+package com.web.app.implementation;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.web.app.Repository.IProductRepository;
+import com.web.app.entity.Product;
+import com.web.app.service.IProductService;
+
+public class ProductServiceImpl implements IProductService{
+
+	@Autowired
+	private IProductRepository prodRepo;
+	
+	@Override
+	public Product getProductById(Integer id) {
+		// TODO Auto-generated method stub
+		
+     Optional<Product> product = this.prodRepo.findById(id);
+       if(product.isPresent()) {
+    	   return product.get();
+       }else {
+    	     //throw new Exception("Not found");
+       }
+		
+		return null;
+	}
+
+}

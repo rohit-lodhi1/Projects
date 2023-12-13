@@ -1,0 +1,14 @@
+package com.blog.app.service;
+
+import java.util.List;
+
+import com.blog.app.entity.Album;
+
+public interface IAlbumService {
+   
+	public Album addAlbum(Album album);
+	
+	public List<Album> getAllAlbums();
+	
+	public Album getAlbumById(Long id);
+}

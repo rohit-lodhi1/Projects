@@ -1,0 +1,17 @@
+package com.commerce.app.Service;
+
+import java.util.List;
+
+import com.commerce.app.entities.CartItem;
+
+public interface ICartItemService {
+public CartItem addGroupVariation(CartItem cartItem);
+    
+    public CartItem updateGroupVariation(CartItem cartItem);
+    
+    public boolean deleteGroupVariation(Integer id);
+    
+    public CartItem getGroupVariation(Integer id);
+    
+    public List<CartItem> getGroupVariations();
+}

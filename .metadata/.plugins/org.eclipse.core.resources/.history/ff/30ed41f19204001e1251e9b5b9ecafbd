@@ -1,0 +1,47 @@
+package com.commerce.app.Impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.commerce.app.Repository.IUserRepositoty;
+import com.commerce.app.Service.IOrderItemService;
+import com.commerce.app.entities.OrderItem;
+
+@Service
+public class OrderItemServiceImpl  implements IOrderItemService{
+
+	@Autowired
+	private IOrderItemRepository orderItemRepo;
+
+	@Override
+	public OrderItem addOrderItem(OrderItem OrderItem) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public OrderItem updateOrderItem(OrderItem OrderItem) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean deleteOrderItem(Integer id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public OrderItem getOrderItem(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<OrderItem> getOrderItems() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

@@ -1,0 +1,10 @@
+package com.blog.app.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.blog.app.entity.Todos;
+import com.blog.app.entity.User;
+
+public interface TodosRepository extends JpaRepository<Todos, Long>   {
+
+}

@@ -1,0 +1,49 @@
+package com.commerce.app.Impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.commerce.app.Repository.IGroupRepository;
+import com.commerce.app.Repository.IGroupVarientsRepository;
+import com.commerce.app.Service.IGroupService;
+import com.commerce.app.Service.IGroupVariationService;
+import com.commerce.app.entities.Group;
+
+@Service
+public class GroupVariationServiceImpl  implements IGroupService{
+  @Autowired
+  private IGroupVarientsRepository groupVaritationRepo;
+
+@Override
+public Group addGroup(Group GroupVariation) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+public Group updateGroup(Group GroupVariation) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+public boolean deleteGroup(Integer id) {
+	// TODO Auto-generated method stub
+	return false;
+}
+
+@Override
+public Group getGroup(Integer id) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+public List<Group> getAllGroups() {
+	// TODO Auto-generated method stub
+	return null;
+}
+  
+}

@@ -1,0 +1,23 @@
+package com.commerce.app.entities;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class CartItem {
+  private Integer cId;
+  
+  private Product product;
+  
+  private GroupVarient groupVarient;
+  
+  private Integer quantity;
+}

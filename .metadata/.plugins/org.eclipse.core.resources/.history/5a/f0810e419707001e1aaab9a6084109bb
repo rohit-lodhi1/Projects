@@ -1,0 +1,9 @@
+package com.blog.app.controller;
+
+public class PostController {
+
+	public PostController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

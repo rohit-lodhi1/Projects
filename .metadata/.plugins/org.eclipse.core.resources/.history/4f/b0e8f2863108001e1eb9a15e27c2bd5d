@@ -1,0 +1,28 @@
+package com.blog.app.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.blog.app.Exceptions.PostNotFoundException;
+import com.blog.app.entity.Comments;
+import com.blog.app.entity.Posts;
+import com.blog.app.repository.ICommentsRepository;
+import com.blog.app.service.ICommentsService;
+
+public class CommentsServiceImpl implements ICommentsService {
+
+	@Autowired
+	private ICommentsRepository commentRepo;
+	
+	@Override
+	public List<Comments> getCommentsByPostId(Long id) {
+	    if(id==0)
+	    	throw new PostNotFoundException("Comments Not Found For Post Id : "+id);
+		Posts post = new Posts(); 		
+	    post.setId(id);
+        List<Comments> comments = this.commentRepo.findByPost(post);
+		return comments;
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.roverse.com;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.roverse.com.services.EmployeeRepository;
+import com.roverse.entity.Employee;
+
+@SpringBootApplication
+public class ApiFirstApplication {
+	static EmployeeRepository emp;
+	public static void main(String[] args) {
+		ApplicationContext context = SpringApplication.run(ApiFirstApplication.class, args);
+		 emp=context.getBean(EmployeeRepository.class);
+	}
+	public Employee addEmployee(Employee em) {
+		emp.save(em);
+		return em;
+	}
+
+}

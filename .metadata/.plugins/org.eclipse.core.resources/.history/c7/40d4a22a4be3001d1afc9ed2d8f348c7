@@ -1,0 +1,13 @@
+package com.roverse.entity;
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+
+@Entity
+@Data
+public class Employee{
+  private String name;
+  private int id;
+  private String email;
+
+}

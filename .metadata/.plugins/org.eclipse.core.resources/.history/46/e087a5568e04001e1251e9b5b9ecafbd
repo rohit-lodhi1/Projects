@@ -1,0 +1,5 @@
+package com.commerce.app.Repository;
+
+public interface IOrderItemRepository {
+
+}

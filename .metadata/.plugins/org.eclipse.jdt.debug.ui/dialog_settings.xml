@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=firstmaven/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.dollop.firstmaven{App.java[App&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Pract/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.pract{Main.java[Main[he&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Pract/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.pract{Main.java[Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=springFirst/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.example.demo{SpringFirstApplication.java[SpringFirstApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=SpringSecurity/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.web.app{SpringSecurityApplication.java[SpringSecurityApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Bloging/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.blog.app{BlogingApplication.java[BlogingApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Library/src&amp;lt;{Library.java[Library&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="728"/>
+			<item key="DIALOG_WIDTH" value="1366"/>
+			<item key="DIALOG_X_ORIGIN" value="8"/>
+			<item key="DIALOG_Y_ORIGIN" value="8"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="OpenFromClipboardAction_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="492"/>
+		<item key="DIALOG_Y_ORIGIN" value="80"/>
+		<item key="DIALOG_WIDTH" value="398"/>
+		<item key="DIALOG_HEIGHT" value="438"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="AddExceptionDialog">
+		<item key="caughtChecked" value="true"/>
+		<item key="uncaughtChecked" value="true"/>
+	</section>
+</section>

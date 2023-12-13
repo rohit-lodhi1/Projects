@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.schedular.beanS&apos; to &apos;com.schedular.bean&apos;&#x0D;&#x0A;- Original project: &apos;Scheduling&apos;&#x0D;&#x0A;- Original element: &apos;Scheduling/src/main/java/com.schedular.beanS&apos;&#x0D;&#x0A;- Renamed element: &apos;Scheduling/src/main/java/com.schedular.bean&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.schedular.beanS&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.schedular.beanS" name="com.schedular.bean" qualified="false" references="true" stamp="1680676447323" textual="false" version="1.0"/>
+</session>

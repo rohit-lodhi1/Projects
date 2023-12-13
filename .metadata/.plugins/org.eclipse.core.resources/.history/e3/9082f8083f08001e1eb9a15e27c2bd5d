@@ -1,0 +1,59 @@
+package com.blog.app.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.blog.app.Exceptions.AlbumNotFoundException;
+import com.blog.app.Exceptions.PhotosNotFoundException;
+import com.blog.app.entity.Album;
+import com.blog.app.entity.Photos;
+import com.blog.app.repository.IAlbumRepository;
+import com.blog.app.service.IAlbumService;
+
+public class AlbumServiceImpl implements IAlbumService{
+
+	@Autowired
+	private IAlbumRepository albumRepo;
+	
+	
+	@Override
+	public Album addAlbum(Album album) {
+	    	
+		return this.albumRepo.save(album);
+	}
+
+	@Override
+	public List<Album> getAllAlbums() {
+		
+		return this.albumRepo.findAll();
+	}
+
+	@Override
+	public Album getAlbumById(Long id) {
+		  Optional<Album> album = this.albumRepo.findById(id);
+		  if(album.isPresent())
+		   return album.get();
+		throw new AlbumNotFoundException("Album not Found with Id : "+id);
+	}
+
+	@Override
+	public Boolean deleteAlbumById(Long id) {
+		if(this.albumRepo.existsById(id)) {
+			this.albumRepo.deleteById(id);
+			return true;
+		}
+		throw new AlbumNotFoundException("Album not Found with Id : "+id);
+	}
+
+	@Override
+	public List<Photos> getAllPhotosOfALbum(Long id) {
+		   Optional<Album> album = this.albumRepo.findById(id);
+		    if(album.isPresent()) {
+		    	return album.get().getPhotos();
+		    }
+		    throw new PhotosNotFoundException("Album not Found with Id : "+id);
+	}
+
+}

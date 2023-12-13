@@ -1,0 +1,10 @@
+package com.blog.app.ExceptionsHandler;
+
+
+public class CustomExceptionHandler {
+
+	public CustomExceptionHandler() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

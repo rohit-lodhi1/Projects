@@ -1,0 +1,34 @@
+package com.blog.app.impl;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.blog.app.Exceptions.CompanyNotFoundException;
+import com.blog.app.entity.Company;
+import com.blog.app.repository.ICompanyRepository;
+import com.blog.app.service.ICompanyService;
+
+@Service
+public class CompanyServiceImpl implements ICompanyService{
+
+	@Autowired
+	private ICompanyRepository companyRepo;
+	
+	@Override
+	public Company addCompany(Company commpany) {
+		// TODO Auto-generated method stub
+		return this.companyRepo.save(commpany);
+	}
+
+	@Override
+	public Company getCompanyById(Long id) {
+		// TODO Auto-generated method stub
+		Optional<Company> company = this.companyRepo.findById(id);
+		if(company.isPresent())
+			return company.get();
+		throw new CompanyNotFoundException("Company Not Found id : "+id);
+	}
+
+}

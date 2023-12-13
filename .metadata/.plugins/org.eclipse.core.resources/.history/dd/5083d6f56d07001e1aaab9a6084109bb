@@ -1,0 +1,6 @@
+package com.blog.app.entity;
+
+public enum RoleName {
+   ADMIN,
+   USER;
+}

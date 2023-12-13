@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Pract/src/main/java/com/sortings&apos; to &apos;algorithm&apos;" description="Rename resource &apos;sortings&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/sortings" name="algorithm" stamp="1678522583471" updateReferences="true"/>
+</session>

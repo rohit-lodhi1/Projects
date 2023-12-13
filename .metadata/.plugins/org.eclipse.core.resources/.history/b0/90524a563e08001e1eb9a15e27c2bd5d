@@ -1,0 +1,7 @@
+package com.blog.app.impl;
+
+import com.blog.app.service.IAlbumService;
+
+public class AlbumServiceImpl implements IAlbumService{
+
+}

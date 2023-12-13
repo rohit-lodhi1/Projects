@@ -1,0 +1,64 @@
+package com.blog.app.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.blog.app.Exceptions.PostNotFoundException;
+import com.blog.app.entity.Posts;
+import com.blog.app.repository.IPostsRepository;
+import com.blog.app.service.IPostsService;
+
+@Service
+public class PostsServiceImpl implements IPostsService{
+
+	@Autowired
+	private IPostsRepository postRepo;
+	
+	@Override
+	public Posts addPost(Posts post) {
+		// TODO Auto-generated method stub
+		
+		return this.postRepo.save(post);
+	}
+
+	@Override
+	public Boolean deletePost(Long id) {
+		// TODO Auto-generated method stub
+		if(this.postRepo.existsById(id))
+		{
+			this.postRepo.deleteById(id);
+			return true;
+		}
+		throw new PostNotFoundException("Post not found with id : "+id);
+        
+	}
+
+	@Override
+	public List<Posts> getAllPosts() {
+		// TODO Auto-generated method stub
+		
+		return this.postRepo.findAll();
+	}
+
+	@Override
+	public Posts getPost(Long id) {
+		// TODO Auto-generated method stub
+		Optional<Posts> post = this.postRepo.findById(id);
+		if(post.isPresent())
+			return post.get();
+		throw new PostNotFoundException("Post not Found with id :"+id);
+		
+	}
+
+	@Override
+	public Posts updatePost(Posts post) {
+		   if(this.postRepo.existsById(post.getId())) {
+	         	return  this.postRepo.save(post);
+		   }
+			throw new PostNotFoundException("Post not update with id: "+post.getId());
+	}
+
+}

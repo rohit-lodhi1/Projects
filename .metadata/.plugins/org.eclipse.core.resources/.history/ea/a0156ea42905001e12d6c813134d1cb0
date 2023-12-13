@@ -1,0 +1,21 @@
+package com.commerce.app.exceptionHandler;
+
+import java.util.Date;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import com.commerce.app.exception.ErrorEntity;
+import com.commerce.app.exception.UserNotFoundException;
+
+@RestControllerAdvice
+public class CustomeExceptionHandler ResponseEntityExceptionHandler {
+   
+	@ExceptionHandler(UserNotFoundException.class)
+	public ResponseEntity<ErrorEntity> userNameMatched(UserNotFoundException us){
+		
+		return new ResponseEntity<ErrorEntity>(new ErrorEntity(us.getMessage(),"500",new Date().toString(),"Exception occured in creating"),HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+}

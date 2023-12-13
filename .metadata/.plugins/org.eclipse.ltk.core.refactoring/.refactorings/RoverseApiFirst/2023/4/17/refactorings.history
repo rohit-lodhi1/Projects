@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.roverse.com.services.EmployeService.java&apos; to &apos;IEmployeService.java&apos;&#x0D;&#x0A;- Original project: &apos;ApiFirst&apos;&#x0D;&#x0A;- Original element: &apos;com.roverse.com.services.EmployeService.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.roverse.com.services.IEmployeService.java&apos;" description="Rename compilation unit &apos;EmployeService.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.roverse.com.services{EmployeService.java" name="IEmployeService.java" references="false" stamp="1682437440817" version="1.0"/>
+</session>

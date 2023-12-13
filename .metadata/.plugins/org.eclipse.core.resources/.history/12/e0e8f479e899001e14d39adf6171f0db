@@ -1,0 +1,1090 @@
+package com.pract;
+
+import java.lang.reflect.InvocationTargetException;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.Stack;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
+
+import org.springframework.jdbc.core.metadata.OracleCallMetaDataProvider;
+
+interface DD {
+
+}
+
+class AB implements Comparable<AB> {
+	int id = 0;
+	String name = "rohit";
+
+	@Override
+	public int compareTo(AB o) {
+		if (this.id < o.id)
+			return 1;
+
+		return -1;
+	}
+
+	@Override
+	public String toString() {
+		return "AB [id=" + id + ", name=" + name + "]";
+	}
+
+}
+
+abstract class kd {
+
+}
+
+public class Test {
+
+	public Test(int a) {
+
+	}
+
+	public static void main(String[] args) throws Exception {
+		// fibonacci(0,1,20);
+		// Class<?> clas = Class.forName("com.pract.Test");
+
+		// Constructor<?> to = clas.getConstructor(int.class);
+		// Test t = (Test) to.newInstance();
+		var a = new Test(8);
+
+		// System.out.println(Integer.toBinaryString(2));
+
+		// new Random().ints(1,999).limit(20).sorted().forEach(System.out::println);
+		// List<Integer> list = List.of(1,2,3,4,5);
+		// System.out.println(list.stream().mapToInt(v->v).max().getAsInt());
+		// list.stream().max(Integer::compare);
+
+//		
+//		longestPolindrom("bcac");
+//	
+//	majorityElement(new  int []{1,2,3,4,5,5});
+//		
+//	anagram("abcda","bcdaa");
+//	String sp="TEST@$QWES 89";
+//	sp = sp.replaceAll("\\d+","");
+//	System.out.println(sp);
+
+//arrayLeftRotation(new int[] {1,2,3,4,5},4);
+//arrayRightRotation(new int[] {1,2,3,4,5},2);
+//arraySum(new int[] {1,2,3,4},new int[] {1,2,3});
+//uniqueFromArrays(new int[] {1,2,4},new int[] {1,2,3,5});
+//wordCount("Hello what are you doing here you fucking bitch bastard");
+//String s[]=textToWordsArray("Hello what are you doing here you fucking bitch bastard ab bcd");
+
+//char arr[]=stringToArrayOfCharacters("hello what");
+
+//twoSum(new int[] {2,7,11,15},9);
+//		System.out.println(medianOfTwoSortedArray(new int[] {3},new int[] {-2,-1}));
+//		System.out.println(longestPolindromSubtString("cbbd"));
+		// zigzapConversion("PAYPALISHIRING",4);
+//		Date d = new Date();
+//		SimpleDateFormat f = new SimpleDateFormat("dd/MM/yyyy");
+//		Date parse = f.parse("12/9/2023");
+//		//LocalDate.now().
+//		LocalDate l = LocalDate.now();
+//		LocalDate l2 = LocalDate.of(2024, 10, 11);
+//		Period period = Period.between(l, l2);
+//		period.between(l, l2);
+//		DayOfWeek dayOfWeek = l2.getDayOfWeek();
+//		System.out.println(dayOfWeek.toString());
+
+		int arr[] = new int[] { 1, 2, 4 };
+		int arr2[] = new int[] { 1, 3, 4 };
+		// righRotation(arr, 2);
+//inserAtNthPos(arr,3,3);
+
+//arr=insertInSortedArray(arr,6);
+//System.out.println(2%5);
+//arr=mergeSortedArrays(arr,arr2);
+//System.out.println(Arrays.toString(arr))
+		// reverserInteger(-1234);
+//convertToInteger("  -1234");
+
+		// AB.main(new String[] {"a","b"});
+		// AB ab = new AB();
+//		ab.hello();
+//Comparator<Integer> com = new Comparator<Integer>() {
+//
+//	@Override
+//	public int compare(Integer o1, Integer o2) {
+//	   
+//		return o1.intValue()>o2.intValue()?o2:o1;
+//	}
+//	
+//};
+//com = (c,b) -> c<b?1:-1;
+//
+//TreeSet<AB>  t = new TreeSet<>(); 
+//		AB a1 = new AB();
+//		a1.id=10;
+//		AB a2 = new AB();
+//		a2.id=20;
+//		AB a3 = new AB();
+//		a3.id=30;
+//		AB a4 = new AB();
+//		a4.id=40;
+//		AB a5 = new AB();
+//		a5.id=50;
+//		
+//		t.add(a1);
+//		t.add(a2);
+//		t.add(a3);
+//		t.add(a4);
+//		t.add(a5);
+//		System.out.println(t);
+		// System.out.println(integerToRoman(400));
+		// System.out.println(romanToInteger("D"));
+		// System.out.println(nonRepeatingChar("abcabc"));
+		// System.out.println(longestPrefix(new String[] {"flow","flowight","flower"}));
+		int arr1[] = {10,8,7,5,4,11,78};
+		int arr3[] = { -1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4 };
+		Arrays.sort(arr3);
+	//	System.out.println(threeSum(arr3));
+//		recursionBubbleSort(arr1,0,0);
+//		System.out.println(Arrays.toString(arr1));
+		List.of(arr);
+		
+//		System.out.println(Arrays.toString(mergeTwoSortedArray(new int[] {1,3,5,7,9},new int[] {2,4,6,7,8})));
+//		System.out.println(Arrays.toString(selectionSortRecu(new int[] {7,9,4,3,2,1,54,3},0,1,0)));
+		
+//		System.out.println(Arrays.toString(insertionSort(new int[] {9,8,6,5,4,3,5})));
+	//	System.out.println(uniqueOccurance(new int[] {1,1,1,2,2,2,3,4,4,5,4,5}));;
+//		System.out.println(reverseKElements(new int[] {1,2,3,4,5,6,7,8,9},2));
+		
+		System.out.println(isArraySortedOrRotated(new int[] {1,2,3,4,4}));
+}
+	
+	public static Boolean isArraySortedOrRotated(int arr[]) {
+		int i=0;
+		for( i=0;i<arr.length-1 ;i++) {
+			if(arr[i]>arr[i+1]) 
+				break;
+			
+		}
+		
+		for(;i<arr.length;i++) {
+			if(arr[0]<arr[i])
+				return false;
+		}
+		return true;
+	}
+	
+	public static int findUnique(int arr[]) {
+		int ans=0;
+		for(int i=0 ;i<arr.length ;i++) {
+			
+			ans=ans^arr[i];
+		}
+		return ans;
+	}
+	
+	public static int count(int arr[],int value) {
+		int count=0;
+		for(int i=0 ;i<arr.length ;i++) {
+			if(value==arr[i])
+				count++;
+		}
+		return count;
+        
+	}
+	
+	public static int uniqueOccurance(int arr[]) {
+		int arr1[] = new int[arr.length],k=0;
+		for(int i=0 ;i<arr.length ;i++) {
+			if(!isPreExists(arr[i], arr, i-1)) {
+
+				int count=count(arr, arr[i]);
+				arr1[k++] = count;
+					System.out.println("count "+count);
+			}
+		}
+		return findUniqueElement(arr1);
+	}
+	
+	
+	public static int[] reverse(int arr[],int st,int end) {
+		if(end<arr.length)
+		while(st<end) {
+			int k=arr[st];
+			arr[st++]=arr[end];
+			arr[end--] =k;
+		}
+		return arr;
+	}
+	
+	public static int[] reverseKElements(int arr[],int k) {
+		int j=0,count=0;
+		for(int i=0 ;i<arr.length;i+=k) {
+			
+			reverse(arr, i, i+k-1);
+		}
+		System.out.println(Arrays.toString(arr));
+		return arr;
+		
+	}
+	
+	
+	
+	
+	public static boolean isPreExists(int value,int arr[],int k) {
+		for(int i=k ; i>=0 ;i--) {
+			if(arr[i]==value)
+				return true;
+		}
+		return false;
+	}
+	
+	public static int findUniqueElement(int arr[]) {
+		System.out.println(Arrays.toString(arr));
+		for(int i=0 ;i<arr.length ;i++) {
+		  int count=0;
+		  if(!isPreExists(arr[i], arr, i-1))
+			for(int j=i ;j<arr.length ;j++) {
+			
+				if(arr[i]==arr[j])
+					count++;
+			}
+		  
+		   	if(count==1) {
+					System.out.println("found "+arr[i]);
+		
+				return arr[i];	
+				}
+		}
+		return 0;
+	}
+	
+	public static int[] insertionSort(int arr[]) {
+		int j=0;
+		for(int i=0 ;i<arr.length;i++) {
+			int k =arr[i];
+			for( j=i-1;j>=0;j--) {
+				if(arr[j]<k){
+					arr[j+1]=arr[j];
+				}
+				else
+					break;
+			}
+			arr[j+1 ]=k;
+		}
+		return arr;
+	}
+	
+	
+	public static int[] selectionSortRecu(int arr[],int i ,int j ,int min) {
+		if(i>=arr.length)
+			return arr;
+		if(j<arr.length) {
+			if(arr[min]>arr[j])
+				min=j;
+ 		return	selectionSortRecu(arr, i, j+1, min);
+		}
+		int k=arr[i];
+		arr[i]=arr[min];
+		arr[min]=k;
+		return selectionSortRecu(arr, i+1, i+2, i+1);
+	}
+	
+	
+	public static int[] mergeTwoSortedArray(int arr[],int arr1[]) {
+		int arr3[] = new int[arr.length+arr1.length],k=0, i=0,j=0;
+		
+		while(i<arr.length && j<arr1.length) {
+			if(arr[i]>arr1[j]) {
+				arr3[k++]=arr1[j++];
+				
+			}else
+			{
+				arr3[k++]=arr[i++];
+				
+			}
+		}
+	
+		while(i<arr.length){
+			arr3[k++]=arr[i++];
+		}
+		while(j<arr1.length){
+			arr3[k++]=arr1[i++];
+		}
+		return arr3;
+ 	}
+
+	public static void recursionBubbleSort(int arr[], int i,int j) {
+        if(i==arr.length)
+        	return ;
+        if(j<arr.length-i-1 && arr[j]>arr[j+1]) {
+        	
+        	int k = arr[j];
+        	arr[j] = arr[j+1];
+        	arr[j+1]=k;
+        	System.out.println(Arrays.toString(arr));
+        	recursionBubbleSort(arr, i, j+1);
+        	
+        }
+        else 
+        {
+        	System.out.println("----- "+Arrays.toString(arr));
+        	recursionBubbleSort(arr, i+1, 0);
+        }
+			
+		
+        
+	}
+
+	public static void bubbleSort(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length - i - 1; j++) {
+				if (arr[j] > arr[j + 1]) {
+					int k = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = k;
+				}
+
+			}
+		}
+	}
+
+	public static List<List<Integer>> threeSum(int arr[]) {
+		int i = 0, j = 0, k = arr.length - 1;
+		Set<List<Integer>> output = new HashSet<>();
+		for (i = 0; i < arr.length; i++) {
+			j = i + 1;
+			k = arr.length - 1;
+			while (j < k) {
+				System.out.println(arr[i] + "->" + arr[j] + "->" + arr[k] + "=> " + (arr[i] + arr[j] + arr[k]) + " ( "
+						+ i + "," + j + "," + k);
+				if (arr[i] + arr[j] + arr[k] == 0) {
+					List<Integer> list = new ArrayList<>();
+					list.add(arr[i]);
+					list.add(arr[j]);
+
+					list.add(arr[k]);
+					output.add(list);
+				} else if (arr[i] + arr[j] + arr[k] > 0) {
+					k--;
+					j--;
+				}
+				j++;
+
+			}
+		}
+
+		return output.stream().toList();
+
+	}
+
+	public static String longestPrefix(String s[]) {
+
+		String prefix = "";
+
+		for (int i = 0; i < s.length; i++) {
+			for (int j = i + 1; j < s.length; j++) {
+				if (s[i].length() > s[j].length()) {
+					String temp = s[i];
+					s[i] = s[j];
+					s[j] = temp;
+				}
+			}
+		}
+
+		String st = s[0];
+		boolean isMatched = false;
+		for (int j = 0; j < st.length(); j++) {
+			char ch = st.charAt(j);
+
+			for (int k = 1; k < s.length; k++) {
+				isMatched = false;
+
+				if (ch == s[k].charAt(j)) {
+					isMatched = true;
+				} else
+					break;
+			}
+			if (isMatched)
+				prefix += ch;
+			else
+				break;
+
+		}
+		;
+		return prefix;
+
+	}
+
+	public static String nonRepeatingChar(String s) {
+		for (int i = 0; i < s.length(); i++) {
+			boolean isPresent = false;
+			for (int j = 0; j < s.length(); j++) {
+				if (i != j && s.charAt(i) == s.charAt(j)) {
+					isPresent = true;
+					break;
+				}
+			}
+			if (!isPresent) {
+				return s.charAt(i) + "";
+			}
+		}
+		return "All Are repated";
+	}
+
+	public static Integer romanToInteger(String s) {
+		int num = 0;
+		Map<String, Integer> romans = new HashMap<>();
+		romans.put("M", 1000);
+		romans.put("CM", 900);
+		romans.put("D", 500);
+		romans.put("CD", 400);
+		romans.put("C", 100);
+		romans.put("XC", 90);
+		romans.put("L", 50);
+		romans.put("XL", 40);
+		romans.put("X", 10);
+		romans.put("IX", 9);
+		romans.put("V", 5);
+		romans.put("IV", 4);
+		romans.put("I", 1);
+//System.out.println(romans.get("M"));
+		if (s.length() < 2)
+			return romans.get(s.charAt(0) + "");
+		for (int i = 0; i < s.length() - 1; i++) {
+
+			if (romans.get(s.charAt(i) + "").intValue() >= romans.get(s.charAt(i + 1) + "").intValue()) {
+				num += romans.get(s.charAt(i) + "");
+				System.out.println("num -> " + num);
+			} else {
+
+				int sum = romans.get(s.charAt(i + 1) + "") - romans.get(s.charAt(i) + "");
+				System.out.println("num    => " + num + "  sum => " + sum);
+				num += sum;
+				i++;
+				System.out.println("--------- " + num);
+			}
+			if (i == s.length() - 2)
+				if (romans.get(s.charAt(i + 1) + "").intValue() <= romans.get(s.charAt(i) + "").intValue()) {
+					num += romans.get(s.charAt(i + 1) + "");
+
+				}
+		}
+		return num;
+	}
+
+	public static String integerToRoman(int num) {
+		Integer number[] = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
+		String romans[] = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
+		String result = "";
+		for (int i = 0; i < number.length; i++) {
+
+			while (num >= number[i]) {
+				num -= number[i];
+				result += romans[i];
+			}
+		}
+		return result;
+
+	}
+
+	public static int convertToInteger(String s) {
+		String st = "";
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) >= '0' && s.charAt(i) <= '9') {
+				st += s.charAt(i);
+			} else if (s.charAt(i) == '-')
+				st += s.charAt(i);
+		}
+		System.out.println(Integer.parseInt(st));
+		return 0;
+	}
+
+	public static int reverserInteger(int n) {
+		int rev = 0;
+		while (n != 0) {
+			int r = n % 10;
+			n /= 10;
+			rev = rev * 10 + r;
+		}
+		System.out.println(rev);
+		return 0;
+	}
+
+	public static int[] mergeSortedArrays(int a1[], int a2[]) {
+		int a3[] = new int[a1.length + a2.length], j = 0, k = 0, i = 0;
+
+		Stack<Character> stack = new Stack();
+		String s = "a";
+		Character c = s.charAt(i);
+		System.out.println(c.equals(c));
+
+		while (i < a1.length && j < a2.length) {
+
+			if (a1[i] >= a2[j])
+				a3[k++] = a2[j++];
+			else
+				a3[k++] = a1[i++];
+
+		}
+		while (i < a1.length)
+			a3[k++] = a1[i++];
+
+		while (j < a2.length)
+			a3[k++] = a2[j++];
+
+		return a3;
+
+	}
+
+	public static int[] insertInSortedArray(int arr[], int value) {
+		int temp[] = new int[arr.length + 1], j = 0;
+		boolean isInserted = false;
+		for (int i = 0; i < arr.length; i++) {
+
+			if (!isInserted && arr[i] > value) {
+				temp[j++] = value;
+				isInserted = true;
+			}
+			temp[j++] = arr[i];
+		}
+		if (!isInserted)
+			temp[j++] = value;
+		return temp;
+	}
+
+	public static int[] inserAtNthPos(int arr[], int value, int pos) {
+		int j = 0;
+		int temp[] = new int[arr.length + 1];
+		if (pos < 1)
+			return arr;
+
+		for (int i = 0; i < arr.length; i++) {
+			if (i == pos - 1)
+				temp[j++] = value;
+
+			temp[j++] = arr[i];
+		}
+		if (pos > arr.length) {
+			temp[j++] = value;
+		}
+
+//	for(int i=0;i<temp.length;i++)
+//		arr[i]=temp[i];
+		return temp;
+	}
+
+	public static void righRotation(int arr[], int num) {
+		int n = arr.length, temp = 0, count = 0;
+		while (count++ < num) {
+			temp = arr[n - 1];
+			for (int i = n - 1; i > 0; i--)
+				arr[i] = arr[i - 1];
+			arr[0] = temp;
+		}
+
+	}
+
+	public static void leftRotation(int arr[], int num) {
+		int temp[] = new int[arr.length], n = arr.length, j = 0;
+
+		for (int i = num; i < n; i++)
+			temp[j++] = arr[i];
+		for (int i = 0; i < num; i++)
+			temp[j++] = arr[i];
+		for (int i = 0; i < n; i++)
+			arr[i] = temp[i];
+	}
+
+	public static char[] copyArray(char[] arr) {
+		if (arr == null)
+			return new char[1];
+
+		char[] a = Arrays.copyOf(arr, arr.length + 1);
+		return a;
+	}
+
+	public static String zigzapConversion(String s, int num) {
+		char[][] arr = new char[num][];
+		int k = 0, i = 0, j = 0, t = 0;
+		while (k < s.length()) {
+			while (i != num - 1) {
+				arr[i] = copyArray(arr[i]);
+				arr[i][j] = s.charAt(k++);
+				i++;
+			}
+			j++;
+			while (i != 0) {
+				arr[i] = copyArray(arr[i]);
+				arr[i][j] = s.charAt(k++);
+				i--;
+			}
+			j++;
+
+		}
+		for (char[] a : arr) {
+			for (char tt : a)
+				System.out.print(tt);
+			System.out.println();
+		}
+		return "";
+	}
+
+	public static String longestPolindromSubtString(String s) {
+		String ans = "";
+		if (s.length() < 1)
+			return s;
+		for (int i = 0; i < s.length(); i++) {
+
+			for (int j = s.length() - 1; j >= 0; j--) {
+				if (i < j) {
+					String sub = s.substring(i, j + 1);
+					if (sub.equals(new StringBuilder(sub).reverse().toString())) {
+						if (sub.length() > ans.length()) {
+							ans = sub;
+						}
+
+					}
+				}
+			}
+		}
+
+		return ans;
+	}
+
+	public static double medianOfTwoSortedArray(int[] arr1, int[] arr2) {
+
+		int arr3[] = new int[arr1.length + arr2.length], i = 0, j = 0, k = 0;
+		while (true) {
+			if (i < arr1.length) {
+				arr3[k++] = arr1[i++];
+			} else if (j < arr2.length) {
+				arr3[k++] = arr2[j++];
+			} else
+				break;
+
+		}
+		double ans = 0;
+		Arrays.sort(arr3);
+		System.out.println(Arrays.toString(arr3));
+		if (arr3.length % 2 == 0) {
+			int mid = arr3.length / 2;
+			ans = (double) (arr3[mid - 1] + arr3[mid]) / 2;
+			System.out.println(arr3[mid - 1]);
+		} else {
+			ans = arr3[arr3.length / 2];
+		}
+
+		return ans;
+	}
+// 4
+// 1,1,1,1
+// 2,1,1
+// 1,1,2
+// 2,2
+
+	public static int[] twoSum(int arr[], int target) {
+		int f = 0, sec = 0;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				if (arr[i] + arr[j] == target && i != j) {
+
+					f = i;
+					sec = j;
+				}
+			}
+
+		}
+		System.out.println(f + " " + sec);
+		return new int[] { f, sec };
+	}
+
+	public static char[] stringToArrayOfCharacters(String s) {
+		char arr[] = new char[s.length()];
+		for (int i = 0; i < s.length(); i++) {
+			arr[i] = s.charAt(i);
+		}
+		return arr;
+	}
+
+	public static String[] textToWordsArray(String text) {
+		List<String> words = new ArrayList<>();
+		for (int i = 0; i < text.length(); i++) {
+
+			for (int j = i; j < text.length() - 1; j++) {
+				if (i > 0 && text.charAt(i) == ' ' && text.charAt(j + 1) == ' ' && text.charAt(i - 1) != ' ') {
+					words.add(text.substring(i + 1, j + 1));
+					break;
+				} else if (i == 0 && text.charAt(j + 1) == ' ') {
+					words.add(text.substring(i, j + 1));
+					break;
+				} else if (text.charAt(i) == ' ' && j + 1 == text.length() - 1) {
+					words.add(text.substring(i + 1, text.length()));
+					break;
+				}
+			}
+
+		}
+		String s[] = new String[words.size()];
+		int i = 0;
+		ListIterator<String> listIterator = words.listIterator();
+		while (listIterator.hasNext()) {
+			s[i++] = listIterator.next();
+		}
+		return s;
+	}
+
+	public static int wordCount(String s) {
+		int count = 0;
+		for (int i = 0; i < s.length(); i++) {
+			if (i == 0)
+				count++;
+			else if (s.charAt(i) == ' ')
+				for (int j = i; j < s.length() - 1; j++) {
+					if (s.charAt(j + 1) == ' ' && s.charAt(i - 1) != ' ') {
+						count++;
+						System.out.print(s.charAt(i) + " - > " + s.charAt(j) + " = " + count);
+						break;
+					}
+				}
+		}
+		return count + 1;
+
+	}
+
+	public static void uniqueFromArrays(int arr[], int arr2[]) {
+
+		List<Integer> list1 = List.of(1, 2, 4);
+		List<Integer> list2 = List.of(1, 2, 3, 5);
+		List<Integer> unique = new ArrayList<>();
+		unique.addAll(list1);
+		unique.addAll(list2);
+		unique = unique.stream().distinct()
+				.filter(a -> list1.contains(a) && !list2.contains(a) || !list1.contains(a) && list2.contains(a))
+				.collect(Collectors.toList());
+		System.out.println(unique);
+
+		int k = 0;
+		for (int i = 0; i < arr.length || k < arr2.length; i++, k++) {
+			boolean a = false;
+			boolean b = false;
+			if (i < arr.length)
+				for (int j = 0; j < arr2.length; j++) {
+					if (arr[i] == arr2[j])
+						a = true;
+				}
+			for (int j = 0; j < arr.length; j++) {
+				if (arr2[k] == arr[j])
+					b = true;
+			}
+			if (!a && i < arr.length)
+				System.out.println(arr[i]);
+			if (!b)
+				System.out.println(arr2[k]);
+		}
+	}
+
+	public static void arraySum(int arr[], int arr2[]) {
+		int carry = 0, total = 0, j = 0, k = arr2.length - 1, i;
+		List<Integer> sum = new ArrayList<>();
+
+		for (i = arr.length - 1; i >= 0 && k >= 0; i--, k--) {
+
+			total = arr[i] + arr2[k] + carry;
+			carry = 0;
+			if (total > 9) {
+				carry = total % 10;
+				total /= 10;
+			}
+			sum.add(total);
+
+		}
+
+		if (i < 0 && k >= 0) {
+			for (int a = k; a >= 0; a--)
+				sum.add(arr2[a]);
+		}
+		if (k < 0 && i >= 0) {
+			for (int a = i; a >= 0; a--)
+				sum.add(arr[a]);
+		}
+		Collections.reverse(sum);
+		System.out.println(sum);
+	}
+
+	public static void arrayRightRotation(int arr[], int n) {
+		int j = 0, count = 0;
+		for (int i = 0; i < arr.length && count < n; i++) {
+			int temp = arr[arr.length - 1];
+			for (j = arr.length - 1; j > 0; j--) {
+				arr[j] = arr[j - 1];
+			}
+			count++;
+			arr[0] = temp;
+		}
+		for (int a : arr)
+			System.out.print(a + ",");
+	}
+
+	public static void arrayLeftRotation(int arr[], int n) {
+		int j = 0, count = 0;
+		for (int i = 0; i < arr.length && count < n; i++) {
+			int temp = arr[0];
+			for (j = 0; j < arr.length - 1; j++) {
+				arr[j] = arr[j + 1];
+			}
+			count++;
+			arr[j] = temp;
+		}
+		for (int a : arr)
+			System.out.print(a + ",");
+	}
+
+	public static boolean anagram(String s, String s1) {
+
+		int count = 0;
+		boolean b = false;
+		for (int i = 0; i < s.length(); i++) {
+			char ch = s.charAt(i);
+			count = 0;
+			b = false;
+			for (int k = 0; k < s.length(); k++) {
+				if (ch == s.charAt(k))
+					count++;
+			}
+
+			for (int j = 0; j < s1.length(); j++) {
+				if (count > 0 && ch == s1.charAt(j))
+					count--;
+			}
+			if (count == 0)
+				b = true;
+		}
+
+		System.out.println(b ? "yes" : "no");
+		return b;
+	}
+
+	public static int count(int i, int arr[]) {
+		int count = 0;
+		for (int a : arr) {
+			if (a == i)
+				count++;
+		}
+		System.out.println(count);
+		return count;
+	}
+
+	public static void majorityElement(int arr[]) {
+		int max = 0, count = 0;
+		for (int i = 0; i < arr.length; i++) {
+			count = count(arr[i], arr);
+			if (count >= max && count > arr.length / 2)
+				max = arr[i];
+
+		}
+		System.out.println(max);
+	}
+
+	public static void longestPolindrom(String s) {
+
+		int first = 0, last = s.length() - 1, max = 0;
+		for (int i = 0; i < s.length(); i++) {
+
+			for (int j = s.length() - i; j >= 0; j--) {
+				if (i < j && j < s.length())
+					if (checkPolindrom(i, j + 1, s) && max < s.substring(i, j).length()) {
+
+						max = s.substring(i, j + 1).length();
+						first = i;
+						last = j + 1;
+					}
+			}
+			System.out.println("------");
+
+		}
+		System.out.println(s.substring(first, last));
+
+	}
+
+	public static boolean checkPolindrom(int f, int l, String s) {
+		String st = s.substring(f, l);
+		System.out.println(st + "444");
+		return st.equals(new StringBuffer(st).reverse().toString());
+
+	}
+
+	public void spiralMatrix() throws ClassNotFoundException, NoSuchMethodException, SecurityException,
+			InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+		int a[][] = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+		int j = 0, k = 0, count = 0, max = 10 - 1;
+		// int max=a.length*a.length-1;
+		// System.out.println(a.length);
+
+		for (int i = 0; i < a.length - i; i++) {
+
+			if (count == max)
+				break;
+
+			for (j = i; j < a.length - i && count <= max; j++) {
+				count++;
+				System.out.println(a[k][j]);
+			}
+			j--;
+
+			k++;
+			while (k < a.length - i && count <= max) {
+				System.out.println(a[k][j]);
+				k++;
+				count++;
+			}
+			k--;
+			j--;
+
+			while (j >= 0 && count <= max) {
+				count++;
+				System.out.println(a[k][j--]);
+			}
+
+			// k=i+1;
+			if (k == a.length / 2 && j == a.length / 2)
+				break;
+			j++;
+			while (k > i + 1 && count <= max) {
+				System.out.println(a[--k][j]);
+				count++;
+			}
+
+			k = i + 1;
+			System.out.println("-----------------");
+		}
+
+	}
+
+	public static ArrayList<Integer> findIndexes(int arr[], int sum) {
+		boolean a = false;
+		int f = 0, l = arr.length, s = 0;
+		for (int i = 0; i < arr.length; i++) {
+			s = 0;
+			if (a)
+				break;
+
+			for (int j = i; j < arr.length; j++) {
+				s += arr[j];
+				if (s == sum) {
+					f = i;
+					l = j;
+					a = true;
+					break;
+				}
+
+			}
+			System.out.println(s);
+		}
+
+		return a ? new ArrayList<Integer>(Arrays.asList(f, l)) : new ArrayList<Integer>(Arrays.asList(-1));
+	}
+
+	public int count(char a, String s) {
+		class A {
+			static int a;
+
+			public void main() {
+				System.out.println("hello");
+			}
+		}
+
+		int count = 0;
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == a)
+				count++;
+		}
+		return count;
+	}
+
+	public static boolean isPresent(char a, int indx, String s) {
+		for (int i = indx; i >= 0; i--) {
+			if (s.charAt(i) == a)
+				return true;
+		}
+		return false;
+	}
+
+	public static boolean isPresent(int a, int indx, int ar[]) {
+		for (int i = indx; i >= 0; i--) {
+			if (ar[i] == a)
+				return true;
+		}
+		return false;
+	}
+
+	public static void fibonacci(int t1, int t2, int n) {
+		if (n == 0)
+			return;
+		else {
+			int t3 = t1 + t2;
+			t1 = t2;
+			t2 = t3;
+			System.out.println(t3);
+			fibonacci(t1, t2, n - 1);
+		}
+
+	}
+
+	public static int factorial(int n) {
+		if (n == 1)
+			return 1;
+		else
+			n = n * factorial(n - 1);
+		return n;
+
+	}
+
+	public static String removeSpaces(String s) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) != ' ')
+				sb.append(s.charAt(i));
+
+		}
+		return sb.toString();
+	}
+
+	public static int[] removeDuplicate(int[] a) {
+		int arr[] = new int[a.length];
+		int j = 0;
+		for (int i = 0; i < a.length; i++) {
+			if (!isPresent(a[i], i - 1, a))
+				arr[j++] = a[i];
+		}
+		a = new int[j];
+		System.out.println(j);
+		for (int i = 0; i < j; i++)
+			a[i] = arr[i];
+		return a;
+	}
+
+	class C {
+		static int a;
+	}
+}
+
+class B {
+	int a = 10;
+
+	public String toString() {
+		System.out.println("askfjal");
+		return new String(this.a + "");
+	}
+
+	public void hello(int... a) {
+
+	}
+}

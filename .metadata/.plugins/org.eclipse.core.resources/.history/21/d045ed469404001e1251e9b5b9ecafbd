@@ -1,0 +1,54 @@
+package com.commerce.app.Impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.commerce.app.Repository.IProductRepository;
+import com.commerce.app.Repository.IUserRepositoty;
+import com.commerce.app.Service.IProductService;
+import com.commerce.app.entities.Product;
+import com.commerce.app.exception.UserNotFoundException;
+
+@Service
+public class ProductServiceImpl implements IProductService {
+
+	@Autowired
+	private IProductRepository productRepo;
+	
+	@Override
+	public Product addProduct(Product product) {
+		// TODO Auto-generated method stub
+		return this.productRepo.save(product);
+	}
+
+	@Override
+	public Product updateProduct(Product product) {
+		// TODO Auto-generated method stub
+		if(this.productRepo.existsById(product.getPId()))
+			return this.productRepo.save(product);
+		throw new UserNotFoundException("Product id is null");
+		    
+		return null;
+	}
+
+	@Override
+	public boolean deleteProduct(Integer id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Product getProduct(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> getProducts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

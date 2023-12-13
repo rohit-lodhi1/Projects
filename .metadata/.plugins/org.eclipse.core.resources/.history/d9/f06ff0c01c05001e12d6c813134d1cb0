@@ -1,0 +1,10 @@
+package com.commerce.app.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.commerce.app.entities.CartItem;
+import com.commerce.app.entities.Stock;
+
+public interface ICartItemRepository extends JpaRepository<CartItem, Integer> {
+   public CartItem findByCartAndProduct(Integer cid,Integer pid );
+}

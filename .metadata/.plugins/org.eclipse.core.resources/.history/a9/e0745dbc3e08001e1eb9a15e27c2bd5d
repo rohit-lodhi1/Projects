@@ -1,0 +1,9 @@
+package com.blog.app.Exceptions;
+
+public class PhotosNotFoundException {
+
+	public PhotosNotFoundException() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

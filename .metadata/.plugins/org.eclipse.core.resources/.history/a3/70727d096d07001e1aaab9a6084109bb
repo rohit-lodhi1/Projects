@@ -1,0 +1,8 @@
+package com.blog.app.impl;
+
+import com.blog.app.service.ITagService;
+import com.blog.app.service.ITodosService;
+
+public class TagServiceImpl implements ITagService{
+
+}

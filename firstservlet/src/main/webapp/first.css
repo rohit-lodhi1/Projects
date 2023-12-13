@@ -1,0 +1,218 @@
+@charset "ISO-8859-1";
+.header-col img {
+    border-radius: 95px;
+    height: 173px;
+}
+.header-col img {
+    border-radius: 64px;
+    height: 177px;
+    width: 29%;
+    background: black;
+}
+.header-col img {
+    border-radius: 63px;
+    width: 72%;
+    
+}
+table.container td{
+    border: 2px solid;
+}
+td.header-col {
+    border: black;
+    border-block-color: black;
+}
+.header-col h1 {
+    position: absolute;
+    left: 33%;
+    top: 20px;
+    font-size: 49px;
+    background: black;
+    color: white;
+}
+table.container {
+    width: 100%;
+}
+.header-col img {
+    width: 275px;
+}
+tr.header-row {
+    background: black;
+}
+.header-col img {
+    position: absolute;
+    height: 19%;
+    width: 203px;
+    left: 7%;
+    top: 20px;
+}tr.header-row {
+    height: 140px;
+}
+.header-col p {
+    color: #f0f0f5;
+    position: absolute;
+    left: 60%;
+    top: 106px;
+}
+tr.middle-row {
+    height: 388px;
+}
+td.middle-LeftSide {
+    width: 26%;
+    padding: 9px;
+    height: 89px;
+}
+td.middle-LeftSide {
+    width: 29%;
+    background: black;
+    color: white;
+}
+.navbar li {
+    display: block;
+    margin: 4px;
+    padding: 8px;
+    font-size: 19px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    background: bal;
+    
+}
+ul.navbar {
+    position: absolute;
+    top: 157px;
+    left: 4%;
+}
+.footer-col h4 {
+    position: absolute;
+    left: 40%;
+    top: 539px;
+    color: white;
+}
+td.footer-col {
+    background: black;
+}
+tr.footer-row {
+    height: 75px;
+}.footer-col h5 {
+    color: white;
+    position: absolute;
+    top: 570px;
+    left: 34%;
+}
+.navbar li:hover{
+    background: white;
+    color: black;
+    
+}
+a{
+    text-decoration: none;
+}
+img {
+    height: 384px;
+    width: 100%;
+}
+
+/*** LOGIN PAGE **/
+form.login-form {
+    position: absolute;
+    color: white;
+    top: 245px;
+    left: 50%;
+    background-color: transparent;
+}
+.login-form h2 {
+    background: transparent;
+    font-size: 36px;
+    position: absolute;
+    top: -12px;
+    left: 74px;
+    color: rgb(237, 119, 16);
+    background: #00000088;
+}
+table.form-table {
+    position: absolute;
+    top: 90px;
+    background: #1b1a7494;
+    font-size: 22px;
+}
+.login-form label {
+    padding: 13px;
+    color: orange;
+}
+form.singup {
+    position: absolute;
+    top: 27%;
+    left: 52%;
+    color: #c1aeae;
+    font-size: 28px;
+}
+.singup label {
+    font-size: 22px;
+}
+.singup h2 {
+    color: whitesmoke;
+}
+table.form-table {
+    background: #0000006b;
+}
+form.singup {
+    background: #0000006b;
+    background: bal;
+    width: 264px;
+}
+.singup h2 {
+    position: absolute;
+    left: 21%;
+    top: -8px;
+    background: #00000085;
+}
+.middle-RightSide button {
+    position: absolute;
+    top: 180px;
+    left: 106px;
+    font-size: 20px;
+    color: orange;
+    background: bal;
+    background: #000000b5;
+    font-style: italic;
+}
+
+.singup button {
+    top: 271px;
+    color: whitesmoke;
+}
+.middle-RightSide h2 {
+    position: absolute;
+    top: 39%;
+    color: whitesmoke;
+    left: 38%;
+   background: rgba(0, 0, 0, 0.598);
+    width: 159px;
+}
+button{
+    transition: width 4s;
+}
+
+button:hover{
+    width:200px;
+}
+.middle-RightSide h1 {
+    position: absolute;
+    top: 30%;
+    left: 460px;
+    color: white;
+}
+.middle-RightSide h3 {
+    position: absolute;
+    color: white;
+    top: 49%;
+    font-size: 30px;
+    left: 51%;
+}.middle-RightSide h4 {
+    position: absolute;
+    top: 58%;
+    color: white;
+    font-size: 23px;
+    left: 47%;
+}

@@ -1,0 +1,33 @@
+package com.commerce.app.entities;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class OrderItem {
+  private Integer id;
+  
+  private Integer price;
+  
+  @ManyToOne(cascade = CascadeType.ALL)
+  private Order order;
+  
+  @ManyToOne(cascade = CascadeType.ALL)
+  private Product product;
+  
+  @ManyToOne(cascade = CascadeType.ALL)
+  private GroupVarient groupVarient;
+  
+  
+}

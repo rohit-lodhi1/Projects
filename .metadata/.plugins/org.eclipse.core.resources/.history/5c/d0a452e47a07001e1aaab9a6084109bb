@@ -1,0 +1,9 @@
+package com.blog.app.controller;
+
+public class CompanyController {
+
+	public CompanyController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.commerce.app.exception;
+
+public class GroupNotFoundException {
+	
+	
+	  public GroupNotFoundException(){
+		  
+	  }
+
+	  public GroupNotFoundException(String msg){
+		  super(msg);
+	  }
+}

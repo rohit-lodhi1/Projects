@@ -1,0 +1,33 @@
+package com.blog.app.entity;
+
+import java.sql.Timestamp;
+
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Todos {
+   private Long id;
+   
+   private String title;
+   
+   private Boolean completed=false;
+   
+   @ManyToOne
+   private User user;
+   
+	
+	private Timestamp createdAt;
+	
+	private Timestamp updatedAt;	
+	
+	private Long createdBy;
+	private Long updatedBy;
+}

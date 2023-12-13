@@ -1,0 +1,9 @@
+package com.blog.app.Exceptions;
+
+public class CommentsNotFoundExceptions {
+
+	public CommentsNotFoundExceptions() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

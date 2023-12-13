@@ -1,0 +1,29 @@
+package com.roverse.com.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.roverse.com.services.IEmployeService;
+import com.roverse.com.servicesImpl.EmployeServiceImpl;
+import com.roverse.entity.Employee;
+
+@RestController
+public class MyController {
+	@Autowired
+    private IEmployeService emp;
+	@GetMapping("/home")
+	public String home() {
+		return "Yuppyyyy!!!!";
+	}
+	
+	@GetMapping("/employees")
+	public List<Employee> getEmployees(){
+		
+		
+		return emp.getEmployees();
+	}
+}

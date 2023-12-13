@@ -1,0 +1,122 @@
+package com.blog.app.impl;
+
+import java.sql.SQLDataException;
+import java.sql.SQLIntegrityConstraintViolationException;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.stereotype.Service;
+
+import com.blog.app.Exceptions.UserFoundException;
+import com.blog.app.Exceptions.UserNotFoundException;
+import com.blog.app.entity.Album;
+import com.blog.app.entity.Posts;
+import com.blog.app.entity.User;
+import com.blog.app.repository.IUserRepository;
+import com.blog.app.service.IUserService;
+
+@Service
+public class UserServiceImpl implements IUserService{
+
+	@Autowired
+	private IUserRepository userRepo;
+	
+      //    -------- To Add User ---------
+	@Override
+	public User addUser(User user) {
+		try {
+        return	this.userRepo.save(user);
+		}catch (Exception e) {
+             throw new UserFoundException("UserName Already exists");
+		}	
+	}
+
+	@Override
+	public User login(String username, String password) {
+		// TODO Auto-generated method stub
+		Optional<User> user = this.userRepo.findByUserNameAndPassword(username, password);
+		if(user.isPresent()) 
+     	   return user.get();
+		throw new UserFoundException();
+		
+	}
+
+	
+	//  -------- To Get User By ID ---------
+	@Override
+	public User getUserById(Long id) {
+		// TODO Auto-generated method stub
+		Optional<User> user = this.userRepo.findById(id);
+		  if(user.isPresent())
+			 return user.get();
+     throw new UserNotFoundException("User Not Found with id: "+id);
+	}
+
+	//  -------- To Update User ---------
+	@Override
+	public User updateUser(User user) {
+		
+		try {
+			if (this.userRepo.existsById(user.getId()))
+				return this.userRepo.save(user);
+
+		} catch (DataAccessException e) {
+			
+			throw new UserFoundException("User Name ALready exits: ");
+		}
+		throw new UserNotFoundException("User Not Found with id: " + user.getId());
+	}
+
+	// -------- To Get ALl users ---------
+	@Override
+	public List<User> getAllUsers() {
+		return this.userRepo.findAll();
+	}
+	
+	// -------- To Delete user By ID ---------
+	@Override
+	public Boolean deleteUser(Long id) {
+        if(this.userRepo.existsById(id))
+        {
+            this.userRepo.deleteById(id);
+            return true;
+        }
+		throw new UserNotFoundException("User not Found With ID : "+id);
+	}
+	
+   //  -------- To Get Posts created by User By UserName ---------
+	@Override
+	public List<Posts> getPostsOfUser(String userName) {
+		  Optional<User> user = this.userRepo.findByUserName(userName);
+		  if(user.isPresent())
+			  return user.get().getPosts();
+		  throw new UserNotFoundException("User not found with userName : "+userName);
+	}
+
+   //  -------- To Get ALbums created by User By UserName ---------
+	@Override
+	public List<Album> getAlbumsOfUser(String userName) {
+		  Optional<User> user = this.userRepo.findByUserName(userName);
+		  if(user.isPresent())
+			  return user.get().getAlbums();
+		  throw new UserNotFoundException("User not found with userName : "+userName);
+	}
+
+//  -------- To Check userName is Available or Not  ---------
+	@Override
+	public String checkUsernameAvailability(String userName) {
+		   Optional<User> user = this.userRepo.findByUserName(userName);
+		   return  user.isPresent()?"Availability : false":"Availability : true";
+	}
+	
+//  -------- To Check Email is Available or Not  ---------
+	@Override
+	public String checkEmailAvailability(String email) {
+		 Optional<User> user = this.userRepo.findByEmail(email);
+		 return  user.isPresent()?"Availability : false":"Availability : true";
+	}
+
+	
+}

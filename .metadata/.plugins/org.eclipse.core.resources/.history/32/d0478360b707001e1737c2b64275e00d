@@ -1,0 +1,9 @@
+package com.blog.app.entity.helper;
+
+public class LoginData {
+
+	public LoginData() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

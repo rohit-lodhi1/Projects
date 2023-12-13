@@ -1,0 +1,46 @@
+package com.blog.app.entity;
+
+import java.sql.Timestamp;
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Company {
+    
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	private String name;
+	
+	private String cachePharse;
+	
+	private String bs;
+	
+private Timestamp createdAt;
+	
+	private Timestamp updatedAt;	
+	
+	private Long createdBy;
+	private Long updatedBy;
+	
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name="c_id")
+	private List<User> users;
+   
+}

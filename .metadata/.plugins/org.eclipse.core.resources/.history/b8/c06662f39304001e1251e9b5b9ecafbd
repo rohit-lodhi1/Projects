@@ -1,0 +1,9 @@
+package com.commerce.app.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.commerce.app.entities.User;
+
+public interface IUserRepositoty  extends JpaRepository<User, Integer>{
+  public User findByUsernameAndEmail(String username,String password);
+} 

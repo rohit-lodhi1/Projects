@@ -1,0 +1,17 @@
+package com.commerce.app.Service;
+
+import java.util.List;
+
+import com.commerce.app.entities.Group;
+
+public interface IGroupService {
+public Group addGroupVariation(Group GroupVariation);
+    
+    public Group updateGroupVariation(Group GroupVariation);
+    
+    public boolean deleteGroupVariation(Integer id);
+    
+    public Group getGroupVariation(Integer id);
+    
+    public List<Group> getGroupVariations();
+}

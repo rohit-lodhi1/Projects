@@ -1,0 +1,7 @@
+package com.roverse.entity;
+
+public class Employee {
+  private String name;
+  private int id;
+  private String email; 
+}
