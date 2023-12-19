@@ -107,28 +107,52 @@ public class Test {
 //	  removeNthNodeFromEnd(2,l);
 		// System.out.println(l);
 		LinkList l = new LinkList();
-		l.add(10);
-		l.add(20);
-		l.add(30);
-		LinkList l2 = new LinkList();
-		l.add(10);
-		l.add(20);
-		l.add(30);
-
-		LinkList l3 = new LinkList();
-		l.add(90);
-		l.add(45);
-		l.add(36);
-		LinkList l4 = new LinkList();
-		l.add(98);
+		l.add(1);
 		l.add(2);
-		l.add(387);
+		l.add(3);
 
-		Node[] node = { l.start, l2.start,l3.start,l4.start };
+//		Node[] node = { l.start, l2.start,l3.start,l4.start };
 		
-		System.out.println(mergeKSortedLists(node));;
-	
+		
+//		System.out.println(mergeKSortedLists(node));;
+		System.out.println(plus(l.start));
 	}
+	
+	public static LinkList plus(Node start) {
+		 Node temp= plusOne(start, start);
+		 LinkList l = new LinkList();
+		 if(temp==start) {
+		  l.add(1);
+		  
+		  while(start!=null) {
+			  l.add(start.getData());
+			  start = start.getNext();
+		  }
+	 return l;
+		 }
+		 l.start=start;
+		 return  l;
+	}
+	
+	public static Node plusOne(Node start,Node temp) {
+		if(temp==null)
+			return temp;
+		plusOne(start,temp.getNext());
+		System.out.println((int)temp.getData());
+		if((int)temp.getData()<9) {
+			temp.setData((int)temp.getData()+1);
+			return temp;
+		}
+		
+		   temp.setData(0);
+		 return temp;
+		
+//		return temp;
+	 // return new linklist with values holding 0;
+		  
+		
+	}
+	
 
 	public static LinkList mergeKSortedLists(Node[] node) {
 		LinkList list = new LinkList();

@@ -9,15 +9,19 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.Stack;
+
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.jdbc.core.metadata.OracleCallMetaDataProvider;
 
 interface DD {
@@ -44,6 +48,16 @@ class AB implements Comparable<AB> {
 }
 
 abstract class kd {
+
+}
+
+class Foodsystem {
+	public String count;
+	public Map<String, Integer> food = new LinkedHashMap<>();
+
+	public String toString() {
+		return count + " =" + food;
+	}
 
 }
 
@@ -102,8 +116,8 @@ public class Test {
 //		DayOfWeek dayOfWeek = l2.getDayOfWeek();
 //		System.out.println(dayOfWeek.toString());
 
-		int arr[] = new int[] { 1, 2, 4 };
-		int arr2[] = new int[] { 1, 3, 4 };
+//		int arr[] = new int[] { 1, 2, 4 };
+//		int arr2[] = new int[] { 1, 3, 4 };
 		// righRotation(arr, 2);
 //inserAtNthPos(arr,3,3);
 
@@ -150,54 +164,477 @@ public class Test {
 		// System.out.println(romanToInteger("D"));
 		// System.out.println(nonRepeatingChar("abcabc"));
 		// System.out.println(longestPrefix(new String[] {"flow","flowight","flower"}));
-		int arr1[] = {10,8,7,5,4,11,78};
-		int arr3[] = { -1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4 };
-		Arrays.sort(arr3);
-	//	System.out.println(threeSum(arr3));
+//		int arr1[] = { 10, 8, 7, 5, 4, 11, 78 };
+//		int arr3[] = { -1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4 };
+//		Arrays.sort(arr3);
+		// System.out.println(threeSum(arr3));
 //		recursionBubbleSort(arr1,0,0);
 //		System.out.println(Arrays.toString(arr1));
-		List.of(arr);
-		
+//		List.of(arr);
+
 //		System.out.println(Arrays.toString(mergeTwoSortedArray(new int[] {1,3,5,7,9},new int[] {2,4,6,7,8})));
 //		System.out.println(Arrays.toString(selectionSortRecu(new int[] {7,9,4,3,2,1,54,3},0,1,0)));
-		
+
 //		System.out.println(Arrays.toString(insertionSort(new int[] {9,8,6,5,4,3,5})));
-	//	System.out.println(uniqueOccurance(new int[] {1,1,1,2,2,2,3,4,4,5,4,5}));;
+		// System.out.println(uniqueOccurance(new int[] {1,1,1,2,2,2,3,4,4,5,4,5}));;
 //		System.out.println(reverseKElements(new int[] {1,2,3,4,5,6,7,8,9},2));
-		
-	//	System.out.println(isArraySortedOrRotated(new int[] {5,6,7,8,1}));
-		//System.out.println(Arrays.toString(twoSum2(new int[] {2 ,7,8,5,2,1},9)));
-		//System.out.println(longestPrefixs(new String[] {"ab","aba","ad"}));
-	//	System.out.println(Arrays.toString(removeDuplicatess(new int[] {1,1,2,2,3,4,4,5,55,5})));
+
+		// System.out.println(isArraySortedOrRotated(new int[] {5,6,7,8,1}));
+		// System.out.println(Arrays.toString(twoSum2(new int[] {2 ,7,8,5,2,1},9)));
+		// System.out.println(longestPrefixs(new String[] {"ab","aba","ad"}));
+		// System.out.println(Arrays.toString(removeDuplicatess(new int[]
+		// {1,1,2,2,3,4,4,5,55,5})));
+		// System.out.println(firstOccurances("hadbadhad","had"));
+		// String s[]= {"aaa","aec","adc","ae"};
+//		Arrays.sort(s);
+//		System.out.println(lastWordLength("hello world jav   "));
+		// System.out.println(Arrays.toString(plusOneOptimized(new int[] {9,9,})));
+		// System.out.println(isPolindrom("5?6?7?876?5"));
+		// System.out.println(reverseWords("A man, a plan, a canal: Panama"));
+//		System.out.println(mostOccurrance("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."));   // stuck after 30
+//		System.out.println(mostOccurranceInString("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."));   // stuck after 30
+//		System.out.println(replaceString("a man is one the street"));
+//	System.out.println(replaceAllDigitsWithCharacter("a1b2c3"));
+		// System.out.println(removeAllSubstring("aabababa","aba"));
+//System.out.println(removeAllDuplicates("aabbccdeffghill"));
+		// System.out.println(1%2);
+//		char ch[]=new char[] {'a','a','a','b','b','a','a'};
+//		int n=countLetters(ch);
+//		for(int i=0;i<n;i++) {
+//			System.out.print(ch[i]+",");
+// 		System.out.println(System.currentTimeMillis());
+//		}
+//		System.out.println(Arrays.toString(mergeSorted(new int[] {1,2,3,4},3,new int[] {2,5,6},2)));
 		System.out.println(System.currentTimeMillis());
-		System.out.println(firstOccurances("hadbadhad","had"));
-		System.out.println(System.currentTimeMillis());
-		String s[]= {"aaa","aec","adc","ae"};
-		Arrays.sort(s);
-		System.out.println(Arrays.toString(s));
+		int arr[][] = new int[][] { { 1, 2, 3 }, { 4, 5, 6 } };
+//		printWave(arr,2,3);
+		// System.out.println(reverseVowels("hello"));
 		
-}
-	public static int firstOccurances(String s,String value) {
-		 if(s.contains(value)) {
-			 return s.indexOf(value);
-		 }
-		 return -1;
+		System.out.println(System.currentTimeMillis());
 	}
 	
-	public static boolean isMatched(String s,String value) {
-		if(s.length()<value.length())
-			return false;
-		for(int i=0;i<value.length();i++) {
-			 if(s.charAt(i)!=value.charAt(i))
-				 return false;
+	
+	
+	public static void printSprial(int arr[][],int row,int col) {
+		for
+	}
+
+	public static boolean isVowel(char ch) {
+		ch = Character.toLowerCase(ch);
+		if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+			return true;
+		return false;
+	}
+
+	public static String reverseVowels(String s) {
+
+		char[] arr = s.toCharArray();
+		int i = 0, j = arr.length - 1;
+		while (i < j) {
+			if (isVowel(arr[i]) && isVowel(arr[j])) {
+				char t = arr[i];
+				arr[i] = arr[j];
+				arr[j] = t;
+				i++;
+				j--;
+			} else if (isVowel(arr[i]))
+				j--;
+			else
+				i++;
+		}
+		return new String(arr);
+	}
+
+	public static void printWave(int arr[][], int row, int col) {
+		for (int j = 0; j < col; j++) {
+
+			for (int i = 0; i < row; i++) {
+				System.out.print(arr[i][j]);
+			}
+
+			System.out.println();
+			j++;
+			for (int i = row - 1; i >= 0 && j < col; i--) {
+				System.out.print(arr[i][j]);
+			}
+			System.out.println();
+
+		}
+	}
+
+	public static int[] mergeSorted(int arr[], int m, int arr1[], int n) {
+		int arr3[] = new int[m + n], i = 0, j = 0, k = 0;
+
+		while (i < arr.length && j < arr1.length) {
+			if (arr[i] > arr1[j] && n > 0) {
+				arr3[k++] = arr1[j++];
+				n--;
+			} else if (m > 0) {
+				arr3[k++] = arr[i++];
+				m--;
+			} else
+				break;
+
+		}
+		System.out.println(Arrays.toString(arr3));
+		while (m > 0 && i < arr.length) {
+			arr3[k++] = arr[i++];
+			m--;
+		}
+		while (n > 0 && j < arr1.length) {
+			arr3[k++] = arr1[j++];
+			n--;
+		}
+		return arr3;
+	}
+
+	public static List<Foodsystem> system = new ArrayList<>();
+
+	public void enterData() {
+		String food[] = { "kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi" };
+		String country[] = { "korean", "japanese", "japanese", "greek", "japanese", "korean" };
+		int arr[] = { 9, 12, 8, 15, 14, 7 };
+		for (int i = 0; i < country.length; i++) {
+			Map<String, Integer> fs = new LinkedHashMap<>();
+			Foodsystem s = new Foodsystem();
+			s.count = country[i];
+			s.food.put(food[i], arr[i]);
+			this.add(s);
+		}
+		System.out.println(system);
+
+	}
+
+	public void add(Foodsystem o) {
+		for (int i = 0; i < this.system.size(); i++) {
+			if (system.get(i).count.equals(o.count)) {
+				system.get(i).food.putAll(o.food);
+				return;
+			}
+
+		}
+		this.system.add(o);
+	}
+
+	public void changeRating(String food, int rating) {
+		for (int i = 0; i < this.system.size(); i++) {
+			Foodsystem f = system.get(i);
+			if (f.food.containsKey(food)) {
+				f.food.put(food, rating);
+				return;
+			}
+
+		}
+
+	}
+
+	public String highestRating(String country) {
+		String city = "";
+
+		for (int i = 0; i < this.system.size(); i++) {
+			Foodsystem s = system.get(i);
+			if (s.count.equals(country)) {
+				int max = 0;
+				Set<Entry<String, Integer>> entrySet = s.food.entrySet();
+				System.out.println(entrySet);
+				for (Entry<String, Integer> e : entrySet) {
+					if (e.getValue() > max) {
+						max = e.getValue();
+						city = e.getKey();
+
+					}
+					if (e.getValue() == max) {
+						s.food.put(e.getKey(), e.getValue());
+					}
+				}
+			}
+
+		}
+
+		return city;
+	}
+
+	public static int countLetters(char[] s) {
+		int k = 0;
+		for (int i = 0; i < s.length;) {
+			char ch = s[i];
+			int j = i + 1, count = 1;
+
+			while (j < s.length && s[j] == ch) {
+				count++;
+				j++;
+			}
+			System.out.println(ch + " " + count + " " + j);
+			if (count > 1) {
+				s[k++] = ch;
+				for (char c : Integer.toString(count).toCharArray()) {
+					if (k < s.length)
+						s[k++] = c;
+					else
+						return k;
+				}
+			} else {
+				s[k++] = ch;
+			}
+			i = j;
+		}
+		return k;
+	}
+
+	public static String removeAllDuplicates(String s) {
+		StringBuilder sb = new StringBuilder();
+		int count[] = new int[26];
+		for (int i = 0; i < s.length(); i++) {
+			int num = s.charAt(i) - 'a';
+			count[num]++;
+		}
+
+		for (int i = 0; i < s.length(); i++) {
+			if (count[(s.charAt(i) - 'a')] < 2)
+				sb.append(s.charAt(i));
+
+		}
+		return sb.toString();
+	}
+
+	public static String removeAllSubstring(String s, String part) {
+		while (s.length() != 0 && s.contains(part))
+			s = s.replaceFirst(part, "");
+
+		return s;
+	}
+
+	public static String replaceAllDigitsWithCharacter(String s) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) >= '0' && s.charAt(i) <= '9')
+				sb.append((char) (s.charAt(i - 1) + (s.charAt(i) - 48)));
+			else
+				sb.append(s.charAt(i));
+		}
+		return sb.toString();
+
+	}
+
+	public static String replaceString(String s) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == ' ')
+				sb.append("@40");
+			else
+				sb.append(s.charAt(i));
+
+		}
+		return sb.toString();
+	}
+
+	public static char mostOccurranceInString(String s) {
+		int arr[] = new int[26]; // storing occurance of every letter according to index
+		s = s.toLowerCase();
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) >= 'a' && s.charAt(i) <= 'z') {
+				int num = s.charAt(i) - 'a';
+				arr[num]++;
+			}
+		}
+
+		// finding max
+		int max = 0;
+		char ch = ' ';
+		for (int i = 0; i < arr.length; i++) {
+			if (max < arr[i]) {
+				max = arr[i];
+				ch = (char) i;
+			}
+
+		}
+		return (char) (ch + 'a');
+
+	}
+
+	// brute force
+	public static char mostOccurrance(String s) {
+		int max = 0;
+		char ch = ' ';
+		for (int i = 0; i < s.length(); i++) {
+			int count = 0;
+			for (int j = i + 1; j < s.length(); j++) {
+				if (s.charAt(i) == s.charAt(j) && s.charAt(i) != ' ')
+					count++;
+			}
+
+			if (count > max) {
+				ch = s.charAt(i);
+				max = count;
+			}
+		}
+		return ch;
+	}
+
+	public static int climbStairs(int n) {
+
+		if (n < 0)
+			return 0;
+		if (n == 0)
+			return 1;
+		return climbStairs(n - 1) + climbStairs(n - 2);
+	}
+
+	public static void reverseString(char[] ch, int st, int end) {
+
+		while (st < end) {
+			char temp = ch[st];
+			ch[st] = ch[end];
+			ch[end] = temp;
+			st++;
+			end--;
+		}
+
+	}
+
+	public static char[] reverseWords(String s) {
+		char ch[] = s.toCharArray();
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) != ' ' && s.charAt(i) != ',') {
+				int j = i + 1;
+				for (; j < s.length(); j++) {
+					if (s.charAt(j) == ' ' || s.charAt(j) == ',')
+						break;
+				}
+				reverseString(ch, i, j - 1);
+				i = j;
+			}
+		}
+		return ch;
+	}
+
+	public static boolean isAlphaNumeric(char c) {
+		if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' || c >= '0' && c <= '9')
+			return true;
+		return false;
+	}
+
+	public static boolean isPolinromValidAlgo(String s) {
+		StringBuilder b = new StringBuilder();
+		// remove special characters only left alphanumeric
+		for (int i = 0; i < s.length(); i++) {
+			if (isAlphaNumeric(s.charAt(i)))
+				b.append(s.charAt(i));
+
+		}
+
+		// to lower case
+		String str = b.toString().toLowerCase();
+		int st = 0, end = str.length() - 1;
+		while (st < end) {
+			if (str.charAt(st) != str.charAt(end))
+				return false;
+			st++;
+			end--;
+		}
+		return true;
+
+	}
+
+	public static boolean isPolindrom(String s) {
+		int st = 0, end = s.length() - 1;
+		while (st < end) {
+			if (s.charAt(st) >= '0' && s.charAt(st) <= '9') {
+				if (s.charAt(end) >= '0' && s.charAt(end) <= '9') {
+
+					if (s.charAt(st) != s.charAt(end))
+						return false;
+					else {
+						st++;
+						end--;
+					}
+				} else
+					end--;
+			} else
+				st++;
 		}
 		return true;
 	}
-	
-	public static int firstOccurance(String s,String value) {
-		for(int i=0;i<s.length();i++) {
-			if(s.charAt(i)==value.charAt(0)) {
-				if(isMatched(s.substring(i), value))
+
+	// optimized
+	public static int[] plusOneOptimized(int arr[]) {
+		for (int i = arr.length - 1; i >= 0; i--) {
+			if (arr[i] < 9) {
+				arr[i]++;
+				return arr;
+			}
+			arr[i] = 0;
+		}
+		arr = new int[arr.length + 1];
+		arr[0] = 1;
+		return arr;
+	}
+
+	// brute force
+	public static int[] plusOne(int arr[]) {
+		if (arr.length < 1)
+			return arr;
+		int carry = 1;
+		for (int i = arr.length - 1; i >= 0; i--) {
+			arr[i] = arr[i] + carry;
+			carry = 0;
+			if (arr[i] > 9) {
+				arr[i] = 0;
+				carry = 1;
+			} else
+				break;
+		}
+
+		if (carry != 0) {
+			int ar[] = new int[arr.length + 1];
+			ar[0] = carry;
+			for (int i = 1; i < ar.length - 1; i++)
+				ar[i] = arr[i];
+			return ar;
+		}
+		return arr;
+	}
+
+	public static int countLastWordLength(String s, int index) {
+		int count = 0;
+		for (; index >= 0; index--) {
+			if (s.charAt(index) != ' ')
+				count++;
+			else
+				break;
+		}
+		return count;
+	}
+
+	public static int lastWordLength(String s) {
+		for (int i = s.length() - 1; i >= 0; i--) {
+			if (s.charAt(i) != ' ')
+				return countLastWordLength(s, i);
+		}
+		return 0;
+	}
+
+	public static int firstOccurances(String s, String value) {
+		if (s.contains(value)) {
+			return s.indexOf(value);
+		}
+		return -1;
+	}
+
+	public static boolean isMatched(String s, String value) {
+		if (s.length() < value.length())
+			return false;
+		for (int i = 0; i < value.length(); i++) {
+			if (s.charAt(i) != value.charAt(i))
+				return false;
+		}
+		return true;
+	}
+
+	public static int firstOccurance(String s, String value) {
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == value.charAt(0)) {
+				if (isMatched(s.substring(i), value))
 					return i;
 			}
 		}
@@ -205,245 +642,230 @@ public class Test {
 	}
 
 	public static int[] removeDuplicatess(int arr[]) {
-		int i=0,j=1;
-		for(i=1;i<arr.length;i++) {
-			if(arr[i-1]!=arr[i])
-				arr[j++]=arr[i];
+		int i = 0, j = 1;
+		for (i = 1; i < arr.length; i++) {
+			if (arr[i - 1] != arr[i])
+				arr[j++] = arr[i];
 		}
 		return arr;
 	}
-	
+
 	public static int[] removeDuplicates(int arr[]) {
 		Set<Integer> set = new LinkedHashSet<>();
-		for(int i=0;i<arr.length;i++) {
-		  	set.add(arr[i]);
+		for (int i = 0; i < arr.length; i++) {
+			set.add(arr[i]);
 		}
-		return set.stream().mapToInt(i->i).toArray();
-		
-	
+		return set.stream().mapToInt(i -> i).toArray();
+
 	}
-	
-	
+
 	public static String longestPrefixs(String arr[]) {
-		 Arrays.sort(arr);
-	      StringBuilder b = new StringBuilder();
-	      String first=arr[0];
-	      String last = arr[arr.length-1];
-	      for(int i=0;i<Math.min(first.length(),last.length());i++){
-	          if(first.charAt(i)!=last.charAt(i))
-	              return b.toString();
-	           b.append(first.charAt(i)) ;
-	      }
-	      return b.toString();
-	       
+		Arrays.sort(arr);
+		StringBuilder b = new StringBuilder();
+		String first = arr[0];
+		String last = arr[arr.length - 1];
+		for (int i = 0; i < Math.min(first.length(), last.length()); i++) {
+			if (first.charAt(i) != last.charAt(i))
+				return b.toString();
+			b.append(first.charAt(i));
+		}
+		return b.toString();
+
 	}
-	
-	public static int[] twoSum2(int []arr,int target) {
-		int f=0,l=0;
-		for(int i=0;i<arr.length-1;i++) {
-			for(int j=1;j<arr.length;j++) {
-				if(arr[i]+arr[j]==target) {
-				 f=i;
-				 l=j;
+
+	public static int[] twoSum2(int[] arr, int target) {
+		int f = 0, l = 0;
+		for (int i = 0; i < arr.length - 1; i++) {
+			for (int j = 1; j < arr.length; j++) {
+				if (arr[i] + arr[j] == target) {
+					f = i;
+					l = j;
 				}
 			}
 		}
-		return new int[] {f,l};
+		return new int[] { f, l };
 	}
 
-	
 	public static Boolean arraySortedOrRotated(int arr[]) {
-		int count=0;
-		for(int i=1;i<arr.length;i++) {
-			if(arr[i-1]>arr[i])
+		int count = 0;
+		for (int i = 1; i < arr.length; i++) {
+			if (arr[i - 1] > arr[i])
 				count++;
 		}
-		if(arr[0]<arr[arr.length-1])
+		if (arr[0] < arr[arr.length - 1])
 			count++;
-		
-		return count==1;
+
+		return count == 1;
 	}
-	
+
 	// brute force
 	public static Boolean isArraySortedOrRotated(int arr[]) {
-		int i=0;
-		for( i=0;i<arr.length-1 ;i++) {
-			if(arr[i]>arr[i+1]) 
+		int i = 0;
+		for (i = 0; i < arr.length - 1; i++) {
+			if (arr[i] > arr[i + 1])
 				break;
-			
+
 		}
-		System.out.println(i+" -<");
+		System.out.println(i + " -<");
 		i++;
-		for(;i<arr.length-1;i++) {
-			System.out.println("->"+i);
-			if(arr[0]<arr[i] || arr[i]>arr[i+1])
+		for (; i < arr.length - 1; i++) {
+			System.out.println("->" + i);
+			if (arr[0] < arr[i] || arr[i] > arr[i + 1])
 				return false;
 		}
-		if(i<arr.length && arr[0]<arr[i])
-			return false; 
+		if (i < arr.length && arr[0] < arr[i])
+			return false;
 		return true;
 	}
-	
+
 	public static int findUnique(int arr[]) {
-		int ans=0;
-		for(int i=0 ;i<arr.length ;i++) {
-			
-			ans=ans^arr[i];
+		int ans = 0;
+		for (int i = 0; i < arr.length; i++) {
+
+			ans = ans ^ arr[i];
 		}
 		return ans;
 	}
-	
-	public static int count(int arr[],int value) {
-		int count=0;
-		for(int i=0 ;i<arr.length ;i++) {
-			if(value==arr[i])
+
+	public static int count(int arr[], int value) {
+		int count = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if (value == arr[i])
 				count++;
 		}
 		return count;
-        
-	}
-	
-	public static int uniqueOccurance(int arr[]) {
-		int arr1[] = new int[arr.length],k=0;
-		for(int i=0 ;i<arr.length ;i++) {
-			if(!isPreExists(arr[i], arr, i-1)) {
 
-				int count=count(arr, arr[i]);
+	}
+
+	public static int uniqueOccurance(int arr[]) {
+		int arr1[] = new int[arr.length], k = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if (!isPreExists(arr[i], arr, i - 1)) {
+
+				int count = count(arr, arr[i]);
 				arr1[k++] = count;
-					System.out.println("count "+count);
+				System.out.println("count " + count);
 			}
 		}
 		return findUniqueElement(arr1);
 	}
-	
-	
-	public static int[] reverse(int arr[],int st,int end) {
-		if(end<arr.length)
-		while(st<end) {
-			int k=arr[st];
-			arr[st++]=arr[end];
-			arr[end--] =k;
-		}
+
+	public static int[] reverse(int arr[], int st, int end) {
+		if (end < arr.length)
+			while (st < end) {
+				int k = arr[st];
+				arr[st++] = arr[end];
+				arr[end--] = k;
+			}
 		return arr;
 	}
-	
-	public static int[] reverseKElements(int arr[],int k) {
-		int j=0,count=0;
-		for(int i=0 ;i<arr.length;i+=k) {
-			
-			reverse(arr, i, i+k-1);
+
+	public static int[] reverseKElements(int arr[], int k) {
+		int j = 0, count = 0;
+		for (int i = 0; i < arr.length; i += k) {
+
+			reverse(arr, i, i + k - 1);
 		}
 		System.out.println(Arrays.toString(arr));
 		return arr;
-		
+
 	}
-	
-	
-	
-	
-	public static boolean isPreExists(int value,int arr[],int k) {
-		for(int i=k ; i>=0 ;i--) {
-			if(arr[i]==value)
+
+	public static boolean isPreExists(int value, int arr[], int k) {
+		for (int i = k; i >= 0; i--) {
+			if (arr[i] == value)
 				return true;
 		}
 		return false;
 	}
-	
+
 	public static int findUniqueElement(int arr[]) {
 		System.out.println(Arrays.toString(arr));
-		for(int i=0 ;i<arr.length ;i++) {
-		  int count=0;
-		  if(!isPreExists(arr[i], arr, i-1))
-			for(int j=i ;j<arr.length ;j++) {
-			
-				if(arr[i]==arr[j])
-					count++;
-			}
-		  
-		   	if(count==1) {
-					System.out.println("found "+arr[i]);
-		
-				return arr[i];	
+		for (int i = 0; i < arr.length; i++) {
+			int count = 0;
+			if (!isPreExists(arr[i], arr, i - 1))
+				for (int j = i; j < arr.length; j++) {
+
+					if (arr[i] == arr[j])
+						count++;
 				}
+
+			if (count == 1) {
+				System.out.println("found " + arr[i]);
+
+				return arr[i];
+			}
 		}
 		return 0;
 	}
-	
+
 	public static int[] insertionSort(int arr[]) {
-		int j=0;
-		for(int i=0 ;i<arr.length;i++) {
-			int k =arr[i];
-			for( j=i-1;j>=0;j--) {
-				if(arr[j]<k){
-					arr[j+1]=arr[j];
-				}
-				else
+		int j = 0;
+		for (int i = 0; i < arr.length; i++) {
+			int k = arr[i];
+			for (j = i - 1; j >= 0; j--) {
+				if (arr[j] < k) {
+					arr[j + 1] = arr[j];
+				} else
 					break;
 			}
-			arr[j+1 ]=k;
+			arr[j + 1] = k;
 		}
 		return arr;
 	}
-	
-	
-	public static int[] selectionSortRecu(int arr[],int i ,int j ,int min) {
-		if(i>=arr.length)
+
+	public static int[] selectionSortRecu(int arr[], int i, int j, int min) {
+		if (i >= arr.length)
 			return arr;
-		if(j<arr.length) {
-			if(arr[min]>arr[j])
-				min=j;
- 		return	selectionSortRecu(arr, i, j+1, min);
+		if (j < arr.length) {
+			if (arr[min] > arr[j])
+				min = j;
+			return selectionSortRecu(arr, i, j + 1, min);
 		}
-		int k=arr[i];
-		arr[i]=arr[min];
-		arr[min]=k;
-		return selectionSortRecu(arr, i+1, i+2, i+1);
+		int k = arr[i];
+		arr[i] = arr[min];
+		arr[min] = k;
+		return selectionSortRecu(arr, i + 1, i + 2, i + 1);
 	}
-	
-	
-	public static int[] mergeTwoSortedArray(int arr[],int arr1[]) {
-		int arr3[] = new int[arr.length+arr1.length],k=0, i=0,j=0;
-		
-		while(i<arr.length && j<arr1.length) {
-			if(arr[i]>arr1[j]) {
-				arr3[k++]=arr1[j++];
-				
-			}else
-			{
-				arr3[k++]=arr[i++];
-				
+
+	public static int[] mergeTwoSortedArray(int arr[], int arr1[]) {
+		int arr3[] = new int[arr.length + arr1.length], k = 0, i = 0, j = 0;
+
+		while (i < arr.length && j < arr1.length) {
+			if (arr[i] > arr1[j]) {
+				arr3[k++] = arr1[j++];
+
+			} else {
+				arr3[k++] = arr[i++];
+
 			}
 		}
-	
-		while(i<arr.length){
-			arr3[k++]=arr[i++];
+
+		while (i < arr.length) {
+			arr3[k++] = arr[i++];
 		}
-		while(j<arr1.length){
-			arr3[k++]=arr1[i++];
+		while (j < arr1.length) {
+			arr3[k++] = arr1[i++];
 		}
 		return arr3;
- 	}
+	}
 
-	public static void recursionBubbleSort(int arr[], int i,int j) {
-        if(i==arr.length)
-        	return ;
-        if(j<arr.length-i-1 && arr[j]>arr[j+1]) {
-        	
-        	int k = arr[j];
-        	arr[j] = arr[j+1];
-        	arr[j+1]=k;
-        	System.out.println(Arrays.toString(arr));
-        	recursionBubbleSort(arr, i, j+1);
-        	
-        }
-        else 
-        {
-        	System.out.println("----- "+Arrays.toString(arr));
-        	recursionBubbleSort(arr, i+1, 0);
-        }
-			
-		
-        
+	public static void recursionBubbleSort(int arr[], int i, int j) {
+		if (i == arr.length)
+			return;
+		if (j < arr.length - i - 1 && arr[j] > arr[j + 1]) {
+
+			int k = arr[j];
+			arr[j] = arr[j + 1];
+			arr[j + 1] = k;
+			System.out.println(Arrays.toString(arr));
+			recursionBubbleSort(arr, i, j + 1);
+
+		} else {
+			System.out.println("----- " + Arrays.toString(arr));
+			recursionBubbleSort(arr, i + 1, 0);
+		}
+
 	}
 
 	public static void bubbleSort(int arr[]) {
@@ -514,7 +936,7 @@ public class Test {
 					isMatched = true;
 				} else
 					break;
-			}	
+			}
 			if (isMatched)
 				prefix += ch;
 			else
