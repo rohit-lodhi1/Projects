@@ -24,7 +24,7 @@ public class Recursions {
 		// System.out.println(list);
 
 		// System.out.println(fibonacciOfNthTerm(5));
-		// System.out.println( countNoOfWaysToReachNthStairs(3));
+	//	 System.out.println( countNoOfWaysToReachNthStairs(45));
 //	 	 System.out.println(powTrial(2, 2));
 		// System.out.println(factorialTrail(5));
 		// convertNumToWords(8765);

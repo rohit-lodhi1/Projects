@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="binarySearch"/>
+		<item key="selection" value="countNoOfWaysToReachNthStairs"/>
 		<list key="findhistory">
+			<item value="countNoOfWaysToReachNthStairs"/>
+			<item value="cli"/>
+			<item value="clim"/>
 			<item value="binarySearch"/>
 			<item value="binaySearch"/>
 			<item value="searchin"/>
@@ -20,7 +23,6 @@
 			<item value="GroupVarient"/>
 			<item value="GroupVarieny"/>
 			<item value="User"/>
-			<item value=" @GetMapping(&quot;/&quot;)"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
