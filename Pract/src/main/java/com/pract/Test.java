@@ -205,18 +205,387 @@ public class Test {
 // 		System.out.println(System.currentTimeMillis());
 //		}
 //		System.out.println(Arrays.toString(mergeSorted(new int[] {1,2,3,4},3,new int[] {2,5,6},2)));
-		System.out.println(System.currentTimeMillis());
-		int arr[][] = new int[][] { { 1, 2, 3 }, { 4, 5, 6 } };
+		// int arr[][] = new int[][] { { 1, 2, 3} ,{ 4, 5, 6} ,{7,8,9}};
 //		printWave(arr,2,3);
 		// System.out.println(reverseVowels("hello"));
-		
+//		printSprial(arr);
+//		generateMatrix(5);
+//		arr = rotateArray90(arr);
+//		for(int i=0;i<arr.length;i++) {
+//			for(int j=0;j<arr[0].length;j++)
+//				System.out.print(arr[i][j]+" ");
+//			System.out.println();
+//		}
+
+//		int arr []= {1,2};
+		// rotateArrayWithK(arr, 3);
+//		int arr[][] = {{1,2,3},{4,5,6},{7,8,9}};  
+//		List<List<Integer>> shiftGrid = shiftGrid(arr, 2);
+//		for(int i =0 ;i<shiftGrid.size();i++) {
+//			System.out.println(shiftGrid.get(i));
+//		}
+
+//		System.out.println(maximumSumOfTwoSubStringScore("00111"));
+//		System.out.println(convertArrayIn2DArray(new int[] {1,2,3,4,5,5,6,200,200}));
+//	System.out.println(missingNumber(new int[] {9,6,4,2,3,5,7,0,1}));	
+//		System.out.println(unique(new int[] {1,1,2,2,3,3,9}));
+		// System.out.println(Arrays.toString(findErrorNums(new int[] {1,2,2,4})));
+		//	kajuKatli(10);
 		System.out.println(System.currentTimeMillis());
+		System.out.println(minOperations("110010"));
+		System.out.println(System.currentTimeMillis());
+	}
+
+	public static int minOperations(String s) {
+		int count[] = new int[2];
+		for(int i=0;i<s.length();i++) {
+			count[s.charAt(i)-'0']++;
+		}
+		int co=0;
+		if(count[0]>count[1])
+		while(count[0]!=count[1]) {
+			count[0]--;
+			count[1]++;
+			co++;
+		}else
+			while(count[0]!=count[1]) {
+				count[0]++;
+				count[1]--;
+				co++;
+			}	
+		
+			return co;
 	}
 	
 	
-	
-	public static void printSprial(int arr[][],int row,int col) {
-		for
+	public static int[] findErrorNums(int[] arr) {
+		Set<Integer> value = new HashSet<>();
+		int[] ar = new int[2];
+		for (int i = 0; i < arr.length; i++) {
+			if (value.contains(arr[i])) {
+				ar[0] = arr[i];
+				arr[1] = arr[i] + 1;
+				System.out.println(arr[i] + 1);
+				return ar;
+			}
+			value.add(arr[i]);
+		}
+		return ar;
+	}
+
+	public static int[] selectionSort(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+			int min = i;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[j] < arr[min])
+					min = j;
+			}
+			int temp = arr[i];
+			arr[i] = arr[min];
+			arr[min] = temp;
+
+		}
+		return arr;
+	}
+
+	public static int[] bubbleSortPr(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length - i - 1; j++) {
+				if (arr[j] > arr[j + 1]) {
+					int temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+				}
+
+			}
+		}
+		return arr;
+	}
+
+	public static int unique(int arr[]) {
+		int xor = 0;
+		for (int i = 0; i < arr.length; i++) {
+			xor ^= arr[i];
+		}
+		return xor;
+	}
+
+	public static int xorDuplicate(int arr[]) {
+
+		for (int i = 0; i < arr.length; i++) {
+
+		}
+		return 0;
+	}
+
+	public static int missingNumber(int arr[]) {
+		int max = findMaximum(arr);
+		int total = max * (max + 1) / 2, sum = 0;
+		for (int i = 0; i < arr.length; i++) {
+			sum += arr[i];
+		}
+		return total - sum == 0 ? max + 1 : total - sum;
+	}
+
+	public static int countNumber(int arr[], int value) {
+		int count = 0;
+
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == value)
+				count++;
+			if (count > 2)
+				return count;
+		}
+		return count;
+	}
+
+	public static int uniqueElement(int arr[]) {
+		Set<Integer> value = Arrays.stream(arr).boxed().collect(Collectors.toSet());
+		Iterator<Integer> iterator = value.iterator();
+		while (iterator.hasNext()) {
+			int va = iterator.next();
+			if (count(arr, va) < 2)
+				return va;
+		}
+		return -1;
+	}
+
+	public static int findMaximum(int arr[]) {
+		int max = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] > max)
+				max = arr[i];
+		}
+		return max;
+	}
+
+	public static List<List<Integer>> convertArrayIn2DArray(int arr[]) {
+		// int max = findMaximum(arr);
+		int count[] = new int[201];
+		for (int i = 0; i < arr.length; i++)
+			count[arr[i]]++;
+//		System.out.println(Arrays.toString(count));
+		int max = findMaximum(count);
+		List<List<Integer>> response = new ArrayList<>();
+		for (int i = 0; i < max; i++) {
+			List<Integer> list = new ArrayList<>();
+			for (int j = 0; j < count.length; j++) {
+				if (count[j] > 0) {
+					list.add(j);
+					count[j]--;
+				}
+			}
+			response.add(list);
+		}
+
+		return response;
+	}
+
+	public static int count(char arr[], int st, int end, char ch) {
+		int count = 0;
+		while (st <= end) {
+			if (arr[st] == ch)
+				count++;
+			st++;
+		}
+
+		return count;
+	}
+
+	public static int maximumSumOfTwoSubStringScore(String s) {
+		char[] arr = s.toCharArray();
+		int i = 0, j = i + 1, max = 0;
+		while (i < j && j < arr.length) {
+			int cou = count(arr, i, j - 1, '0') + count(arr, j, arr.length - 1, '1');
+
+			if (cou > max)
+				max = cou;
+			j++;
+		}
+		return max;
+	}
+
+	public static List<List<Integer>> shiftGrid(int arr[][], int k) {
+		int row = arr.length, col = arr[0].length, j = row * col - 1, count = 0;
+		while (count++ < k) {
+			int ele = arr[arr.length - 1][arr[0].length - 1];
+			for (j = row * col - 1; j > 0; j--) {
+				arr[j / col][j % col] = arr[(j - 1) / col][(j - 1) % col];
+			}
+			arr[0][0] = ele;
+
+		}
+		List<List<Integer>> ar = new ArrayList<>();
+		for (int i = 0; i < arr.length; i++) {
+			List<Integer> ro = new ArrayList<>();
+			for (j = 0; j < arr[0].length; j++) {
+				ro.add(arr[i][j]);
+			}
+			ar.add(ro);
+
+		}
+		return ar;
+	}
+
+	public static boolean binarySearch2DInSortedRow(int arr[][], int target) {
+		int row = 0, col = arr[0].length - 1;
+
+		while (col >= 0 && row <= arr.length - 1) {
+			if (arr[row][col] == target)
+				return true;
+			if (arr[row][col] < target)
+				row++;
+			else
+				col--;
+		}
+		return false;
+	}
+
+	public static boolean binarySearchIn2D(int arr[][], int target) {
+		int row = arr.length;
+		int col = arr[0].length;
+		int st = 0;
+		int end = row * col - 1;
+
+		while (st <= end) {
+			int mid = st + (end - st) / 2;
+			int element = arr[mid / col][mid % col];
+			if (element == target)
+				return true;
+			if (element < target)
+				st = mid + 1;
+			else
+				end = mid - 1;
+
+		}
+		return false;
+
+	}
+
+	public static void rotateArrayWithK(int arr[], int k) {
+		int arr2[] = new int[arr.length], l = 0;
+		int kIndex = arr.length - k;
+
+		if (k >= arr.length) {
+			int count = 0;
+			while (count++ <= k) {
+				int temp = arr[arr.length - 1];
+				System.out.println(Arrays.toString(arr));
+				for (int j = arr.length - 1; j > 0; j--) {
+					arr[j] = arr[j - 1];
+				}
+				arr[0] = temp;
+			}
+			return;
+		}
+
+		if (kIndex < 0)
+			return;
+		for (int i = kIndex; i < arr.length; i++)
+			arr2[l++] = arr[i];
+
+		for (int i = 0; i < kIndex; i++)
+			arr2[l++] = arr[i];
+
+		for (int i = 0; i < arr.length; i++)
+			arr[i] = arr2[i];
+
+	}
+
+	public static int[][] rotateArray90(int arr[][]) {
+		int arr3[][] = new int[arr.length][arr[0].length], k = 0;
+		for (int col = 0; col < arr[0].length; col++) {
+			k = 0;
+			for (int row = arr.length - 1; row >= 0; row--) {
+				arr3[col][k++] = arr[row][col];
+			}
+
+		}
+		return arr3;
+	}
+
+	public static int[][] generateMatrix(int n) {
+		int row = n;
+		int col = n;
+		int total = n * n;
+		int startingCol = 0;
+		int startingRow = 0;
+		int endingRow = row - 1;
+		int endingCol = col - 1;
+		int arr[][] = new int[n][n];
+		int count = 0;
+		while (count < total) {
+			// first row
+			for (int i = startingCol; count < total && i <= endingCol; i++) {
+				arr[startingRow][i] = ++count;
+			}
+
+			startingRow++;
+			// second row
+			for (int i = startingRow; count < total && i <= endingRow; i++) {
+				arr[i][endingCol] = ++count;
+			}
+
+			endingCol--;
+			// third row
+			for (int i = endingCol; count < total && i >= startingCol; i--) {
+				arr[endingRow][i] = ++count;
+			}
+
+			endingRow--;
+
+			// fourth row
+			for (int i = endingRow; count < total && i >= startingRow; i--) {
+				arr[i][startingCol] = ++count;
+			}
+			startingCol++;
+
+		}
+		return arr;
+	}
+
+	public static void printSprial(int arr[][]) {
+		int startingCol = 0;
+		int startingRow = 0;
+		int row = arr.length;
+		int col = arr[0].length;
+		int endingRow = row - 1;
+		int endingCol = col - 1;
+		int count = 0;
+		int total = row * col;
+
+		while (count < total) {
+			// first row
+			for (int i = startingCol; count < total && i <= endingCol; i++) {
+				System.out.print(arr[startingRow][i]);
+				count++;
+			}
+			System.out.println();
+			startingRow++;
+			// second row
+			for (int i = startingRow; count < total && i <= endingRow; i++) {
+				System.out.print(arr[i][endingCol]);
+				count++;
+			}
+
+			System.out.println();
+			endingCol--;
+			// third row
+			for (int i = endingCol; count < total && i >= startingCol; i--) {
+				System.out.print(arr[endingRow][i]);
+				count++;
+			}
+
+			endingRow--;
+			System.out.println();
+			// fourth row
+			for (int i = endingRow; count < total && i >= startingRow; i--) {
+				System.out.print(arr[i][startingCol]);
+				count++;
+			}
+			startingCol++;
+			System.out.println();
+		}
 	}
 
 	public static boolean isVowel(char ch) {

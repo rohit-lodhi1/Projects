@@ -26,14 +26,41 @@ public class Paterns {
 
 		// random6(5);
 		List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-		System.out.println(list.stream().max(Integer::compare).get());
-		System.out.println(list.stream().max(Comparator.naturalOrder()).get());
-		System.out.println(list.stream().mapToInt(v -> v).max());
+	//	System.out.println(list.stream().max(Integer::compare).get());
+//		System.out.println(list.stream().max(Comparator.naturalOrder()).get());
+//		System.out.println(list.stream().mapToInt(v -> v).max());
 
 //		random18(5);
-		diagonalLine(15);
+		starwithTwo(5);
 	}
 	
+	public static void kajuKatli(int n) {
+		int k = 1, l = 1;
+		for (int i = 0; i < n * 2-1; i++) {
+
+			for (int j = 0; j < n * 2; j++) {
+				if (i < n) {
+					if (j < n - i - 1) {
+						System.out.print(" ");
+					} else if (k-- > 0)
+						System.out.print("*");
+				} else  {
+					if ( j < i - n + 1 )
+						System.out.print(" ");
+					else if (k-- > 0)
+						System.out.print("*");
+				}
+
+			}
+			System.out.println();
+			if (i < n - 1)
+				l += 2;
+			else
+				l -= 2;
+			k = l;
+		}
+	}
+
 	
 	public static void diagonalLine(int n) {
 		for(int i=0 ;i<n;i++) {

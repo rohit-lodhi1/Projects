@@ -110,13 +110,44 @@ public class Test {
 		l.add(1);
 		l.add(2);
 		l.add(3);
+		l.add(4);
+		l.add(5);
+		l.add(6);
+		l.add(7);
 
 //		Node[] node = { l.start, l2.start,l3.start,l4.start };
 		
 		
 //		System.out.println(mergeKSortedLists(node));;
-		System.out.println(plus(l.start));
+//		System.out.println(plus(l.start));
+		System.out.println(l);
+		l.start=swap(l.start);
+		System.out.println(l);
+		System.out.println(l.start.getData());;
+		System.out.println(l.start.getNext().getData());;
+		System.out.println(l.start.getNext().getNext().getData());;
+		System.out.println(l.start.getNext().getNext().getNext().getData());;
+	//	System.out.println(l.start.getNext().getNext().getNext().getNext().getData());;
+		
 	}
+	
+	 public static Node swap(Node t1,Node t2) {
+		
+		 if(t1==null || t1.getNext()==null)
+			 return t1;
+		 t2 = t1.getNext();
+	//	 System.out.println(t1.getData()+"  -  "+t2.getNext());
+		 t1.setNext(t2.getNext());
+		 t2.setNext(t1);
+		 Node temp=swap(t1.getNext(),t2);
+		 t1.setNext(temp);
+		 return t2;
+		 
+	 }
+	public static Node swap(Node start) {
+		return swap(start,start);
+	}
+	
 	
 	public static LinkList plus(Node start) {
 		 Node temp= plusOne(start, start);
