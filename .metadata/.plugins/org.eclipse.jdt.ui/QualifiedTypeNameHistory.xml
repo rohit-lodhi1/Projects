@@ -11,4 +11,5 @@
     <fullyQualifiedTypeName name="java.lang.Number"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="ch.qos.logback.core.recovery.ResilientSyslogOutputStream"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ser.std.StdArraySerializers.BooleanArraySerializer"/>
 </qualifiedTypeNameHistroy>

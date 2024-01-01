@@ -24,6 +24,8 @@ import java.util.stream.Collectors;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.jdbc.core.metadata.OracleCallMetaDataProvider;
 
+import com.fasterxml.jackson.databind.ser.std.StdArraySerializers.BooleanArraySerializer;
+
 interface DD {
 
 }
@@ -230,34 +232,69 @@ public class Test {
 //	System.out.println(missingNumber(new int[] {9,6,4,2,3,5,7,0,1}));	
 //		System.out.println(unique(new int[] {1,1,2,2,3,3,9}));
 		// System.out.println(Arrays.toString(findErrorNums(new int[] {1,2,2,4})));
-		//	kajuKatli(10);
+		// kajuKatli(10);
+//		System.out.println(minOperations("110010"));
+//		printPrinNumberRange(40);
 		System.out.println(System.currentTimeMillis());
-		System.out.println(minOperations("110010"));
+		System.out.println(isDuplicatePresent(new int[] {1,2,3,4}));
 		System.out.println(System.currentTimeMillis());
+	}
+	
+	
+	public static boolean isDuplicatePresent(int arr[]) {
+      int count[]=new int[10];		
+      for(int i=0;i<arr.length;i++) {
+    	  if(count[arr[i]]<1)
+    	  count[arr[i]]++;
+    	  else
+    		  return true;
+      }
+		return false;
+	}
+	
+	
+	// An ugly number is a positive integer whose prime factors are limited to 2, 3, and 5
+	public static boolean isUglyNumber(int n) {
+			//if(n<0)
+		return false;
+		
+			
+	}
+
+	public static void printPrinNumberRange(int n) {
+		boolean[] isPrime = new boolean[n + 1];
+		int count = 1;
+		for (int i = 2; i <= n; i++) {
+			if (!isPrime[i]) {
+				count++;
+				for (int j = i + i; j <= n; j += i)
+					isPrime[j] = true;
+			}
+		}
 	}
 
 	public static int minOperations(String s) {
 		int count[] = new int[2];
-		for(int i=0;i<s.length();i++) {
-			count[s.charAt(i)-'0']++;
+		for (int i = 0; i < s.length(); i++) {
+			count[s.charAt(i) - '0']++;
 		}
-		int co=0;
-		if(count[0]>count[1])
-		while(count[0]!=count[1]) {
-			count[0]--;
-			count[1]++;
-			co++;
-		}else
-			while(count[0]!=count[1]) {
+		int co = 0;
+		if (count[0] > count[1])
+			while (count[0] != count[1]) {
+				count[0]--;
+				count[1]++;
+				co++;
+			}
+		else
+			while (count[0] != count[1]) {
 				count[0]++;
 				count[1]--;
 				co++;
-			}	
-		
-			return co;
+			}
+
+		return co;
 	}
-	
-	
+
 	public static int[] findErrorNums(int[] arr) {
 		Set<Integer> value = new HashSet<>();
 		int[] ar = new int[2];
