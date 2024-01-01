@@ -26,17 +26,247 @@ public class Paterns {
 
 		// random6(5);
 		List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-	//	System.out.println(list.stream().max(Integer::compare).get());
+		// System.out.println(list.stream().max(Integer::compare).get());
 //		System.out.println(list.stream().max(Comparator.naturalOrder()).get());
 //		System.out.println(list.stream().mapToInt(v -> v).max());
 
 //		random18(5);
-		starwithTwo(5);
+		// starwithTwo(5);
+		pattern17(10);
 	}
-	
+
+	public static void pattern17(int n) {
+		for (int i = 1; i < n * 2; i++) {
+			for (int j = 1; j < n + i; j++) {
+				if (i <=n)
+					if (j == n - i+1 || j == n + i-1)
+						System.out.print(i);
+					else
+						System.out.print(" ");
+
+				else {
+				//	System.out.println("sdfsd  "+((n*2-1)-i));
+					if(j==i-n+1 || j==(n*2-1)+n-i)
+						System.out.print(n*2-i);
+					else
+						System.out.print(" ");
+				}
+
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern16(int n) {
+		int k = 1, val = 1;
+
+		for (int i = 1; i <= n; i++) {
+			val = 1;
+			for (int j = 1; j <= n + i - 1; j++) {
+				if (j <= n - i)
+					System.out.print(" ");
+				else {
+					System.out.print(val);
+					if (j < n)
+						val++;
+					else
+						val--;
+				}
+			}
+			k += 2;
+			System.out.println();
+		}
+	}
+
+	public static void pattern15(int n) {
+		int val = 1;
+		for (int i = 1; i <= n; i++) {
+			val = i;
+			for (int j = 1; j <= i; j++) {
+				System.out.print(val);
+				val += n - j;
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern14(int n) {
+		for (int i = 0; i < n; i++) {
+			boolean star = true;
+			for (int j = 0; j < n * (n / 2 + 1) + n / 2; j++) {
+				// System.out.print(n*(n/2));
+				// System.out.println(j> (n*n/2)-i && j<(n*n/2)+i);
+				if (j >= (n * (n / 2)) - i - 2 && j < (n * (n / 2)) + i && !star) {
+					System.out.print(i + 1);
+					star = true;
+				} else {
+					star = false;
+					System.out.print("*");
+
+				}
+
+			}
+			System.out.println();
+		}
+
+	}
+
+	public static void pattern13(int n) {
+		int k = 1, val = 1;
+
+		for (int i = 1; i <= n; i++) {
+			val = i;
+			for (int j = 0; j < k; j++) {
+
+				System.out.print((char) (64 + val));
+				if (j < k / 2)
+					val--;
+				else
+					val++;
+			}
+			k += 2;
+			System.out.println();
+		}
+	}
+
+	public static void pattern12(int n) {
+		int k = 1, val = 1;
+
+		for (int i = 0; i < n; i++) {
+			val = 1;
+			for (int j = 0; j < k; j++) {
+				System.out.print(val++);
+			}
+			k += 2;
+			System.out.println();
+		}
+	}
+
+	public static void pattern11(int n) {
+		int st = 1, end = n * (n / 2 + 1);
+		boolean isFirstLine = false;
+		for (int i = 0; i < n; i++) {
+			isFirstLine = !isFirstLine;
+			for (int j = 0; j < n - i; j++) {
+				if (isFirstLine)
+					System.out.print(st++);
+				else
+					System.out.print(end--);
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern10(int n) {
+		int val = 1, k = 1, modif = 1;
+		for (int i = 0; i < n; i++) {
+
+			val = 0;
+			modif = 1;
+			for (int j = 0; j < k; j++) {
+				val = val + modif;
+				System.out.print(val);
+				modif += 2;
+			}
+			k += 2;
+			System.out.println();
+		}
+
+	}
+
+	public static void pattern9(int n) {
+		boolean isStart = false;
+		int k = 0;
+		for (int i = 0; i <= n; i++) {
+			isStart = !isStart;
+			if (i % 2 == 0)
+				k++;
+			for (int j = 0; j < k; j++) {
+				if (isStart)
+					System.out.print("#");
+				else
+					System.out.print("@");
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern8(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n - i; j++) {
+				System.out.print(j + 1);
+
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern7(int n) {
+		for (int i = 1; i <= n; i++) {
+			for (int j = 0; j < n; j++) {
+				System.out.print(i);
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern6(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print(j + 1);
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern5(int n) {
+		for (int i = 1; i <= n; i++) {
+			for (int j = 0; j < n; j++) {
+				System.out.print(i);
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern4(int n) {
+		for (int i = 5; i > 0; i--) {
+			for (int j = 0; j < n; j++) {
+				System.out.print(i);
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern3(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 5; j > 0; j--) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern2(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print("#");
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern1(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n - i; j++) { // j=i+1 ;j<=n;
+				System.out.print("#");
+			}
+			System.out.println();
+		}
+	}
+
 	public static void kajuKatli(int n) {
 		int k = 1, l = 1;
-		for (int i = 0; i < n * 2-1; i++) {
+		for (int i = 0; i < n * 2 - 1; i++) {
 
 			for (int j = 0; j < n * 2; j++) {
 				if (i < n) {
@@ -44,8 +274,8 @@ public class Paterns {
 						System.out.print(" ");
 					} else if (k-- > 0)
 						System.out.print("*");
-				} else  {
-					if ( j < i - n + 1 )
+				} else {
+					if (j < i - n + 1)
 						System.out.print(" ");
 					else if (k-- > 0)
 						System.out.print("*");
@@ -61,80 +291,70 @@ public class Paterns {
 		}
 	}
 
-	
 	public static void diagonalLine(int n) {
-		for(int i=0 ;i<n;i++) {
-			for(int j=0 ;j<n; j++) {
-				if(i+j==n-1 || i==j)
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (i + j == n - 1 || i == j)
 					System.out.print("*");
 				else
 					System.out.print(" ");
-			
-			}
-			System.out.println();
-		}
-	}
-	
 
-	
+			}
+			System.out.println();
+		}
+	}
+
 	public static void random18(int n) {
-	
-		for(int i = 0 ; i<n*2 ;i++) {
-			for(int j=0 ; j<=n+i ;j++) {
-				if(i<=n) {
-					if(j==n-i || j==n+i)
+
+		for (int i = 0; i < n * 2; i++) {
+			for (int j = 0; j <= n + i; j++) {
+				if (i <= n) {
+					if (j == n - i || j == n + i)
 						System.out.print("*");
 					else
 						System.out.print(" ");
-				}
-				else {
-					if(j==i-n || j==i+n)
+				} else {
+					if (j == i - n || j == i + n)
 						System.out.print("*");
 					else
 						System.out.print(" ");
-				
+
 				}
-				
+
 			}
 			System.out.println();
 		}
 	}
-	
-	
+
 	public static void random17(int n) {
-	
-		for(int i = 1 ; i<=n*2 ;i++) {
-			for(int j=1 ; j<=n ;j++) {
-				if(i<=n) {
-			   if(j<=n-i)
-				   System.out.print(" ");
-			   else
-				   System.out.print("* ");
+
+		for (int i = 1; i <= n * 2; i++) {
+			for (int j = 1; j <= n; j++) {
+				if (i <= n) {
+					if (j <= n - i)
+						System.out.print(" ");
+					else
+						System.out.print("* ");
+				} else {
+					if (j <= i - n - 1)
+						System.out.print(" ");
+					else
+						System.out.print("* ");
 				}
-				else {
-					if(j<=i-n-1)
-						   System.out.print(" ");
-					   else
-						   System.out.print("* ");
-				}
-				
+
 			}
 			System.out.println();
 		}
 	}
-	
-	
+
 	public static void random16(int n) {
-		boolean star=true;
-		for(int i = 1 ; i<=n ;i++) {
-			for(int j=1 ; j<=n*3+2 ;j++) {
-				if(j>n*2-i-1 && j<n*2+i && star)
-				{
-				star=false;
+		boolean star = true;
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n * 3 + 2; j++) {
+				if (j > n * 2 - i - 1 && j < n * 2 + i && star) {
+					star = false;
 					System.out.print(i);
-				}
-				else 
-				{
+				} else {
 					star = true;
 					System.out.print("*");
 				}
@@ -142,50 +362,47 @@ public class Paterns {
 			System.out.println();
 		}
 	}
-	
-	
+
 	public static void random15(int n) {
-		int k=1;
-		for(int i=1 ;i <=n ;i++) {
-			k=1;
-			for(int j=1 ;j<n+i ;j++) {
-				if(j<=n-i)
-				System.out.print(" ");
+		int k = 1;
+		for (int i = 1; i <= n; i++) {
+			k = 1;
+			for (int j = 1; j < n + i; j++) {
+				if (j <= n - i)
+					System.out.print(" ");
 				else
-					System.out.print(j>=n?k:k++);
-				if(j>=n)
+					System.out.print(j >= n ? k : k++);
+				if (j >= n)
 					k--;
 			}
 			System.out.println();
 		}
 	}
-	
-	
+
 	public static void random14(int n) {
-		int k=-1,m=65;
-		for(int i=1 ;i<=n ;i++) {
-			k+=2;
-			m=65;
-			for(int j=1 ;j<=k ; j++) {
-				
-				System.out.print((char)(j>k/2?m:m++));
-				if(j>k/2)
+		int k = -1, m = 65;
+		for (int i = 1; i <= n; i++) {
+			k += 2;
+			m = 65;
+			for (int j = 1; j <= k; j++) {
+
+				System.out.print((char) (j > k / 2 ? m : m++));
+				if (j > k / 2)
 					m--;
-				
+
 			}
 			System.out.println();
 		}
-	
+
 	}
-	
 
 	public static void random13(int n) {
-		int k=1;
-		for(int i=0 ;i<n ;i++) {
-			k=i+1;
-			for(int j=0 ;j<n ; j++) {
-				
-				if(i==0 || j==0 ||j==n-i-1)
+		int k = 1;
+		for (int i = 0; i < n; i++) {
+			k = i + 1;
+			for (int j = 0; j < n; j++) {
+
+				if (i == 0 || j == 0 || j == n - i - 1)
 					System.out.print(k);
 				else
 					System.out.print(" ");
@@ -193,23 +410,23 @@ public class Paterns {
 			}
 			System.out.println();
 		}
-	
+
 	}
-	
+
 	public static void random12(int n) {
-		int k=1;
+		int k = 1;
 		for (int i = 0; i < n; i++) {
-     k=1;
-			for (int j = 0; j <n+i; j++) {
-			   if(j==n-i-1 && i!=n-1|| j==n+i-1 && i!=n-1)
-				   System.out.print(k);
-			   else
-			   System.out.print(" ");
-			   if(i==n-1 && j<n)
-			   System.out.print(k++);
-			   if(j>=n-1)
-				   k++;
-			
+			k = 1;
+			for (int j = 0; j < n + i; j++) {
+				if (j == n - i - 1 && i != n - 1 || j == n + i - 1 && i != n - 1)
+					System.out.print(k);
+				else
+					System.out.print(" ");
+				if (i == n - 1 && j < n)
+					System.out.print(k++);
+				if (j >= n - 1)
+					k++;
+
 			}
 			System.out.println();
 		}
