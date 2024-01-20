@@ -13,6 +13,12 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+sealed class A permites B,C{
+	
+}
+
+
+
 // 
 //interface A{
 //	public void sort(int a,int b);
