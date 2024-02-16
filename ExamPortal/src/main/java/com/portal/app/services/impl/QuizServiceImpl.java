@@ -1,4 +1,4 @@
-package com.portal.app.services.Implementation;
+package com.portal.app.services.impl;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -8,9 +8,9 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.portal.app.Repository.IQuizRepository;
 import com.portal.app.entity.exam.Category;
 import com.portal.app.entity.exam.Quiz;
+import com.portal.app.repository.IQuizRepository;
 import com.portal.app.services.IQuizService;
 
 @Service

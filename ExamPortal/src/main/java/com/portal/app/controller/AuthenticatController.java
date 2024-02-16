@@ -10,6 +10,7 @@ import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,12 +21,15 @@ import com.portal.app.config.JwtUtils;
 import com.portal.app.entity.JwtRequest;
 import com.portal.app.entity.JwtResponse;
 import com.portal.app.entity.User;
-import com.portal.app.services.Implementation.UserDetaileServiceImpl;
+import com.portal.app.services.impl.UserDetaileServiceImpl;
 
 @RestController
 @CrossOrigin("*")
 public class AuthenticatController {
 
+	@Autowired
+	private BCryptPasswordEncoder passwordEncoder;
+	
 	@Autowired
 	private AuthenticationManager authenticationManager;
 	
@@ -39,9 +43,10 @@ public class AuthenticatController {
 	//generate Token
 	@PostMapping("/generate-token")
 	public ResponseEntity<?> generateToken(@RequestBody JwtRequest jwtRequest) throws Exception{
-        
+ System.out.println(passwordEncoder.encode("12345"));        
 		try {
 	        System.out.println(jwtRequest.getUserName());
+	      
 			authenticate(jwtRequest.getUserName(), jwtRequest.getPassword());
 		}catch(UsernameNotFoundException e) {
 		    e.printStackTrace();
