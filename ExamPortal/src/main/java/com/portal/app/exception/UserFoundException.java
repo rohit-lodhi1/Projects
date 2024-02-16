@@ -1,4 +1,4 @@
-package com.portal.app.helper;
+package com.portal.app.exception;
 
 public class UserFoundException extends Exception {
 	

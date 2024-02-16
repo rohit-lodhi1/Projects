@@ -1,4 +1,4 @@
-package com.portal.app.services.Implementation;
+package com.portal.app.services.impl;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -6,8 +6,8 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.portal.app.Repository.ICategoryRepository;
 import com.portal.app.entity.exam.Category;
+import com.portal.app.repository.ICategoryRepository;
 import com.portal.app.services.ICategoryService;
 
 @Service

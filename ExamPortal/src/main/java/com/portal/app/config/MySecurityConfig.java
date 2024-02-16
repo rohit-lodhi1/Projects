@@ -17,7 +17,7 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.portal.app.services.Implementation.UserDetaileServiceImpl;
+import com.portal.app.services.impl.UserDetaileServiceImpl;
 
 @EnableWebSecurity
 @Configuration

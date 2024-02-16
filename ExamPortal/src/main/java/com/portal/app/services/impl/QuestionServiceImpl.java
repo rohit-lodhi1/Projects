@@ -1,4 +1,4 @@
-package com.portal.app.services.Implementation;
+package com.portal.app.services.impl;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -8,10 +8,10 @@ import java.util.Set;import java.util.function.Predicate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.portal.app.Repository.IQuestionRepository;
 import com.portal.app.entity.exam.Question;
 import com.portal.app.entity.exam.Quiz;
 import com.portal.app.entity.exam.Result;
+import com.portal.app.repository.IQuestionRepository;
 import com.portal.app.services.IQuestionService;
 
 @Service

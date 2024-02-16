@@ -1,4 +1,4 @@
-package com.portal.app.services.Implementation;
+package com.portal.app.services.impl;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -11,11 +11,11 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.portal.app.Repository.IResultRepository;
 import com.portal.app.entity.User;
 import com.portal.app.entity.exam.Quiz;
 import com.portal.app.entity.exam.Ranks;
 import com.portal.app.entity.exam.Result;
+import com.portal.app.repository.IResultRepository;
 import com.portal.app.services.IResultService;
 import com.portal.app.services.IUserServices;
 

@@ -15,6 +15,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Objects;
 import java.util.Set;
 import java.util.Stack;
 
@@ -235,30 +236,192 @@ public class Test {
 		// kajuKatli(10);
 //		System.out.println(minOperations("110010"));
 //		printPrinNumberRange(40);
+		// System.out.println(isDuplicatePresent(new int[] { 1, 2, 3, 4 }));
+//		System.out.println(isIsomorphic("bbbaaaba","aaabbbba"));
+		// System.out.println(replaceAllDigitsWithCharacter("a1b1c2d3"));
 		System.out.println(System.currentTimeMillis());
-		System.out.println(isDuplicatePresent(new int[] {1,2,3,4}));
-		System.out.println(System.currentTimeMillis());
-	}
-	
-	
-	public static boolean isDuplicatePresent(int arr[]) {
-      int count[]=new int[10];		
-      for(int i=0;i<arr.length;i++) {
-    	  if(count[arr[i]]<1)
-    	  count[arr[i]]++;
-    	  else
-    		  return true;
-      }
-		return false;
-	}
-	
-	
-	// An ugly number is a positive integer whose prime factors are limited to 2, 3, and 5
-	public static boolean isUglyNumber(int n) {
-			//if(n<0)
-		return false;
+		int arr[] = { 7,8,9,1,2,3 };
+//		arr = mergeSort(arr);
+	//	System.out.println(Arrays.toString(mergeSortedArray(new int[] { 2, 5, 7, 9 }, new int[] { 1, 3, 6, 8 })));
+//		System.out.println(Arrays.toString(arr));
+		System.out.println(findInSortedRotatedArray(arr,3));
 		
-			
+		System.out.println(System.currentTimeMillis());
+	}
+	
+	public static int binarySearch(int arr[],int st,int end,int value) {
+		if(st> end)
+			return -1;
+		int mid = (end+st)/2;
+		if(arr[mid]==value)
+			return mid;
+		if(arr[mid]>value)
+			return binarySearch(arr, st, mid-1, value);
+		return binarySearch(arr, mid+1, end, value);
+	}
+	
+	
+	
+	public static int findInSortedRotatedArray(int arr[],int value) {
+		int st=0,end=arr.length-1;
+		
+		while(st<=end) {
+			int mid = (end+st)/2;
+			System.out.println("st "+ st+"   end  "+end + "   mid  "+mid);
+			if(arr[mid]==value)
+				return mid;
+			else if(arr[mid]>value &&  arr[0]<value || arr[0]>value && arr[0]>arr[mid]) 
+				end =mid-1;
+			else
+				st=mid+1;
+		}
+		return -1;
+	}
+
+	public static int[] mergeSortedArray(int arr[], int arr1[]) {
+		int i = 0, j = 0, k = 0;
+		int sorted[] = new int[arr.length + arr1.length];
+		
+		while (i < arr.length && j < arr1.length) {
+			if (arr[i] < arr1[j])
+				sorted[k++] = arr1[j++];
+			else
+				sorted[k++] = arr[i++];
+		}
+		
+		while (i < arr.length)
+			sorted[k++] = arr[i++];
+
+		while (j < arr1.length)
+			sorted[k++] = arr1[j++];
+		
+		return sorted;
+	}
+
+	public static int[] mergeSort(int arr[]) {
+		return mergeSort(arr, 0, arr.length - 1);
+	}
+
+	public static int[] mergeSort(int arr[], int st, int end) {
+		if (st >= end)
+			return new int[] { arr[st] };
+
+		int mid = (end + st) / 2;
+		return mergeSortedArray(mergeSort(arr, st, mid), mergeSort(arr, mid + 1, end));
+
+	}
+
+	public static void insertionSort1(int arr[]) {
+		for (int i = 1; i < arr.length; i++) {
+			int element = arr[i], j = 0;
+			for (j = i - 1; j >= 0; j--) {
+				if (arr[j] > element)
+					arr[j + 1] = arr[j];
+				else
+					break;
+
+			}
+			arr[j + 1] = element;
+
+		}
+	}
+
+	public static void selectionSort1(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+			int minIndex = i;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[minIndex] > arr[j])
+					minIndex = j;
+			}
+			int temp = arr[i];
+			arr[i] = arr[minIndex];
+			arr[minIndex] = temp;
+		}
+	}
+
+	public static void bubbleSort1(int arr[]) {
+		for (int i = 1; i <= arr.length; i++) {
+			for (int j = 0; j < arr.length - i; j++) {
+				if (arr[j] > arr[j + 1]) {
+					int temp = arr[j + 1];
+					arr[j + 1] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+	}
+
+	public static boolean isIsographic(String s, String t) {
+		return false;
+	}
+
+	public static int count(String s, int index) {
+		if (index == s.length() - 1)
+			return 1;
+		int count = 1;
+
+		for (; index < s.length() - 1; index++) {
+			if (s.charAt(index) == s.charAt(index + 1))
+				count++;
+			else
+				return count;
+		}
+		return count;
+	}
+
+	public static boolean isIsomorphic(String s, String t) {
+		Map<Character, Integer> countS = new HashMap<>();
+		Map<Character, Integer> countT = new HashMap<>();
+
+		for (int i = 0; i < s.length(); i++) {
+			char ch = s.charAt(i);
+			int count = 1;
+			if (Objects.isNull(countS.get(ch))) {
+				for (int j = i + 1; j < s.length(); j++) {
+					if (ch == s.charAt(j))
+						count++;
+				}
+				countS.put(ch, count);
+			}
+		}
+
+		for (int i = 0; i < t.length(); i++) {
+			char ch = t.charAt(i);
+			int count = 1;
+			if (Objects.isNull(countT.get(ch))) {
+				for (int j = i + 1; j < t.length(); j++) {
+					if (ch == t.charAt(j))
+						count++;
+				}
+				countT.put(ch, count);
+			}
+		}
+		System.out.println(9 - '0');
+		System.out.println(countT);
+		for (int i = 0; i < s.length(); i++) {
+			if (count(s, i) != count(t, i) || !countS.get(s.charAt(i)).equals(countT.get(t.charAt(i))))
+				return false;
+		}
+		return true;
+	}
+
+	public static boolean isDuplicatePresent(int arr[]) {
+		int count[] = new int[10];
+		for (int i = 0; i < arr.length; i++) {
+			if (count[arr[i]] < 1)
+				count[arr[i]]++;
+			else
+				return true;
+		}
+		return false;
+	}
+
+	// An ugly number is a positive integer whose prime factors are limited to 2, 3,
+	// and 5
+	public static boolean isUglyNumber(int n) {
+		// if(n<0)
+		return false;
+
 	}
 
 	public static void printPrinNumberRange(int n) {
@@ -814,7 +977,8 @@ public class Test {
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < s.length(); i++) {
 			if (s.charAt(i) >= '0' && s.charAt(i) <= '9')
-				sb.append((char) (s.charAt(i - 1) + (s.charAt(i) - 48)));
+				// sb.append((char) (s.charAt(i - 1) + (s.charAt(i) - 48)));
+				sb.append((char) (s.charAt(i - 1) + s.charAt(i) - 48));
 			else
 				sb.append(s.charAt(i));
 		}

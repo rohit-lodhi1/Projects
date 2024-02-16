@@ -20,11 +20,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.portal.app.Repository.IResultRepository;
 import com.portal.app.entity.User;
 import com.portal.app.entity.exam.Question;
 import com.portal.app.entity.exam.Quiz;
 import com.portal.app.entity.exam.Result;
+import com.portal.app.repository.IResultRepository;
 import com.portal.app.services.IQuestionService;
 import com.portal.app.services.IQuizService;
 import com.portal.app.services.IResultService;

@@ -67,6 +67,7 @@ import java.util.Scanner;
 public class Test {
 	public static int beautiful(int i, int j, int k) {
 		int count = 0, s = 0, store;
+		
 		for (int l = i; l <= j; l++) {
 			store = l;
 			s = 0;
@@ -136,7 +137,6 @@ public class Test {
 		 if(t1==null || t1.getNext()==null)
 			 return t1;
 		 t2 = t1.getNext();
-	//	 System.out.println(t1.getData()+"  -  "+t2.getNext());
 		 t1.setNext(t2.getNext());
 		 t2.setNext(t1);
 		 Node temp=swap(t1.getNext(),t2);
@@ -154,7 +154,6 @@ public class Test {
 		 LinkList l = new LinkList();
 		 if(temp==start) {
 		  l.add(1);
-		  
 		  while(start!=null) {
 			  l.add(start.getData());
 			  start = start.getNext();
@@ -169,12 +168,10 @@ public class Test {
 		if(temp==null)
 			return temp;
 		plusOne(start,temp.getNext());
-		System.out.println((int)temp.getData());
 		if((int)temp.getData()<9) {
 			temp.setData((int)temp.getData()+1);
 			return temp;
 		}
-		
 		   temp.setData(0);
 		 return temp;
 		
@@ -190,7 +187,6 @@ public class Test {
 
 		for (int i = 0; i < node.length; i++) {
 			Node temp = node[i];
-
 			while (temp != null) {
 				list.add(temp.getData());
 				temp = temp.getNext();
@@ -201,7 +197,6 @@ public class Test {
 		while (i != null) {
 			j = list.start;
 			while (j != null && j.getNext() != null) {
-
 				if ((int) j.getData() > (int) j.getNext().getData()) {
 					int k = (int) j.getData();
 					j.setData(j.getNext().getData());
@@ -209,7 +204,6 @@ public class Test {
 				}
 				j = j.getNext();
 			}
-
 			i = i.getNext();
 		}
 return list;
@@ -252,12 +246,10 @@ return list;
 		int go = count - n;
 		count = 1;
 		temp = l.start;
-		while (temp != null && count++ < go) {
+		while (temp != null && count++ < go) 
 			temp = temp.getNext();
-
-		}
+		
 		if (temp.getNext() != null)
-
 			temp.setNext(temp.getNext().getNext());
 
 	}
@@ -270,7 +262,6 @@ return list;
 			if (fast == slow)
 				return slow;
 		}
-
 		return null;
 	}
 
@@ -291,7 +282,6 @@ return list;
 		if (temp.getNext() == null)
 			return temp;
 		else {
-
 			Node end = reverse(temp.getNext());
 			System.out.println(end.getData());
 			temp.getNext().setNext(temp);

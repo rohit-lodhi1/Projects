@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="countNoOfWaysToReachNthStairs"/>
+		<item key="selection" value="binary"/>
 		<list key="findhistory">
+			<item value="num"/>
+			<item value="insertion"/>
+			<item value="shift"/>
 			<item value="countNoOfWaysToReachNthStairs"/>
 			<item value="cli"/>
 			<item value="clim"/>
@@ -20,11 +23,9 @@
 			<item value="start"/>
 			<item value="GroupVariation"/>
 			<item value="GroupVariention"/>
-			<item value="GroupVarient"/>
-			<item value="GroupVarieny"/>
-			<item value="User"/>
 		</list>
 		<list key="replacehistory">
+			<item value="binary"/>
 			<item value=""/>
 			<item value="tail"/>
 			<item value="cart"/>

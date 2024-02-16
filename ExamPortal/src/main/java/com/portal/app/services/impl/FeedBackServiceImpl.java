@@ -1,4 +1,4 @@
-package com.portal.app.services.Implementation;
+package com.portal.app.services.impl;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,8 +7,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.portal.app.Repository.IFeedBackReposiotry;
 import com.portal.app.entity.Feedback;
+import com.portal.app.repository.IFeedBackReposiotry;
 import com.portal.app.services.IFeedbackService;
 
 
