@@ -239,41 +239,146 @@ public class Test {
 		// System.out.println(isDuplicatePresent(new int[] { 1, 2, 3, 4 }));
 //		System.out.println(isIsomorphic("bbbaaaba","aaabbbba"));
 		// System.out.println(replaceAllDigitsWithCharacter("a1b1c2d3"));
-		System.out.println(System.currentTimeMillis());
-		int arr[] = { 7,8,9,1,2,3 };
+//		System.out.println(System.currentTimeMillis());
+//		int arr[] = { 7,8,9,1,2,3 };
 //		arr = mergeSort(arr);
-	//	System.out.println(Arrays.toString(mergeSortedArray(new int[] { 2, 5, 7, 9 }, new int[] { 1, 3, 6, 8 })));
+		// System.out.println(Arrays.toString(mergeSortedArray(new int[] { 2, 5, 7, 9 },
+		// new int[] { 1, 3, 6, 8 })));
 //		System.out.println(Arrays.toString(arr));
-		System.out.println(findInSortedRotatedArray(arr,3));
+//		System.out.println(findInSortedRotatedArray(arr,3));
+//		
+//		System.out.println(System.currentTimeMillis());
+//		String names[] = new String[] {"Marry","Kimmi","Emma"};
+//		int height[] =new int[] {180,165,170};
+//		Map<Integer, String>  map = new HashMap<>();
+//		for(int i=0;i<names.length ;i++) {
+//			map.put( height[i],names[i]);
+//		}
+//			
+//		int[] sortPeople = sortPeople(names,height);
+//		String sorted[] = new String[sortPeople.length];
+//		for(int i=0;i<sortPeople.length;i++)
+//			sorted[i]=map.get(sortPeople[i]);
+//		System.out.println(Arrays.toString(sorted));
+//		height =new int[] {180,165,170};
+//		System.out.println(Arrays.toString(sortPeo[{ple2(names,height)));
+//		System.out.println(profitOfStock(new int[] { 7, 1, 5, 3, 6, 4 }));
+		String s="prosperity";
+		System.out.println(solve(s,0,new ArrayList<>()).size());
 		
-		System.out.println(System.currentTimeMillis());
 	}
-	
-	public static int binarySearch(int arr[],int st,int end,int value) {
-		if(st> end)
+
+	public static String swap(String s, int st, int end) {
+		char t = s.charAt(st);
+		char[] charArray = s.toCharArray();
+		charArray[st]=charArray[end];
+		charArray[end]=t;
+		
+		return new String(charArray);
+	}
+
+	public static List<String> solve(String s,int index,List<String> ans){
+	    if(index>=s.length())
+	    ans.add(s);
+	    
+	    for(int j=index;j<s.length();j++){
+	        s = swap(s,j,index);
+	        solve(s,index+1,ans);
+	        s = swap(s,j,index);
+	    }
+	    return ans;
+	}
+
+	// best time to buy and sell stock
+
+	// max
+	public static int max(int r, int[] arr, int st) {
+		int max = 0;
+		for (; st < arr.length; st++) {
+			if (max < arr[st] && arr[st] > r) {
+				max = arr[st];
+			}
+		}
+		return max;
+	}
+
+	public static int profitOfStock(int arr[]) {
+		int profit = 0;
+		for (int i = 0; i < arr.length; i++) {
+			int m = max(arr[i], arr, i);
+			if (m - arr[i] > profit)
+				profit = m - arr[i];
+			System.out.println(max(arr[i], arr, i) + " " + profit);
+		}
+		return 0;
+	}
+
+	static class A {
+		String name;
+		int height;
+
+		public A(String name, int height) {
+			this.name = name;
+			this.height = height;
+		}
+
+	}
+
+	public static String[] sortPeople2(String names[], int height[]) {
+		List<A> list = new ArrayList<>();
+		for (int i = 0; i < names.length; i++)
+			list.add(new A(names[i], height[i]));
+
+		List<String> collect = list.stream().sorted(new Comparator<A>() {
+			@Override
+			public int compare(A o1, A o2) {
+				return o2.height - o1.height;
+			}
+
+		}).map(a -> a.name).collect(Collectors.toList());
+
+		names = collect.toArray(new String[0]);
+		return names;
+	}
+
+	public static int[] sortPeople(String names[], int height[]) {
+		for (int i = 0; i < names.length; i++) {
+			int maxHeight = i;
+			for (int j = i + 1; j < height.length; j++) {
+				if (height[j] > height[maxHeight])
+					maxHeight = j;
+			}
+
+			int k = height[maxHeight];
+			height[maxHeight] = height[i];
+			height[i] = k;
+		}
+		return height;
+	}
+
+	public static int binarySearch(int arr[], int st, int end, int value) {
+		if (st > end)
 			return -1;
-		int mid = (end+st)/2;
-		if(arr[mid]==value)
+		int mid = (end + st) / 2;
+		if (arr[mid] == value)
 			return mid;
-		if(arr[mid]>value)
-			return binarySearch(arr, st, mid-1, value);
-		return binarySearch(arr, mid+1, end, value);
+		if (arr[mid] > value)
+			return binarySearch(arr, st, mid - 1, value);
+		return binarySearch(arr, mid + 1, end, value);
 	}
-	
-	
-	
-	public static int findInSortedRotatedArray(int arr[],int value) {
-		int st=0,end=arr.length-1;
-		
-		while(st<=end) {
-			int mid = (end+st)/2;
-			System.out.println("st "+ st+"   end  "+end + "   mid  "+mid);
-			if(arr[mid]==value)
+
+	public static int findInSortedRotatedArray(int arr[], int value) {
+		int st = 0, end = arr.length - 1;
+
+		while (st <= end) {
+			int mid = (end + st) / 2;
+			System.out.println("st " + st + "   end  " + end + "   mid  " + mid);
+			if (arr[mid] == value)
 				return mid;
-			else if(arr[mid]>value &&  arr[0]<value || arr[0]>value && arr[0]>arr[mid]) 
-				end =mid-1;
+			else if (arr[mid] > value && arr[0] < value || arr[0] > value && arr[0] > arr[mid])
+				end = mid - 1;
 			else
-				st=mid+1;
+				st = mid + 1;
 		}
 		return -1;
 	}
@@ -281,20 +386,20 @@ public class Test {
 	public static int[] mergeSortedArray(int arr[], int arr1[]) {
 		int i = 0, j = 0, k = 0;
 		int sorted[] = new int[arr.length + arr1.length];
-		
+
 		while (i < arr.length && j < arr1.length) {
 			if (arr[i] < arr1[j])
 				sorted[k++] = arr1[j++];
 			else
 				sorted[k++] = arr[i++];
 		}
-		
+
 		while (i < arr.length)
 			sorted[k++] = arr[i++];
 
 		while (j < arr1.length)
 			sorted[k++] = arr1[j++];
-		
+
 		return sorted;
 	}
 
