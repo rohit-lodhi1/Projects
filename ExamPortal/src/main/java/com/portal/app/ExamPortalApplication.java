@@ -12,6 +12,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import com.portal.app.entity.Role;
 import com.portal.app.entity.User;
 import com.portal.app.entity.UserRole;
+import com.portal.app.repository.IRoleRepository;
 import com.portal.app.services.IUserServices;
 
 
@@ -20,6 +21,9 @@ public class ExamPortalApplication implements CommandLineRunner{
 
 	@Autowired
 	private IUserServices userServices;
+	
+	@Autowired
+	private IRoleRepository roleRepo;
 	
 	@Autowired
 	private BCryptPasswordEncoder bcryptPasswordEncoder;
@@ -47,8 +51,11 @@ public class ExamPortalApplication implements CommandLineRunner{
 		 * User user1 = userServices.createUser(user, userRoleSet);
 		 * System.out.println(user1.getUserName());
 		 */	
-		
-				
+	Role role = new Role();
+	role.setRoleId(1L);
+	role.setRoleName("User");
+	if(this.roleRepo.findById(1L).isEmpty())
+			this.roleRepo.save(role);	
 	}
 
 }

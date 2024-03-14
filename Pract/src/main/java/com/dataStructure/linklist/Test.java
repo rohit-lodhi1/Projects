@@ -115,22 +115,85 @@ public class Test {
 		l.add(5);
 		l.add(6);
 		l.add(7);
-
+		l.start=l.reverse(l.start, 2);
+//System.out.println(l);
 //		Node[] node = { l.start, l2.start,l3.start,l4.start };
 		
 		
 //		System.out.println(mergeKSortedLists(node));;
 //		System.out.println(plus(l.start));
-		System.out.println(l);
-		l.start=swap(l.start);
-		System.out.println(l);
-		System.out.println(l.start.getData());;
-		System.out.println(l.start.getNext().getData());;
-		System.out.println(l.start.getNext().getNext().getData());;
-		System.out.println(l.start.getNext().getNext().getNext().getData());;
+//		System.out.println(l);
+//		//l.start=swap(l.start);
+//		System.out.println(l);
+//		System.out.println(l.start.getData());;
+//		System.out.println(l.start.getNext().getData());;
+//		System.out.println(l.start.getNext().getNext().getData());;
+//		System.out.println(l.start.getNext().getNext().getNext().getData());;
 	//	System.out.println(l.start.getNext().getNext().getNext().getNext().getData());;
-		
+	//	l.start=swapKNodes(l.start,2);
+
+list.add(1);
+list.add(2);
+list.add(3);
+list.add(4);
+list.add(5);
+list.add(6);
+list.add(7);
+list.add(8);
+		///System.out.println(list.start);
+//list.start = reverseByLoop(list.start);
+System.out.println(list);
+ list.start=swapKNodes(list.start,3);
+ System.out.println(list);
 	}
+	
+	static LinkList list = new LinkList();
+	
+	
+	public static Node swapKNodes(Node head,int k) {
+		if(head==null || head.getNext()==null)
+			return head;
+		Node p=null,curr=head,nxt=null;
+		int count=1;
+		while(curr!=null && count++<=k) {
+			nxt = curr.getNext();
+			curr.setNext(p);
+			p=curr;
+			System.out.println(curr.getData() +" "+p.getData());
+			curr = nxt;
+		}
+	
+		System.out.println();
+			
+		 count=1;
+		Node temp=curr;
+		while(temp!=null && count++<k)
+			temp = temp.getNext();
+		if(temp==null) {
+			head.setNext(curr);
+			return p;
+		}
+			
+		Node rev = swapKNodes(curr,k);
+		head.setNext(rev);
+	    return p;
+	}
+	
+	
+	public static Node reverseByLoop(Node st) {
+		Node pre=null,curr=st,nxt=null;
+		while(curr!=null) {
+			 nxt=curr.getNext();
+			curr.setNext(pre);
+			pre=curr;
+			curr=nxt;
+		}
+		
+	return pre;
+	}
+	
+	
+	
 	
 	 public static Node swap(Node t1,Node t2) {
 		
