@@ -264,8 +264,73 @@ public class Test {
 //		System.out.println(Arrays.toString(sortPeo[{ple2(names,height)));
 //		System.out.println(profitOfStock(new int[] { 7, 1, 5, 3, 6, 4 }));
 		String s="prosperity";
-		System.out.println(solve(s,0,new ArrayList<>()).size());
+//		System.out.println(solve(s,0,new ArrayList<>()).size());
+		int arr[][]= {{1,0,0},{1,1,0},{1,1,1}};
+		System.out.println(ratInMaze(arr));
+	}
+	
+	
+	public static List<String> ratInMaze(int arr[][]){
+		int visited[][] =new int[arr.length][arr.length];
+		List<String> list = new ArrayList<>();
+//		return ratInMaze(arr,arr.length-1,arr.length-1,visited,"",list,arr.length);
+		return ratInMaze(arr,0,0,visited,"",list,arr.length);
+	}
+	
+	public static boolean isSafe(int arr[][],int x,int y,int visited[][],int n) {
+		if(x>=0 && x<=n-1 && y>=0 && y<=n-1 && arr[x][y]==1 && visited[x][y]==0)
+			return true;
+		return false;
+	}
+	
+	public static List<String> ratInMaze(int arr[][],int x,int y,int visited[][],String output,List<String> ans,int n){
+		if(x==0 && y==0) {
+			ans.add(output);
+			return ans;
+		}
 		
+		visited[x][y]=1;
+		
+		// down
+		int newX = x+1;
+		int newY = y;
+		if(isSafe(arr, newX, newY, visited, n)) {
+			
+			output +="D";
+			ratInMaze(arr,newX,newY,visited,output,ans,n);
+			output = output.substring(0,output.length()-1);
+		}
+		
+		// left
+		newX =x;
+		newY=y-1;
+		if(isSafe(arr, newX, newY, visited, n)) {
+			output +="L";
+			ratInMaze(arr,newX,newY,visited,output,ans,n);
+			output = output.substring(0,output.length()-1);
+		}
+		
+		// righit
+		newX =x;
+		newY=y+1;
+		if(isSafe(arr, newX, newY, visited, n)) {
+			output +="R";
+			ratInMaze(arr,newX,newY,visited,output,ans,n);
+			output = output.substring(0,output.length()-1);
+		}
+		
+		// up
+		newX =x-1;
+		newY=y;
+		if(isSafe(arr, newX, newY, visited, n)) {
+			output +="U";
+			ratInMaze(arr,newX,newY,visited,output,ans,n);
+			output = output.substring(0,output.length()-1);
+		}
+		
+		visited[x][y]=0;
+		return ans;
+			
 	}
 
 	public static String swap(String s, int st, int end) {
