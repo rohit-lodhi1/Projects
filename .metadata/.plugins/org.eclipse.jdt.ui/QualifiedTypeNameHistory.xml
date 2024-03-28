@@ -40,4 +40,7 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.dataStructure.linklist.LinkList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="com.dataStructure.linklist.PractLinkedList"/>
+    <fullyQualifiedTypeName name="com.dataStructure.linklist.Circular"/>
 </qualifiedTypeNameHistroy>
