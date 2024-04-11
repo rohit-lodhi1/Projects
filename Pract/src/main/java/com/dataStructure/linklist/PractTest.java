@@ -1,5 +1,8 @@
 package com.dataStructure.linklist;
 
+import java.util.HashMap;
+import java.util.Map;
+
 class PractLinkeList {
 	Node head;
 
@@ -252,22 +255,21 @@ class Circular {
 		temp.setNext(this.tail.getNext());
 		this.tail = temp;
 	}
-	
+
 	public void removeFromNth(int pos) {
 		Node temp = this.tail;
-		
-			
-		if(pos<=0||temp==null || temp.getNext()==this.tail) {
+
+		if (pos <= 0 || temp == null || temp.getNext() == this.tail) {
 			this.removeFromFirst();
-			return ;
+			return;
 		}
-		int count=1;
-		while(count++<pos && temp.getNext()!=this.tail) {
+		int count = 1;
+		while (count++ < pos && temp.getNext() != this.tail) {
 			temp = temp.getNext();
 		}
-		if(temp.getNext()==this.tail) {
+		if (temp.getNext() == this.tail) {
 			this.removeFromLast();
-			return ;
+			return;
 		}
 		temp.setNext(temp.getNext().getNext());
 	}
@@ -321,7 +323,7 @@ public class PractTest {
 		list.addAtLast(10);
 		list.addAtFirst(50);
 		list.addAtNth(25, 3);
-		System.out.println(list);
+//		System.out.println(list);
 		list.removeFromNth(-11);
 
 //		list.removeFromLast();
@@ -331,8 +333,275 @@ public class PractTest {
 //		list.removeFromLast();
 //		list.removeFromLast();
 
-		System.out.println(list);
+//		System.out.println(list);
+//		System.out.println(2%3);
+//
+//		ListNode head = new ListNode(1);
+//		head.next= new ListNode(2);
+//		head.next.next=new ListNode(3);
+//		System.err.println(System.currentTimeMillis());
+//		head=Solution.reverse(head);
+//		ListNode right=Solution.findRightHead(0,head);
+////		System.out.println();
+//		head=Solution.reverse(head);
+////	   	System.out.println(print(head));;
+//	   	ListNode temp =head;
+//	   	while(temp.next!=null){
+////	   		System.err.println(temp.val);
+//            temp=temp.next;
+//        }
+//        temp.next=head;
+//        head=right;
+////        printCircular(temp);
+//        
+//        while(temp.next!=right)
+//            temp=temp.next;
+//        temp.next=null;
+//        System.err.println(System.currentTimeMillis());
+//        System.out.println(print(head));
+//		PractLinkeList l = new PractLinkeList();
+//		l.addAtLast(1);
+//		l.addAtLast(1);
+//		l.addAtLast(1);
+//		l.addAtLast(3);
+//		l.addAtLast(4);
+//		l.addAtLast(4);
+//		l.addAtLast(5);
+//		l.addAtLast(5);
+//		
+//		System.out.println(l);
+//		count(l);
+//		System.out.println(l);
+//		
+//		
+		ListNode head = new ListNode(1);
+		head.next = new ListNode(2);
+		head.next.next = new ListNode(3);
+		head.next.next.next = new ListNode(4);
+		head.next.next.next.next = new ListNode(5);
+		head.next.next.next.next.next = new ListNode(6);
+		head.next.next.next.next.next.next = new ListNode(7);
+//		head = partition(head, 1);
+//	    head=reversePart2(head, 3,5 );
+//		System.out.println(print(head));
+//		System.out.println(print(head));
+		System.out.println(System.currentTimeMillis());
+		reOrder(head);
+		System.out.println(System.currentTimeMillis());
+	}
+	
+	
+	public static ListNode reOrder(ListNode head) {
+		ListNode slow = head,fast=head;
+		while(fast!=null && fast.next!=null) {
+			slow=slow.next;
+			fast=fast.next.next;
+		}
+		ListNode temp2=reverse(slow);
+		
+		ListNode temp1=head;
+		while(temp1!=null && temp2!=null && temp1.next!=temp2 ) {
+			ListNode c1=temp1.next;
+			ListNode c2=temp2.next;
+			temp1.next=temp2;
+			temp2.next=c1;
+			temp1=c1;
+			temp2=c2;
+		}
+		
+		System.out.println(print(head));
+		return null;
+	}
+	
+	
+	public static ListNode reverse(ListNode head) {
+		ListNode pre=null,curr=head,next=null;
+		while(curr!=null) {
+			next=curr.next;
+			curr.next=pre;
+			pre=curr;
+			curr=next;
+		}
+		return pre;
+	}
+	
+	public static ListNode reversePart2(ListNode head,int left,int right) {
+		ListNode joinSt=head,revSt=head,revEnd=head,joinEnd=null,temp=head;
+		int count=1;
+		while(temp!=null) {
+			if(count+1==left) {
+			   joinSt=temp;
+			   revSt=temp.next;
+			}
+			if(count==right) {
+				revEnd=temp;
+				joinEnd=temp.next;
+				break;
+			}
+			count++;
+			temp=temp.next;
+		}
+		revEnd.next=null;
+		System.out.println("RevSt ="+revSt.val+" RevENd="+revEnd.val+" JoinSt ="+joinSt.val+" joinEnd="+joinEnd);
+		ListNode newHead = reverse(revSt);
+		
+		  joinSt.next=newHead;
+		  System.out.println();
+		
+		  revSt.next = joinEnd;
+		  if(revSt==joinSt)
+			  return newHead;
+		return head;
+	}
+	
+	
+
+	public static ListNode addNode(ListNode head, int val) {
+		ListNode temp = new ListNode(val);
+		if (head == null) {
+			head = temp;
+		} else {
+			ListNode t = head;
+			while (t.next != null) {
+				t = t.next;
+			}
+			t.next = temp;
+		}
+		return head;
+	}
+
+	public static ListNode partition(ListNode head, int x) {
+		ListNode temp = head;
+		ListNode l1 = null, l2 = null;
+		while (temp != null) {
+			if (temp.val >= x)
+				l2 = addNode(l2, temp.val);
+			else
+				l1 = addNode(l1, temp.val);
+			temp = temp.next;
+		}
+		temp = l1;
+		if (temp == null)
+			return l2;
+		while (temp.next != null)
+			temp = temp.next;
+		temp.next = l2;
+		return l1;
+	}
+
+	public static void count(PractLinkeList list) {
+		Map<Integer, Integer> cot = new HashMap<>();
+		Node t = list.head;
+		while (t != null) {
+			Integer integer = cot.get(t.getData());
+			if (integer == null)
+				cot.put((Integer) t.getData(), 1);
+			else {
+				cot.put((Integer) t.getData(), ++integer);
+			}
+			t = t.getNext();
+		}
+
+		t = list.head;
+		Node temp = t;
+		while (t != null) {
+			Integer integer = cot.get(t.getData());
+			System.err.println(t.getData());
+			if (integer > 1) {
+				if (t == list.head) {
+					list.head = t.getNext();
+				}
+				temp.setNext(t.getNext());
+			} else {
+				temp = t;
+			}
+			t = t.getNext();
+		}
+
+		System.err.println(cot);
 
 	}
 
+	public static String printCircular(ListNode temp) {
+		String s = "";
+		ListNode t = temp;
+		while (t.next != temp) {
+//			System.err.print(t.val+" ");
+			s += t.val + " ";
+			t = t.next;
+		}
+		s += t.val;
+		return s;
+	}
+
+	public static String print(ListNode t) {
+		String s = "";
+		while (t != null) {
+			s += t.val + " ";
+			t = t.next;
+		}
+		return s;
+	}
+
+}
+
+//
+// 
+class ListNode {
+	int val;
+	ListNode next;
+
+	ListNode() {
+	}
+
+	ListNode(int val) {
+		this.val = val;
+	}
+
+	ListNode(int val, ListNode next) {
+		this.val = val;
+		this.next = next;
+	}
+}
+ 
+class Solution {
+    
+    public static ListNode reverse(ListNode head){
+        ListNode pre = null,curr=head,next=null;
+        while(curr!=null){
+            next = curr.next;
+            curr.next=pre;
+            pre=curr;
+            curr=next;
+        }
+        return pre;
+    }
+    
+    public static ListNode findRightHead(int k,ListNode head){
+        int count=1;
+        ListNode temp=head;
+        while(count<k){
+            while(temp!=null && count++<k){
+                temp = temp.next;
+            }
+            if(temp==null)
+                temp=head;
+            
+        }
+        return temp;
+    }
+    
+    public static ListNode rotateRight(ListNode head, int k) {
+        ListNode temp=reverse(head);
+        ListNode right = findRightHead(k,head);
+    temp=reverse(head);
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next=head;
+        while(temp.next!=right)
+            temp=temp.next;
+        temp.next=null;
+        return right;
+    }
 }
