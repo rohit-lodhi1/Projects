@@ -263,95 +263,166 @@ public class Test {
 //		height =new int[] {180,165,170};
 //		System.out.println(Arrays.toString(sortPeo[{ple2(names,height)));
 //		System.out.println(profitOfStock(new int[] { 7, 1, 5, 3, 6, 4 }));
-		String s="prosperity";
+		String s = "prosperity";
 //		System.out.println(solve(s,0,new ArrayList<>()).size());
-		int arr[][]= {{1,0,0},{1,1,0},{1,1,1}};
-		System.out.println(ratInMaze(arr));
+//		int arr[][]= {{1,0,0},{1,1,0},{1,1,1}};
+//		System.out.println(ratInMaze(arr));
+		int arr[] = { 6,5,3,2,1,4};
+		int arr1[] = {2,4,6,8};
+//		System.out.println(bookProfit(arr));
+//		System.out.println(isUglyNumbers(14));
+//		System.out.println(Arrays.toString(mergeSortAgain(arr,0,arr.length-1)));
 	}
 	
+
+	public static int[] mergeSortedArrayAgain(int arr1[], int arr2[]) {
+		int i = 0, j = 0, k = 0;
+		int mergedArray[] = new int[arr1.length + arr2.length];
+		
+		while (i < arr1.length && j < arr2.length) {
+			if (arr1[i] > arr2[j]) 
+				mergedArray[k++] = arr1[i++];
+			 else
+				mergedArray[k++] = arr2[j++];
+		}
+		
+		while(i<arr1.length)
+			mergedArray[k++] = arr1[i++];
+		while(j<arr2.length)
+			mergedArray[k++] = arr2[j++];
+		
+		return mergedArray;
+	}
 	
-	public static List<String> ratInMaze(int arr[][]){
-		int visited[][] =new int[arr.length][arr.length];
+	public static int[] mergeSortAgain(int arr[],int i,int j) {
+		if(i>=j)
+			return new int[]{arr[i]};
+		// break
+		int mid = (i+j)/2;
+		// left part
+		System.out.println("mid "+mid+" i="+i+" j="+j);
+		int[] arr1 = mergeSortAgain(arr, i, mid);
+		System.out.println(Arrays.toString(arr1));
+		// right part
+		int[] arr2 = mergeSortAgain(arr, mid+1, j);
+		return mergeSortedArrayAgain(arr1, arr2);
+	}
+
+	public static boolean isUglyNumbers(int number) {
+		if (number < 2)
+			return true;
+		int fact = 2;
+		while (fact <= number / 2) {
+			System.out.println(fact);
+			if (number % fact == 0) {
+				if (fact > 5)
+					return false;
+//				number/=fact;
+			}
+//			number=number/fact;
+			if (fact > 5)
+				return false;
+			fact++;
+		}
+		return true;
+	}
+
+	public static int bookProfit(int arr[]) {
+		int min = arr[0], profit = 0;
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println("min " + min + " profit = " + profit);
+			if (arr[i] - min >= profit)
+				profit = arr[i] - min;
+			else if (arr[i] < min)
+				min = arr[i];
+		}
+
+		return profit;
+	}
+
+	public static List<String> ratInMaze(int arr[][]) {
+		int visited[][] = new int[arr.length][arr.length];
 		List<String> list = new ArrayList<>();
 //		return ratInMaze(arr,arr.length-1,arr.length-1,visited,"",list,arr.length);
-		return ratInMaze(arr,0,0,visited,"",list,arr.length);
+		return ratInMaze(arr, 0, 0, visited, "", list, arr.length);
 	}
-	
-	public static boolean isSafe(int arr[][],int x,int y,int visited[][],int n) {
-		if(x>=0 && x<=n-1 && y>=0 && y<=n-1 && arr[x][y]==1 && visited[x][y]==0)
+
+	public static boolean isSafe(int arr[][], int x, int y, int visited[][], int n) {
+		if (x >= 0 && x <= n - 1 && y >= 0 && y <= n - 1 && arr[x][y] == 1 && visited[x][y] == 0)
 			return true;
 		return false;
 	}
-	
-	public static List<String> ratInMaze(int arr[][],int x,int y,int visited[][],String output,List<String> ans,int n){
-		if(x==0 && y==0) {
+
+	public static List<String> ratInMaze(int arr[][], int x, int y, int visited[][], String output, List<String> ans,
+			int n) {
+		if (x == 0 && y == 0) {
 			ans.add(output);
 			return ans;
 		}
-		
-		visited[x][y]=1;
-		
+
+		visited[x][y] = 1;
+
 		// down
-		int newX = x+1;
+		int newX = x + 1;
 		int newY = y;
-		if(isSafe(arr, newX, newY, visited, n)) {
-			
-			output +="D";
-			ratInMaze(arr,newX,newY,visited,output,ans,n);
-			output = output.substring(0,output.length()-1);
+		if (isSafe(arr, newX, newY, visited, n)) {
+
+			output += "D";
+			ratInMaze(arr, newX, newY, visited, output, ans, n);
+			output = output.substring(0, output.length() - 1);
 		}
-		
+
 		// left
-		newX =x;
-		newY=y-1;
-		if(isSafe(arr, newX, newY, visited, n)) {
-			output +="L";
-			ratInMaze(arr,newX,newY,visited,output,ans,n);
-			output = output.substring(0,output.length()-1);
+		newX = x;
+		newY = y - 1;
+		if (isSafe(arr, newX, newY, visited, n)) {
+			output += "L";
+			ratInMaze(arr, newX, newY, visited, output, ans, n);
+			output = output.substring(0, output.length() - 1);
 		}
-		
+
 		// righit
-		newX =x;
-		newY=y+1;
-		if(isSafe(arr, newX, newY, visited, n)) {
-			output +="R";
-			ratInMaze(arr,newX,newY,visited,output,ans,n);
-			output = output.substring(0,output.length()-1);
+		newX = x;
+		newY = y + 1;
+		if (isSafe(arr, newX, newY, visited, n)) {
+			output += "R";
+			ratInMaze(arr, newX, newY, visited, output, ans, n);
+			output = output.substring(0, output.length() - 1);
 		}
-		
+
 		// up
-		newX =x-1;
-		newY=y;
-		if(isSafe(arr, newX, newY, visited, n)) {
-			output +="U";
-			ratInMaze(arr,newX,newY,visited,output,ans,n);
-			output = output.substring(0,output.length()-1);
+		newX = x - 1;
+		newY = y;
+		if (isSafe(arr, newX, newY, visited, n)) {
+			output += "U";
+			ratInMaze(arr, newX, newY, visited, output, ans, n);
+			output = output.substring(0, output.length() - 1);
 		}
-		
-		visited[x][y]=0;
+
+		visited[x][y] = 0;
 		return ans;
-			
+
 	}
 
 	public static String swap(String s, int st, int end) {
 		char t = s.charAt(st);
 		char[] charArray = s.toCharArray();
-		charArray[st]=charArray[end];
-		charArray[end]=t;
-		
+		charArray[st] = charArray[end];
+		charArray[end] = t;
+
 		return new String(charArray);
 	}
 
-	public static List<String> solve(String s,int index,List<String> ans){
-	    if(index>=s.length())
-	    ans.add(s);
-	    
-	    for(int j=index;j<s.length();j++){
-	        s = swap(s,j,index);
-	        solve(s,index+1,ans);
-	        s = swap(s,j,index);
-	    }
-	    return ans;
+	public static List<String> solve(String s, int index, List<String> ans) {
+		if (index >= s.length())
+			ans.add(s);
+
+		for (int j = index; j < s.length(); j++) {
+			s = swap(s, j, index);
+			solve(s, index + 1, ans);
+			s = swap(s, j, index);
+		}
+		return ans;
 	}
 
 	// best time to buy and sell stock

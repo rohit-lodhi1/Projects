@@ -313,18 +313,18 @@ public class PractTest {
 //		list.addAtNth(15, 2);
 //		list.removeFromNth(-11);
 //		System.out.println(list);
-		Circular list = new Circular();
+//		Circular list = new Circular();
 //		list.removeFromLast();
 //		list.removeFromFirst();
-		list.addAtNth(35, -1);
-		list.addAtFirst(40);
-		list.addAtLast(30);
-		list.addAtFirst(20);
-		list.addAtLast(10);
-		list.addAtFirst(50);
-		list.addAtNth(25, 3);
+//		list.addAtNth(35, -1);
+//		list.addAtFirst(40);
+//		list.addAtLast(30);
+//		list.addAtFirst(20);
+//		list.addAtLast(10);
+//		list.addAtFirst(50);
+//		list.addAtNth(25, 3);
 //		System.out.println(list);
-		list.removeFromNth(-11);
+//		list.removeFromNth(-11);
 
 //		list.removeFromLast();
 //		list.removeFromLast();
@@ -379,15 +379,49 @@ public class PractTest {
 		head.next.next = new ListNode(3);
 		head.next.next.next = new ListNode(4);
 		head.next.next.next.next = new ListNode(5);
-		head.next.next.next.next.next = new ListNode(6);
-		head.next.next.next.next.next.next = new ListNode(7);
+//		head.next.next.next.next.next = new ListNode(6);
+//		head.next.next.next.next.next.next = new ListNode(7);
+		
+		ListNode head2 = new ListNode(100);
+		head2.next = new ListNode(200);
+		head2.next.next = new ListNode(300);
+		head2.next.next.next = new ListNode(400);
+		head2.next.next.next.next = new ListNode(500);
+		head2.next.next.next.next.next = new ListNode(600);
 //		head = partition(head, 1);
 //	    head=reversePart2(head, 3,5 );
 //		System.out.println(print(head));
 //		System.out.println(print(head));
-		System.out.println(System.currentTimeMillis());
-		reOrder(head);
-		System.out.println(System.currentTimeMillis());
+//		System.out.println(System.currentTimeMillis());
+//		reOrder(head);
+//		System.out.println(System.currentTimeMillis());
+		
+		System.out.println(print(mergeInBetweenLinkedLists(head,1,4,head2)));
+	}
+	
+	public static ListNode mergeInBetweenLinkedLists(ListNode list1,int a,int b,ListNode list2) {
+		
+		ListNode temp=list1,temp2=list2;
+		while(temp2.next!=null) {
+			temp2 = temp2.next;
+		}
+		System.out.println(temp2.val);
+		ListNode joinFrom=list1;
+		int count=0;
+		while(temp!=null && count<=b) {
+			if(count==a) {
+				System.out.println(count+" --"+" val ="+joinFrom.val);
+				joinFrom.next = list2;
+			}
+			System.out.println("temp ="+temp.val+ " join="+joinFrom.val);
+			joinFrom = temp;
+		    temp = temp.next;
+		    count++;
+		}
+		
+//		System.out.println(temp.val);
+		temp2.next=temp;
+		return list1;
 	}
 	
 	
