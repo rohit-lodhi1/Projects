@@ -17602,3 +17602,814 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2024-04-12 02:16:34,365 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
 2024-04-12 02:16:34,376 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
 2024-04-12 02:16:34,388 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:03:45,011 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-29 01:04:46,589 [Worker-7: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier  to /MavenFirst/target/classes
+2024-04-29 01:04:46,598 [Worker-7: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier  to /SrpingPhoneBook/target/classes
+2024-04-29 01:04:48,773 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:04:49,014 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:04:49,025 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:05:34,273 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:05:34,370 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:05:34,390 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:13:43,522 [Worker-11: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:13:43,623 [Worker-11: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:13:43,632 [Worker-11: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:13:44,946 [Worker-11: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:13:44,950 [Worker-11: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:13:45,314 [Worker-11: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:13:45,315 [Worker-11: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:13:45,722 [Worker-11: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:13:45,723 [Worker-11: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:15:41,379 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:15:41,390 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:15:41,398 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:15:43,194 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:15:43,197 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:15:43,611 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:15:43,613 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:15:43,986 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:15:43,988 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:16:02,580 [Worker-14: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:16:02,601 [Worker-14: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:16:02,611 [Worker-14: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:16:03,306 [Worker-14: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:16:03,308 [Worker-14: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:16:03,786 [Worker-14: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:16:03,788 [Worker-14: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:16:04,282 [Worker-14: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:16:04,285 [Worker-14: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:16:46,505 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:16:46,515 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:16:46,522 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:16:48,212 [Worker-13: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:16:48,214 [Worker-13: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:16:48,840 [Worker-13: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:16:48,842 [Worker-13: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:16:49,305 [Worker-13: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:16:49,306 [Worker-13: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:19:10,691 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:19:10,705 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:19:10,712 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:19:12,274 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:19:12,276 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:19:12,779 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:19:12,780 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:19:13,342 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:19:13,344 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:19:28,434 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:19:28,454 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:19:28,465 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:19:49,919 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:19:49,967 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:19:49,983 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:19:50,727 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:19:50,729 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:19:51,357 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:19:51,359 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:19:51,832 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:19:51,834 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:22,359 [Worker-19: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:20:22,371 [Worker-19: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:20:22,379 [Worker-19: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:20:22,941 [Worker-19: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:22,943 [Worker-19: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:23,290 [Worker-19: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:23,291 [Worker-19: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:23,744 [Worker-19: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:23,746 [Worker-19: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:28,273 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:20:28,283 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:20:28,299 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:20:28,854 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:28,855 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:29,179 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:29,180 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:29,584 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:29,585 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:38,110 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:20:38,121 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:20:38,131 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:20:38,973 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:38,974 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:39,640 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:39,642 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:40,085 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:40,087 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:55,584 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:20:55,595 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:20:55,604 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:20:56,140 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:56,142 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:56,557 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:56,559 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:20:56,959 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:20:56,961 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:21:32,121 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:21:32,132 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:21:32,140 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:21:32,732 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:21:32,734 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:21:33,125 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:21:33,127 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:21:33,440 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:21:33,442 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:22:03,033 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:22:03,085 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:22:03,092 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:22:03,704 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:22:03,707 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:22:04,397 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:22:04,398 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:22:04,800 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:22:04,802 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:22:24,558 [Worker-20: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:22:24,571 [Worker-20: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:22:24,581 [Worker-20: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:22:25,173 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:22:25,175 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:22:25,807 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:22:25,809 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:22:26,544 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:22:26,547 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:22:38,930 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:22:38,940 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:22:38,947 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:22:39,720 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:22:39,721 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:22:40,369 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:22:40,372 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:22:40,957 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:22:40,958 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:05,706 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:05,717 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:05,725 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:23:06,449 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:06,451 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:06,894 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:06,896 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:07,416 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:07,419 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:18,949 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:18,961 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:18,972 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:23:19,655 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:19,657 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:20,151 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:20,152 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:20,563 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:20,564 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:26,494 [Worker-21: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:26,504 [Worker-21: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:26,513 [Worker-21: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:23:27,079 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:27,082 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:27,505 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:27,507 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:27,880 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:27,881 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:30,567 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:30,577 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:30,583 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:23:31,213 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:31,215 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:31,743 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:31,745 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:32,240 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:32,243 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:36,084 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:36,095 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:36,103 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:23:36,974 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:36,976 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:37,346 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:37,347 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:37,841 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:37,843 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:51,237 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:51,248 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:23:51,254 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:23:51,831 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:51,833 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:52,223 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:52,225 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:23:52,572 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:23:52,574 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:24:15,643 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:24:15,654 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:24:15,661 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:24:16,087 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:24:16,089 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:24:16,485 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:24:16,487 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:24:16,849 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:24:16,851 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:24:25,593 [Worker-21: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:24:25,604 [Worker-21: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:24:25,611 [Worker-21: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:24:26,282 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:24:26,284 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:24:26,742 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:24:26,745 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:24:27,125 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:24:27,126 [Worker-21: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:24:35,521 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:24:35,534 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:24:35,542 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:24:35,982 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:24:35,983 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:24:36,325 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:24:36,326 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:24:36,590 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:24:36,591 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:25:26,028 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:25:26,041 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:25:26,047 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:25:26,545 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:25:26,547 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:25:26,909 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:25:26,910 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:25:27,286 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:25:27,287 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:25:34,417 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:25:34,444 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:25:34,454 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:26:18,264 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:26:18,306 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:26:18,312 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:26:18,932 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:26:18,933 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:26:19,305 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:26:19,307 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:26:19,688 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:26:19,690 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:27:14,347 [Worker-20: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:27:14,358 [Worker-20: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:27:14,366 [Worker-20: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:27:14,974 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:27:14,976 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:27:15,460 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:27:15,461 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:27:15,858 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:27:15,859 [Worker-20: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:27:33,175 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:27:33,190 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:27:33,199 [Worker-18: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:27:33,972 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:27:33,973 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:27:34,739 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:27:34,742 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:27:35,347 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:27:35,349 [Worker-18: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:28:45,630 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:28:45,694 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:28:45,707 [Worker-2: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:28:46,602 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:28:46,606 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:28:47,584 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:28:47,588 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:28:48,632 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:28:48,635 [Worker-2: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:29:20,005 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:29:20,019 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:29:20,028 [Worker-16: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:29:21,011 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:29:21,015 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:29:22,172 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:29:22,178 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:29:23,253 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:29:23,257 [Worker-16: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:29:35,263 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:29:35,279 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-04-29 01:29:35,289 [Worker-17: Launching PractTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-04-29 01:29:36,237 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:29:36,242 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:29:37,172 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:29:37,177 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-04-29 01:29:38,147 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-04-29 01:29:38,152 [Worker-17: Launching PractTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-01 23:58:12,436 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-02 00:05:34,252 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier  to /MavenFirst/target/classes
+2024-05-02 00:05:34,851 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier  to /SrpingPhoneBook/target/classes
+2024-05-02 00:05:36,707 [Worker-6: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:05:36,824 [Worker-6: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:05:36,840 [Worker-6: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:05:40,109 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:05:40,114 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:05:40,905 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:05:40,908 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:05:41,503 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:05:41,505 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:05:57,833 [Worker-9: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:05:57,845 [Worker-9: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:05:57,853 [Worker-9: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:05:58,718 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:05:58,720 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:05:59,293 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:05:59,295 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:05:59,785 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:05:59,788 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:06:07,767 [Worker-5: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:06:07,781 [Worker-5: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:06:07,792 [Worker-5: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:06:08,431 [Worker-5: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:06:08,433 [Worker-5: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:06:09,004 [Worker-5: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:06:09,007 [Worker-5: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:06:09,439 [Worker-5: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:06:09,440 [Worker-5: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:06:21,196 [Worker-1: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:06:21,208 [Worker-1: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:06:21,220 [Worker-1: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:06:21,988 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:06:21,990 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:06:22,411 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:06:22,412 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:06:22,846 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:06:22,848 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:06:36,039 [Worker-3: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:06:36,056 [Worker-3: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:06:36,068 [Worker-3: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:06:37,126 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:06:37,129 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:06:37,675 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:06:37,676 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:06:38,172 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:06:38,173 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:07:27,408 [Worker-6: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:07:27,423 [Worker-6: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:07:27,432 [Worker-6: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:07:28,264 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:07:28,266 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:07:28,756 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:07:28,758 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:07:29,153 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:07:29,154 [Worker-6: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:07:58,210 [Worker-0: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:07:58,229 [Worker-0: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:07:58,270 [Worker-0: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:07:58,954 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:07:58,955 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:07:59,374 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:07:59,376 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:07:59,855 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:07:59,857 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:08:15,340 [Worker-9: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:08:15,356 [Worker-9: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:08:15,372 [Worker-9: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:08:16,087 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:08:16,088 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:08:16,439 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:08:16,441 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:08:16,901 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:08:16,902 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:12:16,970 [Worker-10: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:12:16,985 [Worker-10: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:12:16,993 [Worker-10: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:12:17,508 [Worker-10: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:12:17,509 [Worker-10: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:12:17,978 [Worker-10: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:12:17,980 [Worker-10: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:12:18,478 [Worker-10: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:12:18,479 [Worker-10: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:12:27,852 [Worker-13: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:12:27,862 [Worker-13: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:12:27,870 [Worker-13: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:12:28,777 [Worker-13: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:12:28,779 [Worker-13: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:12:29,464 [Worker-13: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:12:29,468 [Worker-13: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:12:29,991 [Worker-13: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:12:29,993 [Worker-13: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:13:09,581 [Worker-15: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:13:09,601 [Worker-15: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:13:09,612 [Worker-15: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:13:10,332 [Worker-15: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:13:10,334 [Worker-15: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:13:10,755 [Worker-15: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:13:10,758 [Worker-15: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:13:11,145 [Worker-15: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:13:11,146 [Worker-15: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:02,425 [Worker-14: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:31:02,460 [Worker-14: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:31:02,478 [Worker-14: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:31:03,485 [Worker-14: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:03,487 [Worker-14: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:03,843 [Worker-14: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:03,844 [Worker-14: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:04,275 [Worker-14: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:04,276 [Worker-14: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:08,416 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:31:08,428 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:31:08,435 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:31:09,828 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:09,829 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:10,122 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:10,123 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:10,428 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:10,429 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:19,201 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:31:19,211 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:31:19,219 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:31:19,893 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:19,895 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:20,400 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:20,401 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:20,846 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:20,848 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:36,783 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:31:36,792 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:31:36,799 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:31:38,247 [Worker-20: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:38,249 [Worker-20: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:38,540 [Worker-20: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:38,540 [Worker-20: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:38,889 [Worker-20: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:31:38,891 [Worker-20: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:31:59,349 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:31:59,371 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:31:59,383 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:32:00,147 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:32:00,149 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:32:00,513 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:32:00,514 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:32:00,844 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:32:00,846 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:32:16,949 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:32:16,959 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:32:16,966 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:32:18,140 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:32:18,141 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:32:18,502 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:32:18,503 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:32:18,882 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:32:18,884 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:32:49,502 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:32:49,521 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:32:49,528 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:32:50,209 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:32:50,210 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:32:50,810 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:32:50,811 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:32:51,342 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:32:51,344 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:33:10,403 [Worker-21: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:33:10,414 [Worker-21: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:33:10,420 [Worker-21: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:33:11,068 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:33:11,070 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:33:11,450 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:33:11,452 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:33:11,809 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:33:11,812 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:33:31,730 [Worker-17: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:33:31,739 [Worker-17: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:33:31,745 [Worker-17: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:33:32,509 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:33:32,512 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:33:32,897 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:33:32,899 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:33:33,304 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:33:33,305 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:33:56,392 [Worker-21: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:33:56,403 [Worker-21: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:33:56,415 [Worker-21: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:33:57,167 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:33:57,170 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:33:57,551 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:33:57,551 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:33:57,832 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:33:57,833 [Worker-21: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:34:53,085 [Worker-17: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:34:53,095 [Worker-17: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:34:53,102 [Worker-17: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:34:53,854 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:34:53,856 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:34:54,399 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:34:54,401 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:34:54,791 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:34:54,793 [Worker-17: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:35:14,678 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:35:14,686 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:35:14,691 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:35:18,250 [Worker-16: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:35:18,251 [Worker-16: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:35:18,562 [Worker-16: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:35:18,563 [Worker-16: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:35:18,869 [Worker-16: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:35:18,870 [Worker-16: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:35:57,886 [Worker-19: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:35:57,895 [Worker-19: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:35:57,902 [Worker-19: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:35:58,570 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:35:58,572 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:35:59,097 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:35:59,098 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:35:59,502 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:35:59,504 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:36:09,057 [Worker-19: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:36:09,080 [Worker-19: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:36:09,086 [Worker-19: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:36:09,857 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:36:09,858 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:36:10,446 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:36:10,447 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:36:10,855 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:36:10,857 [Worker-19: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:38:35,577 [Worker-22: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:38:35,594 [Worker-22: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:38:35,600 [Worker-22: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:38:36,319 [Worker-22: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:38:36,320 [Worker-22: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:38:36,736 [Worker-22: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:38:36,737 [Worker-22: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:38:37,020 [Worker-22: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:38:37,022 [Worker-22: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:38:47,516 [Worker-23: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:38:47,527 [Worker-23: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:38:47,534 [Worker-23: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:38:48,094 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:38:48,095 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:38:48,498 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:38:48,501 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:38:48,897 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:38:48,898 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:39:46,527 [Worker-23: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:39:46,543 [Worker-23: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:39:46,550 [Worker-23: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:39:47,164 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:39:47,166 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:39:47,557 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:39:47,558 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:39:47,919 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:39:47,920 [Worker-23: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:42:10,636 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:42:10,663 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:42:10,673 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:42:11,549 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:42:11,552 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:42:12,235 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:42:12,236 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:42:12,719 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:42:12,720 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:42:28,490 [Worker-27: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:42:28,501 [Worker-27: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:42:28,512 [Worker-27: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:42:29,067 [Worker-27: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:42:29,069 [Worker-27: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:42:29,446 [Worker-27: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:42:29,446 [Worker-27: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:42:29,851 [Worker-27: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:42:29,853 [Worker-27: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:42:40,948 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:42:40,958 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:42:40,965 [Worker-18: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:42:41,809 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:42:41,811 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:42:42,270 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:42:42,272 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:42:42,675 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:42:42,676 [Worker-18: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:43:03,069 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:43:03,081 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:43:03,092 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:43:34,523 [Worker-28: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:43:34,533 [Worker-28: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:43:34,539 [Worker-28: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:43:35,249 [Worker-28: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:43:35,250 [Worker-28: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:43:35,704 [Worker-28: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:43:35,706 [Worker-28: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:43:36,120 [Worker-28: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:43:36,121 [Worker-28: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:43:43,788 [Worker-29: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:43:43,798 [Worker-29: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:43:43,805 [Worker-29: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:43:44,416 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:43:44,417 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:43:44,756 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:43:44,758 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:43:45,136 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:43:45,137 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:45:27,067 [Worker-26: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:45:27,079 [Worker-26: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:45:27,086 [Worker-26: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:45:27,847 [Worker-26: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:45:27,849 [Worker-26: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:45:28,316 [Worker-26: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:45:28,317 [Worker-26: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:45:28,720 [Worker-26: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:45:28,721 [Worker-26: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:45:34,584 [Worker-32: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:45:34,596 [Worker-32: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:45:34,602 [Worker-32: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:45:35,353 [Worker-32: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:45:35,358 [Worker-32: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:45:35,973 [Worker-32: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:45:35,975 [Worker-32: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:45:36,354 [Worker-32: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:45:36,356 [Worker-32: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:49:13,516 [Worker-29: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:49:13,532 [Worker-29: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:49:13,539 [Worker-29: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-02 00:49:14,119 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:49:14,120 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:49:14,555 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:49:14,556 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:49:15,098 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-02 00:49:15,100 [Worker-29: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-02 00:50:12,078 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:50:12,093 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-02 00:50:12,140 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:09:26,392 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-08 23:16:03,928 [Worker-0: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier  to /MavenFirst/target/classes
+2024-05-08 23:16:03,936 [Worker-0: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier  to /SrpingPhoneBook/target/classes
+2024-05-08 23:16:05,199 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:16:05,262 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:16:05,293 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:16:44,359 [Worker-9: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:16:44,418 [Worker-9: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:16:44,470 [Worker-9: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:16:45,325 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:16:45,328 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:16:45,735 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:16:45,737 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:16:46,187 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:16:46,191 [Worker-9: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:16:52,868 [Worker-8: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:16:52,894 [Worker-8: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:16:52,899 [Worker-8: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:16:53,357 [Worker-8: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:16:53,358 [Worker-8: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:16:53,733 [Worker-8: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:16:53,734 [Worker-8: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:16:54,047 [Worker-8: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:16:54,048 [Worker-8: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:17:10,936 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:17:10,952 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:17:10,978 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:17:50,411 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:17:50,420 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:17:50,426 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:17:52,331 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:17:52,332 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:17:52,611 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:17:52,612 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:17:52,904 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:17:52,905 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:18:33,795 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:18:33,805 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:18:33,811 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:18:35,227 [Worker-2: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:18:35,229 [Worker-2: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:18:35,477 [Worker-2: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:18:35,478 [Worker-2: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:18:35,688 [Worker-2: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:18:35,689 [Worker-2: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:20:54,595 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:20:54,639 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:20:54,644 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:21:01,978 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:21:02,024 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:21:02,035 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:21:03,688 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:21:03,697 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:21:03,704 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:21:05,090 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:21:05,090 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:21:05,342 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:21:05,343 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:21:05,572 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:21:05,573 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:21:35,638 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:21:35,647 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:21:35,653 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:21:42,874 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:21:42,883 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:21:42,888 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:21:44,216 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:21:44,217 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:21:44,423 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:21:44,424 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:21:44,637 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:21:44,638 [Worker-7: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:22:32,207 [Worker-3: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:22:32,216 [Worker-3: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:22:32,222 [Worker-3: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:22:32,678 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:22:32,679 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:22:32,996 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:22:32,997 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:22:33,197 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:22:33,198 [Worker-3: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:23:19,899 [Worker-1: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:23:19,906 [Worker-1: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:23:19,913 [Worker-1: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:23:20,457 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:23:20,458 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:23:20,788 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:23:20,789 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:23:21,016 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:23:21,017 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:23:52,230 [Worker-1: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:23:52,240 [Worker-1: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:23:52,245 [Worker-1: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:23:52,746 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:23:52,747 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:23:53,026 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:23:53,028 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:23:53,281 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:23:53,282 [Worker-1: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:24:15,174 [Worker-0: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:24:15,182 [Worker-0: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:24:15,188 [Worker-0: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:24:15,709 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:24:15,710 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:24:15,973 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:24:15,974 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:24:16,188 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:24:16,188 [Worker-0: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:24:29,923 [Worker-12: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:24:29,932 [Worker-12: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:24:29,939 [Worker-12: Launching Test (10)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:24:30,334 [Worker-12: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:24:30,335 [Worker-12: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:24:30,572 [Worker-12: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:24:30,573 [Worker-12: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:24:30,827 [Worker-12: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:24:30,828 [Worker-12: Launching Test (10)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:31:46,376 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:31:46,415 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:31:46,425 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:40:10,191 [Worker-6: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:40:10,216 [Worker-6: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:40:10,233 [Worker-6: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:40:11,380 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:40:11,382 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:40:12,156 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:40:12,161 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:40:12,978 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:40:12,981 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:41:32,833 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:41:32,843 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:41:32,850 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:41:34,367 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:41:34,369 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:41:35,052 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:41:35,054 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:41:35,797 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:41:35,802 [Worker-6: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:41:55,215 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:41:55,244 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:41:55,256 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:42:08,175 [Worker-20: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:42:08,219 [Worker-20: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-08 23:42:08,227 [Worker-20: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-08 23:42:09,237 [Worker-20: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:42:09,238 [Worker-20: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:42:10,042 [Worker-20: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:42:10,045 [Worker-20: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-08 23:42:10,779 [Worker-20: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-08 23:42:10,788 [Worker-20: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-09 00:29:09,270 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:29:09,313 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:29:09,323 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-09 00:29:51,839 [Worker-27: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:29:51,850 [Worker-27: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:29:51,858 [Worker-27: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-09 00:29:52,389 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-09 00:29:52,391 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-09 00:29:52,907 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-09 00:29:52,909 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-09 00:29:53,408 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-09 00:29:53,411 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-09 00:30:55,621 [Worker-27: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:30:55,633 [Worker-27: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:30:55,641 [Worker-27: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-09 00:30:56,329 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-09 00:30:56,331 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-09 00:30:56,721 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-09 00:30:56,722 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-09 00:30:57,163 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-09 00:30:57,165 [Worker-27: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-09 00:31:09,647 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:31:09,661 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:31:09,672 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-09 00:44:36,254 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:44:36,299 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:44:36,305 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-09 00:44:38,661 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:44:38,725 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:44:38,732 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-09 00:47:34,767 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:47:34,820 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:47:34,827 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-09 00:47:46,558 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:47:46,571 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:47:46,606 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-09 00:48:21,297 [Worker-32: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:48:21,309 [Worker-32: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-09 00:48:21,316 [Worker-32: Launching Recursions] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-09 00:48:21,868 [Worker-32: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-09 00:48:21,869 [Worker-32: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes
+2024-05-09 00:48:22,224 [Worker-32: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MavenFirst: com.dollop:MavenFirst:0.0.1-SNAPSHOT with classifier null to /MavenFirst/target/classes
+2024-05-09 00:48:22,225 [Worker-32: Launching Recursions] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SrpingPhoneBook: com.api:SrpingPhoneBook:1.0 with classifier null to /SrpingPhoneBook/target/classes

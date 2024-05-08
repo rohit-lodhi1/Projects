@@ -111,6 +111,7 @@ public class Recursions {
 //    System.out.println(combinations("abcd").size());
 //		List<List<Integer>> subsequencesArray = subsequencesArray(new int[] {1, 2,3}, new ArrayList<>(), 0,new ArrayList<>());
 //		System.out.println(subsequencesArray.stream().sorted(new Comparator<List<Integer>>() {
+//		System.out.println(subsequencesArray);
 //
 //			@Override
 //			public int compare(List<Integer> o1, List<Integer> o2) {
@@ -119,41 +120,75 @@ public class Recursions {
 //			}
 //			
 //		}).collect(Collectors.toList())); 
-//		String mapping[]= {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+//		String mapping[] = { "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
 //		System.out.println(keypadProblem("36","", 0,mapping , new ArrayList<>()));
-		System.out.println(isSubSequence("axc","ahbgdc"));
+//		System.out.println(isSubSequence("axc","ahbgdc"));
+//		System.out.println(keypadProblemAgain("23", "", 0, mapping, new ArrayList<>()));
+		System.out.println(subSets(new int[] {1,2,3},0,new ArrayList<>(),new ArrayList<>()));
 	}
-	
-	public static boolean isSubSequence(String s,String t) {
-		int count[] = new int[26];
-		for(int i=0;i<s.length();i++) {
-		  count[s.charAt(i)-'a']++;
+
+	public static List<String> keypadProblemAgain(String dial, String output, int index, String mapping[],
+			List<String> list) {
+		if (index == dial.length()) {
+			list.add(output);
+			return list;
+		}
+		String s = mapping[dial.charAt(index) - 48];
+		for (int i = 0; i < s.length(); i++) {
+			output += s.charAt(i);
+			keypadProblemAgain(dial, output, index + 1, mapping, list);
+			output = output.substring(0, output.length() - 1);
+		}
+		return list;
+	}
+
+	public static List<List<Integer>> subSets(int arr[], int i, List<Integer> sets,List<List<Integer>> list) {
+		if(i==arr.length) {
+			list.add(sets);
+			return list;
 		}
 		
-		for(int i=0;i<t.length();i++)
-			count[t.charAt(i)-'a']--;
+		// exclude
+		subSets(arr, i+1, sets, list);
 		
-		for(int i=0;i<count.length;i++)
-			if(count[i]>0)
+		// include
+		List<Integer> newSub = new ArrayList<>(sets);
+		newSub.add(arr[i]);
+		subSets(arr, i+1, newSub, list);
+		return list;
+		
+	}
+
+	public static boolean isSubSequence(String s, String t) {
+		int count[] = new int[26];
+		for (int i = 0; i < s.length(); i++) {
+			count[s.charAt(i) - 'a']++;
+		}
+
+		for (int i = 0; i < t.length(); i++)
+			count[t.charAt(i) - 'a']--;
+
+		for (int i = 0; i < count.length; i++)
+			if (count[i] > 0)
 				return false;
-		
+
 		return true;
 	}
 
 	public static List<String> keypadProblem(String input, String output, int index, String mapping[],
 			List<String> ans) {
-        // base case
+		// base case
 		if (index == input.length()) {
 			ans.add(output);
 			return ans;
 		}
-		
+
 		// get the letters of key
-		String letters = mapping[input.charAt(index)-'0'];
-		for(int i=0;i<letters.length();i++) {
-			output+=letters.charAt(i);
-			keypadProblem(input, output, index+1, mapping, ans);
-			output=output.substring(0, output.length()-1);
+		String letters = mapping[input.charAt(index) - '0'];
+		for (int i = 0; i < letters.length(); i++) {
+			output += letters.charAt(i);
+			keypadProblem(input, output, index + 1, mapping, ans);
+			output = output.substring(0, output.length() - 1);
 		}
 		return ans;
 
