@@ -377,16 +377,16 @@ public class PractTest {
 		ListNode head = new ListNode(1);
 		head.next = new ListNode(2);
 		head.next.next = new ListNode(3);
-		head.next.next.next = new ListNode(4);
-		head.next.next.next.next = new ListNode(5);
+//		head.next.next.next = new ListNode(4);
+//		head.next.next.next.next = new ListNode(5);
 //		head.next.next.next.next.next = new ListNode(6);
 //		head.next.next.next.next.next.next = new ListNode(7);
 		
-		ListNode head2 = new ListNode(1);
-		head2.next = new ListNode(2);
-		head2.next.next = new ListNode(3);
-		head2.next.next.next = new ListNode(2);
-		head2.next.next.next.next = new ListNode(1);
+		ListNode head2 = new ListNode(9);
+		head2.next = new ListNode(9);
+		head2.next.next = new ListNode(9);
+		head2.next.next.next = new ListNode(9);
+		head2.next.next.next.next = new ListNode(9);
 //		head2.next.next.next.next.next = new ListNode(8);
 //		head = partition(head, 1);
 //	    head=reversePart2(head, 3,5 );
@@ -400,10 +400,66 @@ public class PractTest {
 //System.out.println();
 		
 //		System.out.println(print(mergeSortedLinkeListWithSpaceO1(head,head2)));
-		System.out.println(palindormeCheck(head2));
-		
+//		System.out.println(palindormeCheck(head2));
+//		System.out.println(print(addNumber(head,head2)));
+		System.out.println(printNumbers("123456789"));
 	}
 	
+	public static String printNumbers(String number) {
+		String s="";
+		int i=number.length()-1;
+		int count=0;
+		while(i>0) {
+			s+=number.charAt(i);
+			count++;
+			if(count==3 || count==2 && number.length()-i>3) {
+				s+=",";
+				count=0;
+			}
+			i--;
+		}
+		s+=number.charAt(0);
+		
+		return new StringBuilder(s).reverse().toString();
+
+	}
+	
+	
+	public static ListNode add(ListNode head,int val) {
+		if(head ==null) 
+			return new ListNode(val);
+		ListNode temp = head;
+		while(temp.next!=null)
+			temp=temp.next;
+		temp.next=new ListNode(val);
+		return  head;
+	}
+
+	public static ListNode addNumber(ListNode head1,ListNode head2) {
+		ListNode newList = null;
+		head1=reverse(head1);
+		head2=reverse(head2);
+		int carry=0;
+		while(head1!=null || head2!=null || carry!=0) {
+			int val1=0,val2=0;
+			if(head1!=null)
+				 val1=head1.val;
+			if(head2!=null)
+				 val2=head2.val;
+			int value = val1+val2+carry;
+			carry=0;
+			int digit = value%10;
+			carry=value/10;
+			newList=add(newList,digit);
+
+			if(head1!=null)
+				head1=head1.next;
+
+			if(head2!=null)
+				head2=head2.next;
+		}
+			return reverse(newList);
+	}
 	
 	public static ListNode reverse(ListNode prev,ListNode curr) {
 		if(curr==null)
