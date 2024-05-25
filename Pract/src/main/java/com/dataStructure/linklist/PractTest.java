@@ -382,12 +382,12 @@ public class PractTest {
 //		head.next.next.next.next.next = new ListNode(6);
 //		head.next.next.next.next.next.next = new ListNode(7);
 		
-		ListNode head2 = new ListNode(100);
-		head2.next = new ListNode(200);
-		head2.next.next = new ListNode(300);
-		head2.next.next.next = new ListNode(400);
-		head2.next.next.next.next = new ListNode(500);
-		head2.next.next.next.next.next = new ListNode(600);
+		ListNode head2 = new ListNode(1);
+		head2.next = new ListNode(2);
+		head2.next.next = new ListNode(3);
+		head2.next.next.next = new ListNode(2);
+		head2.next.next.next.next = new ListNode(1);
+//		head2.next.next.next.next.next = new ListNode(8);
 //		head = partition(head, 1);
 //	    head=reversePart2(head, 3,5 );
 //		System.out.println(print(head));
@@ -396,8 +396,80 @@ public class PractTest {
 //		reOrder(head);
 //		System.out.println(System.currentTimeMillis());
 		
-		System.out.println(print(mergeInBetweenLinkedLists(head,1,4,head2)));
+//		System.out.println(print(mergeInBetweenLinkedLists(head,1,4,head2)));
+//System.out.println();
+		
+//		System.out.println(print(mergeSortedLinkeListWithSpaceO1(head,head2)));
+		System.out.println(palindormeCheck(head2));
+		
 	}
+	
+	
+	public static ListNode reverse(ListNode prev,ListNode curr) {
+		if(curr==null)
+			return prev;
+		ListNode revHead = reverse(curr,curr.next);
+		curr.next=prev;
+		return revHead;
+	}
+	
+	
+	public static boolean palindormeCheck(ListNode head) {
+		ListNode slow=head,fast=head;
+		ListNode prev=slow;
+		while(fast!=null && fast.next!=null) {
+			prev=slow;
+			slow=slow.next;
+			fast=fast.next.next;
+		}
+
+		ListNode revHead = reverse(null,prev);
+		prev.next=null;
+		while(revHead!=null && head!=null) {
+			if(head.val!=revHead.val)
+				return false;
+             head=head.next;
+             revHead=revHead.next;
+		}
+		return true;
+	}
+	
+	public static ListNode mergeSortedLinkeListWithSpaceO1(ListNode first,ListNode second) {
+		ListNode response=first;
+		if(first==null)
+			return second;
+		if(second==null)
+			return first;
+		// make smallest first element list first
+		if(first.val>=second.val) {
+			ListNode t = second;
+			second=first;
+			first=t;
+			response=first;
+		}
+		System.out.println(first.val);
+		ListNode curr=first;
+		while(first.next!=null && second!=null) {
+			curr = first.next;
+			if(curr!=null && curr.val>=second.val) {
+//				System.out.println(first.val);
+				first.next=second;
+				ListNode t= second.next;
+				second.next = curr;
+				second=t;
+			}
+			first=first.next;
+		}
+		System.out.println(first.next);
+		
+		if(first.next==null)
+		{
+			first.next=second;
+		}
+	System.out.println(response.val);
+		return response;
+	}
+	
 	
 	public static ListNode mergeInBetweenLinkedLists(ListNode list1,int a,int b,ListNode list2) {
 		

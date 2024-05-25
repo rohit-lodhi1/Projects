@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Sys"/>
+		<item key="selection" value="reverse"/>
 		<list key="findhistory">
+			<item value="reverse"/>
+			<item value="subsequencesArrayAgain"/>
+			<item value="subsequencesArray"/>
+			<item value="mergeSortedArray"/>
 			<item value="sys"/>
 			<item value="num"/>
 			<item value="insertion"/>
@@ -19,10 +23,6 @@
 			<item value="binaySearch"/>
 			<item value="searchin"/>
 			<item value="binarySea"/>
-			<item value="binarySearching"/>
-			<item value="run"/>
-			<item value="start"/>
-			<item value="GroupVariation"/>
 		</list>
 		<list key="replacehistory">
 			<item value="binary"/>
