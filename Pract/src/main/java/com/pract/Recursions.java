@@ -124,8 +124,10 @@ public class Recursions {
 //		System.out.println(keypadProblem("36","", 0,mapping , new ArrayList<>()));
 //		System.out.println(isSubSequence("axc","ahbgdc"));
 //		System.out.println(keypadProblemAgain("23", "", 0, mapping, new ArrayList<>()));
-		System.out.println(subSets(new int[] {1,2,3},0,new ArrayList<>(),new ArrayList<>()));
+//		System.out.println(subSets(new int[] {1,2,3},0,new ArrayList<>(),new ArrayList<>()));
 	}
+	
+	
 
 	public static List<String> keypadProblemAgain(String dial, String output, int index, String mapping[],
 			List<String> list) {
