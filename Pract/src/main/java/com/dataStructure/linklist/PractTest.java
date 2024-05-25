@@ -375,18 +375,18 @@ public class PractTest {
 //		
 //		
 		ListNode head = new ListNode(1);
-		head.next = new ListNode(2);
-		head.next.next = new ListNode(3);
+		head.next = new ListNode(3);
+		head.next.next = new ListNode(5);
 //		head.next.next.next = new ListNode(4);
 //		head.next.next.next.next = new ListNode(5);
 //		head.next.next.next.next.next = new ListNode(6);
 //		head.next.next.next.next.next.next = new ListNode(7);
 		
-		ListNode head2 = new ListNode(9);
-		head2.next = new ListNode(9);
-		head2.next.next = new ListNode(9);
-		head2.next.next.next = new ListNode(9);
-		head2.next.next.next.next = new ListNode(9);
+		ListNode head2 = new ListNode(2);
+		head2.next = new ListNode(4);
+		head2.next.next = new ListNode(6);
+//		head2.next.next.next = new ListNode(9);
+//		head2.next.next.next.next = new ListNode(9);
 //		head2.next.next.next.next.next = new ListNode(8);
 //		head = partition(head, 1);
 //	    head=reversePart2(head, 3,5 );
@@ -402,11 +402,82 @@ public class PractTest {
 //		System.out.println(print(mergeSortedLinkeListWithSpaceO1(head,head2)));
 //		System.out.println(palindormeCheck(head2));
 //		System.out.println(print(addNumber(head,head2)));
-		System.out.println(printNumbers("123456789"));
+//		System.out.println(printNumbers("123456789"));
+		System.out.println(print(margeLinkelist(head,head2)));
 	}
 	
+	// used to clone linkedlist with random pointers
+		public static ListNode margeLinkelistZigZag(ListNode list1,ListNode list2) {
+			ListNode t1=list1,t2=list2;
+			while(t1!=null) {
+				ListNode nxt1=t1.next,nxt2=t2.next;
+				t1.next=t2;
+				t2.next=nxt1;
+				t1=nxt1;
+				t2=nxt2;
+			}
+			return list1;
+		}
+	
+	public static ListNode randomPointerClone2(ListNode head) {
+		ListNode clonedList = null,temp=head;
+		// copy list with next pointer
+		while(temp!=null) {
+			clonedList=add(clonedList,temp.val);
+			temp=temp.next;
+		}
+		// make list zigzag so that we can copy the random
+		ListNode list = margeLinkelistZigZag(head,clonedList);
+		temp=list;
+		while(temp.next!=null) {
+			temp.next.random = temp.random.next;
+			temp=temp.next.next;
+		}
+		  // remove link from original
+        temp=list;
+        while(temp!=null){
+            temp.next = temp.next.next;
+            temp=temp.next;
+        }
+		return list;	
+	}
+	
+	
+	public static ListNode randomPointerClone(ListNode head) {
+		ListNode cloned = null;
+		ListNode temp=head;
+		Map<ListNode,ListNode> map = new HashMap<>();
+		// copy list with next pointer;
+		while(temp!=null) {
+			cloned = add(cloned,temp.val);
+			temp=temp.next;
+		}
+		ListNode cloneTemp=cloned;
+		temp=head;
+		// make mapping of clone with original to copy the random
+		while(temp!=null) {
+			map.put(temp, cloneTemp);
+			temp=temp.next;
+			cloneTemp=cloneTemp.next;
+		}
+		// now fetch the random with map and add
+		temp=head;
+		cloneTemp=cloned;
+		while(temp!=null) {
+			 cloneTemp.random=map.get(temp.random);
+			 temp=temp.next;
+				cloneTemp=cloneTemp.next;
+		}
+		return cloned;
+	}
+	
+	
+	
 	public static String printNumbers(String number) {
+		if(number.length()==0)
+			return number;
 		String s="";
+		
 		int i=number.length()-1;
 		int count=0;
 		while(i>0) {
@@ -419,7 +490,6 @@ public class PractTest {
 			i--;
 		}
 		s+=number.charAt(0);
-		
 		return new StringBuilder(s).reverse().toString();
 
 	}
@@ -712,6 +782,7 @@ public class PractTest {
 class ListNode {
 	int val;
 	ListNode next;
+	ListNode random;
 
 	ListNode() {
 	}
