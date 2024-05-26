@@ -383,11 +383,11 @@ public class PractTest {
 //		head.next.next.next.next.next.next = new ListNode(7);
 		
 		ListNode head2 = new ListNode(2);
-		head2.next = new ListNode(4);
-		head2.next.next = new ListNode(6);
-//		head2.next.next.next = new ListNode(9);
-//		head2.next.next.next.next = new ListNode(9);
-//		head2.next.next.next.next.next = new ListNode(8);
+		head2.next = new ListNode(1);
+		head2.next.next = new ListNode(5);
+		head2.next.next.next = new ListNode(4);
+		head2.next.next.next.next = new ListNode(3);
+		head2.next.next.next.next.next = new ListNode(0);
 //		head = partition(head, 1);
 //	    head=reversePart2(head, 3,5 );
 //		System.out.println(print(head));
@@ -403,8 +403,30 @@ public class PractTest {
 //		System.out.println(palindormeCheck(head2));
 //		System.out.println(print(addNumber(head,head2)));
 //		System.out.println(printNumbers("123456789"));
-		System.out.println(print(margeLinkelist(head,head2)));
+//		System.out.println(print(mergeSortedLinkeListWithSpaceO1(head,head2)));
+		System.out.println(print(sortLinkedList(head2)));
 	}
+	
+	public static ListNode sortLinkedList(ListNode head) {
+		ListNode temp=head;
+		ListNode min=temp;
+		while(temp!=null) {
+			min=temp;
+			ListNode temp1 = temp.next;
+			while(temp1!=null) {
+				if(temp1.val<min.val) {
+					min=temp1;
+				}
+				temp1=temp1.next;
+			}
+			int val = min.val;
+			min.val=temp.val;
+			temp.val=val;
+			temp=temp.next;
+		}
+		return head;
+	}
+	
 	
 	// used to clone linkedlist with random pointers
 		public static ListNode margeLinkelistZigZag(ListNode list1,ListNode list2) {
@@ -573,7 +595,6 @@ public class PractTest {
 			first=t;
 			response=first;
 		}
-		System.out.println(first.val);
 		ListNode curr=first;
 		while(first.next!=null && second!=null) {
 			curr = first.next;
