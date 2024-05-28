@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="reverse"/>
+		<item key="selection" value="Sort"/>
 		<list key="findhistory">
+			<item value="sort"/>
 			<item value="reverse"/>
 			<item value="subsequencesArrayAgain"/>
 			<item value="subsequencesArray"/>
@@ -22,7 +23,6 @@
 			<item value="binarySearch"/>
 			<item value="binaySearch"/>
 			<item value="searchin"/>
-			<item value="binarySea"/>
 		</list>
 		<list key="replacehistory">
 			<item value="binary"/>

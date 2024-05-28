@@ -404,8 +404,10 @@ public class PractTest {
 //		System.out.println(print(addNumber(head,head2)));
 //		System.out.println(printNumbers("123456789"));
 //		System.out.println(print(mergeSortedLinkeListWithSpaceO1(head,head2)));
-		System.out.println(print(sortLinkedList(head2)));
+//		System.out.println(print(sortLinkedList(head2)));
 	}
+	
+	
 	
 	public static ListNode sortLinkedList(ListNode head) {
 		ListNode temp=head;
@@ -607,13 +609,8 @@ public class PractTest {
 			}
 			first=first.next;
 		}
-		System.out.println(first.next);
-		
 		if(first.next==null)
-		{
 			first.next=second;
-		}
-	System.out.println(response.val);
 		return response;
 	}
 	
