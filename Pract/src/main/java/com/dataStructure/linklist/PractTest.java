@@ -382,12 +382,12 @@ public class PractTest {
 //		head.next.next.next.next.next = new ListNode(6);
 //		head.next.next.next.next.next.next = new ListNode(7);
 		
-		ListNode head2 = new ListNode(2);
+		ListNode head2 = new ListNode(4);
 		head2.next = new ListNode(1);
-		head2.next.next = new ListNode(5);
-		head2.next.next.next = new ListNode(4);
-		head2.next.next.next.next = new ListNode(3);
-		head2.next.next.next.next.next = new ListNode(0);
+		head2.next.next = new ListNode(2);
+		head2.next.next.next = new ListNode(3);
+//		head2.next.next.next.next = new ListNode(5);
+//		head2.next.next.next.next.next = new ListNode(0);
 //		head = partition(head, 1);
 //	    head=reversePart2(head, 3,5 );
 //		System.out.println(print(head));
@@ -405,8 +405,57 @@ public class PractTest {
 //		System.out.println(printNumbers("123456789"));
 //		System.out.println(print(mergeSortedLinkeListWithSpaceO1(head,head2)));
 //		System.out.println(print(sortLinkedList(head2)));
+//		System.out.println(print(mergeSortedLinkedList2(head,head2)));
+		System.out.println(print(mergeSortWithLinkedList(head2)));
 	}
 	
+	public static ListNode mergeSortWithLinkedList(ListNode head) {
+		if(head==null || head.next==null)
+			return head;
+		ListNode slow=head,prev=head,fast=head;
+		while(fast!=null && fast.next!=null) {
+			prev=slow;
+			slow=slow.next;
+			fast=fast.next.next;
+		}
+		prev.next=null;
+		ListNode list1 = mergeSortWithLinkedList(head);
+		ListNode list2 = mergeSortWithLinkedList(slow);
+		return mergeSortedLinkedList2(list1, list2);
+		
+	}
+	
+	
+	public static ListNode mergeSortedLinkedList2(ListNode first,ListNode second) {
+		ListNode resp = first;
+		if(first==null)
+			return second;
+		if(second==null)
+			return first;
+		if(first.val >second.val) {
+			ListNode t = second;
+			second=first;
+			first=t;
+			resp=first;
+		}
+		ListNode curr = first;
+		while(first.next!=null && second!=null ) {
+			curr=first.next;
+			if(curr.val>second.val) {
+				ListNode t = second.next;
+				second.next=curr;
+				first.next=second;
+				second=t;
+			}
+			first=first.next;
+		}
+		if(first.next==null)
+		{
+			first.next=second;
+		}
+		return resp;
+ 
+	}
 	
 	
 	public static ListNode sortLinkedList(ListNode head) {
