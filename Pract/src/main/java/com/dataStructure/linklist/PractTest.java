@@ -382,10 +382,10 @@ public class PractTest {
 //		head.next.next.next.next.next = new ListNode(6);
 //		head.next.next.next.next.next.next = new ListNode(7);
 		
-		ListNode head2 = new ListNode(4);
-		head2.next = new ListNode(1);
-		head2.next.next = new ListNode(2);
-		head2.next.next.next = new ListNode(3);
+		ListNode head2 = new ListNode(1);
+		head2.next = new ListNode(3);
+		head2.next.next = new ListNode(5);
+		head2.next.next.next = new ListNode(6);
 //		head2.next.next.next.next = new ListNode(5);
 //		head2.next.next.next.next.next = new ListNode(0);
 //		head = partition(head, 1);
@@ -406,8 +406,31 @@ public class PractTest {
 //		System.out.println(print(mergeSortedLinkeListWithSpaceO1(head,head2)));
 //		System.out.println(print(sortLinkedList(head2)));
 //		System.out.println(print(mergeSortedLinkedList2(head,head2)));
-		System.out.println(print(mergeSortWithLinkedList(head2)));
+//		System.out.println(print(mergeSortWithLinkedList(head2)));
+System.out.println(binarySearchInLinkedList(head2,9));
 	}
+	
+	
+   public static boolean binarySearchInLinkedList(ListNode head,int value) {
+	   if(head==null )
+		   return false;
+	   ListNode slow=head,prev=head,fast=head;
+	   while(fast!=null && fast.next!=null) {
+		   prev=slow;
+		   slow=slow.next;
+		   fast=fast.next.next;
+	   }
+	   if(slow.val==value) 
+		   return true;
+	   else if(slow.val>value) {
+		   prev.next=null;
+		   return binarySearchInLinkedList(head, value);
+	   }
+	   else
+		   return binarySearchInLinkedList(prev.next, value);
+		   
+	   
+   }
 	
 	public static ListNode mergeSortWithLinkedList(ListNode head) {
 		if(head==null || head.next==null)
