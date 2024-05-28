@@ -381,7 +381,7 @@ public class PractTest {
 //		head.next.next.next.next = new ListNode(5);
 //		head.next.next.next.next.next = new ListNode(6);
 //		head.next.next.next.next.next.next = new ListNode(7);
-		
+
 		ListNode head2 = new ListNode(1);
 		head2.next = new ListNode(3);
 		head2.next.next = new ListNode(5);
@@ -395,10 +395,10 @@ public class PractTest {
 //		System.out.println(System.currentTimeMillis());
 //		reOrder(head);
 //		System.out.println(System.currentTimeMillis());
-		
+
 //		System.out.println(print(mergeInBetweenLinkedLists(head,1,4,head2)));
 //System.out.println();
-		
+
 //		System.out.println(print(mergeSortedLinkeListWithSpaceO1(head,head2)));
 //		System.out.println(palindormeCheck(head2));
 //		System.out.println(print(addNumber(head,head2)));
@@ -407,376 +407,418 @@ public class PractTest {
 //		System.out.println(print(sortLinkedList(head2)));
 //		System.out.println(print(mergeSortedLinkedList2(head,head2)));
 //		System.out.println(print(mergeSortWithLinkedList(head2)));
-System.out.println(binarySearchInLinkedList(head2,9));
+		//System.out.println(binarySearchInLinkedList(head2, 9));
+	 
+			ListNode flatternList = new ListNode(5);
+			flatternList.child=new ListNode(7);
+			flatternList.child.child=new ListNode(8);
+			flatternList.child.child.child=new ListNode(30);
+			
+			flatternList.next = new ListNode(10);
+			flatternList.next.child = new ListNode(20);
+			
+			flatternList.next.next = new ListNode(19);
+			flatternList.next.next.child = new ListNode(22);
+			flatternList.next.next.child.child = new ListNode(50);
+			
+			flatternList.next.next.next = new ListNode(28);
+			flatternList.next.next.next.child = new ListNode(35);
+			flatternList.next.next.next.child.child = new ListNode(40);
+			flatternList.next.next.next.child.child.child = new ListNode(45);
+			System.out.println(print(flatten(flatternList)));
 	}
-	
-	
-   public static boolean binarySearchInLinkedList(ListNode head,int value) {
-	   if(head==null )
-		   return false;
-	   ListNode slow=head,prev=head,fast=head;
-	   while(fast!=null && fast.next!=null) {
-		   prev=slow;
-		   slow=slow.next;
-		   fast=fast.next.next;
-	   }
-	   if(slow.val==value) 
-		   return true;
-	   else if(slow.val>value) {
-		   prev.next=null;
-		   return binarySearchInLinkedList(head, value);
-	   }
-	   else
-		   return binarySearchInLinkedList(prev.next, value);
-		   
-	   
-   }
-	
-	public static ListNode mergeSortWithLinkedList(ListNode head) {
-		if(head==null || head.next==null)
-			return head;
-		ListNode slow=head,prev=head,fast=head;
-		while(fast!=null && fast.next!=null) {
-			prev=slow;
-			slow=slow.next;
-			fast=fast.next.next;
+
+	public static ListNode mergeSortedLinkedListForFlatten(ListNode first,ListNode second){
+		ListNode resp = first;
+          if(first==null)
+          return second;
+          if(second==null)
+          return first;
+          if(first.val>second.val){
+        	  ListNode t = second;
+              second=first;
+              resp=first=t;
+          }
+          ListNode curr=first;
+          while(first.child!=null && second!=null){
+              curr=first.child;
+              if(curr.val>second.val){
+            	  ListNode t = second.child;
+                  second.child=curr;
+                  first.child=second;
+                  second=t;
+              }
+              first=first.child;
+          }
+          if(first.child==null)
+            first.child=second;
+          return resp;
+      }
+  
+      public static ListNode flatten(ListNode head)
+      {
+  	   if (head == null )
+  			return head;
+  	 ListNode next = head.next;
+  	ListNode temp=head;
+  		while (temp != null) {
+  			temp.next = temp.child;
+  			temp = temp.next;
+  		}
+  		ListNode head2 = flatten(next);
+  		return mergeSortedLinkedListForFlatten(head, head2);
+      }
+
+	public static boolean binarySearchInLinkedList(ListNode head, int value) {
+		if (head == null)
+			return false;
+		ListNode slow = head, prev = head, fast = head;
+		while (fast != null && fast.next != null) {
+			prev = slow;
+			slow = slow.next;
+			fast = fast.next.next;
 		}
-		prev.next=null;
+		if (slow.val == value)
+			return true;
+		else if (slow.val > value) {
+			prev.next = null;
+			return binarySearchInLinkedList(head, value);
+		} else
+			return binarySearchInLinkedList(prev.next, value);
+
+	}
+
+	public static ListNode mergeSortWithLinkedList(ListNode head) {
+		if (head == null || head.next == null)
+			return head;
+		ListNode slow = head, prev = head, fast = head;
+		while (fast != null && fast.next != null) {
+			prev = slow;
+			slow = slow.next;
+			fast = fast.next.next;
+		}
+		prev.next = null;
 		ListNode list1 = mergeSortWithLinkedList(head);
 		ListNode list2 = mergeSortWithLinkedList(slow);
 		return mergeSortedLinkedList2(list1, list2);
-		
+
 	}
-	
-	
-	public static ListNode mergeSortedLinkedList2(ListNode first,ListNode second) {
+
+	public static ListNode mergeSortedLinkedList2(ListNode first, ListNode second) {
 		ListNode resp = first;
-		if(first==null)
+		if (first == null)
 			return second;
-		if(second==null)
+		if (second == null)
 			return first;
-		if(first.val >second.val) {
+		if (first.val > second.val) {
 			ListNode t = second;
-			second=first;
-			first=t;
-			resp=first;
+			second = first;
+			first = t;
+			resp = first;
 		}
 		ListNode curr = first;
-		while(first.next!=null && second!=null ) {
-			curr=first.next;
-			if(curr.val>second.val) {
+		while (first.next != null && second != null) {
+			curr = first.next;
+			if (curr.val > second.val) {
 				ListNode t = second.next;
-				second.next=curr;
-				first.next=second;
-				second=t;
+				second.next = curr;
+				first.next = second;
+				second = t;
 			}
-			first=first.next;
+			first = first.next;
 		}
-		if(first.next==null)
-		{
-			first.next=second;
-		}
+		if (first.next == null)
+			first.next = second;
+
 		return resp;
- 
 	}
-	
-	
+
 	public static ListNode sortLinkedList(ListNode head) {
-		ListNode temp=head;
-		ListNode min=temp;
-		while(temp!=null) {
-			min=temp;
+		ListNode temp = head;
+		ListNode min = temp;
+		while (temp != null) {
+			min = temp;
 			ListNode temp1 = temp.next;
-			while(temp1!=null) {
-				if(temp1.val<min.val) {
-					min=temp1;
+			while (temp1 != null) {
+				if (temp1.val < min.val) {
+					min = temp1;
 				}
-				temp1=temp1.next;
+				temp1 = temp1.next;
 			}
 			int val = min.val;
-			min.val=temp.val;
-			temp.val=val;
-			temp=temp.next;
+			min.val = temp.val;
+			temp.val = val;
+			temp = temp.next;
 		}
 		return head;
 	}
-	
-	
+
 	// used to clone linkedlist with random pointers
-		public static ListNode margeLinkelistZigZag(ListNode list1,ListNode list2) {
-			ListNode t1=list1,t2=list2;
-			while(t1!=null) {
-				ListNode nxt1=t1.next,nxt2=t2.next;
-				t1.next=t2;
-				t2.next=nxt1;
-				t1=nxt1;
-				t2=nxt2;
-			}
-			return list1;
+	public static ListNode margeLinkelistZigZag(ListNode list1, ListNode list2) {
+		ListNode t1 = list1, t2 = list2;
+		while (t1 != null) {
+			ListNode nxt1 = t1.next, nxt2 = t2.next;
+			t1.next = t2;
+			t2.next = nxt1;
+			t1 = nxt1;
+			t2 = nxt2;
 		}
-	
+		return list1;
+	}
+
 	public static ListNode randomPointerClone2(ListNode head) {
-		ListNode clonedList = null,temp=head;
+		ListNode clonedList = null, temp = head;
 		// copy list with next pointer
-		while(temp!=null) {
-			clonedList=add(clonedList,temp.val);
-			temp=temp.next;
+		while (temp != null) {
+			clonedList = add(clonedList, temp.val);
+			temp = temp.next;
 		}
 		// make list zigzag so that we can copy the random
-		ListNode list = margeLinkelistZigZag(head,clonedList);
-		temp=list;
-		while(temp.next!=null) {
+		ListNode list = margeLinkelistZigZag(head, clonedList);
+		temp = list;
+		while (temp.next != null) {
 			temp.next.random = temp.random.next;
-			temp=temp.next.next;
+			temp = temp.next.next;
 		}
-		  // remove link from original
-        temp=list;
-        while(temp!=null){
-            temp.next = temp.next.next;
-            temp=temp.next;
-        }
-		return list;	
+		// remove link from original
+		temp = list;
+		while (temp != null) {
+			temp.next = temp.next.next;
+			temp = temp.next;
+		}
+		return list;
 	}
-	
-	
+
 	public static ListNode randomPointerClone(ListNode head) {
 		ListNode cloned = null;
-		ListNode temp=head;
-		Map<ListNode,ListNode> map = new HashMap<>();
+		ListNode temp = head;
+		Map<ListNode, ListNode> map = new HashMap<>();
 		// copy list with next pointer;
-		while(temp!=null) {
-			cloned = add(cloned,temp.val);
-			temp=temp.next;
+		while (temp != null) {
+			cloned = add(cloned, temp.val);
+			temp = temp.next;
 		}
-		ListNode cloneTemp=cloned;
-		temp=head;
+		ListNode cloneTemp = cloned;
+		temp = head;
 		// make mapping of clone with original to copy the random
-		while(temp!=null) {
+		while (temp != null) {
 			map.put(temp, cloneTemp);
-			temp=temp.next;
-			cloneTemp=cloneTemp.next;
+			temp = temp.next;
+			cloneTemp = cloneTemp.next;
 		}
 		// now fetch the random with map and add
-		temp=head;
-		cloneTemp=cloned;
-		while(temp!=null) {
-			 cloneTemp.random=map.get(temp.random);
-			 temp=temp.next;
-				cloneTemp=cloneTemp.next;
+		temp = head;
+		cloneTemp = cloned;
+		while (temp != null) {
+			cloneTemp.random = map.get(temp.random);
+			temp = temp.next;
+			cloneTemp = cloneTemp.next;
 		}
 		return cloned;
 	}
-	
-	
-	
+
 	public static String printNumbers(String number) {
-		if(number.length()==0)
+		if (number.length() == 0)
 			return number;
-		String s="";
-		
-		int i=number.length()-1;
-		int count=0;
-		while(i>0) {
-			s+=number.charAt(i);
+		String s = "";
+
+		int i = number.length() - 1;
+		int count = 0;
+		while (i > 0) {
+			s += number.charAt(i);
 			count++;
-			if(count==3 || count==2 && number.length()-i>3) {
-				s+=",";
-				count=0;
+			if (count == 3 || count == 2 && number.length() - i > 3) {
+				s += ",";
+				count = 0;
 			}
 			i--;
 		}
-		s+=number.charAt(0);
+		s += number.charAt(0);
 		return new StringBuilder(s).reverse().toString();
 
 	}
-	
-	
-	public static ListNode add(ListNode head,int val) {
-		if(head ==null) 
+
+	public static ListNode add(ListNode head, int val) {
+		if (head == null)
 			return new ListNode(val);
 		ListNode temp = head;
-		while(temp.next!=null)
-			temp=temp.next;
-		temp.next=new ListNode(val);
-		return  head;
+		while (temp.next != null)
+			temp = temp.next;
+		temp.next = new ListNode(val);
+		return head;
 	}
 
-	public static ListNode addNumber(ListNode head1,ListNode head2) {
+	public static ListNode addNumber(ListNode head1, ListNode head2) {
 		ListNode newList = null;
-		head1=reverse(head1);
-		head2=reverse(head2);
-		int carry=0;
-		while(head1!=null || head2!=null || carry!=0) {
-			int val1=0,val2=0;
-			if(head1!=null)
-				 val1=head1.val;
-			if(head2!=null)
-				 val2=head2.val;
-			int value = val1+val2+carry;
-			carry=0;
-			int digit = value%10;
-			carry=value/10;
-			newList=add(newList,digit);
+		head1 = reverse(head1);
+		head2 = reverse(head2);
+		int carry = 0;
+		while (head1 != null || head2 != null || carry != 0) {
+			int val1 = 0, val2 = 0;
+			if (head1 != null)
+				val1 = head1.val;
+			if (head2 != null)
+				val2 = head2.val;
+			int value = val1 + val2 + carry;
+			carry = 0;
+			int digit = value % 10;
+			carry = value / 10;
+			newList = add(newList, digit);
 
-			if(head1!=null)
-				head1=head1.next;
+			if (head1 != null)
+				head1 = head1.next;
 
-			if(head2!=null)
-				head2=head2.next;
+			if (head2 != null)
+				head2 = head2.next;
 		}
-			return reverse(newList);
+		return reverse(newList);
 	}
-	
-	public static ListNode reverse(ListNode prev,ListNode curr) {
-		if(curr==null)
+
+	public static ListNode reverse(ListNode prev, ListNode curr) {
+		if (curr == null)
 			return prev;
-		ListNode revHead = reverse(curr,curr.next);
-		curr.next=prev;
+		ListNode revHead = reverse(curr, curr.next);
+		curr.next = prev;
 		return revHead;
 	}
-	
-	
+
 	public static boolean palindormeCheck(ListNode head) {
-		ListNode slow=head,fast=head;
-		ListNode prev=slow;
-		while(fast!=null && fast.next!=null) {
-			prev=slow;
-			slow=slow.next;
-			fast=fast.next.next;
+		ListNode slow = head, fast = head;
+		ListNode prev = slow;
+		while (fast != null && fast.next != null) {
+			prev = slow;
+			slow = slow.next;
+			fast = fast.next.next;
 		}
 
-		ListNode revHead = reverse(null,prev);
-		prev.next=null;
-		while(revHead!=null && head!=null) {
-			if(head.val!=revHead.val)
+		ListNode revHead = reverse(null, prev);
+		prev.next = null;
+		while (revHead != null && head != null) {
+			if (head.val != revHead.val)
 				return false;
-             head=head.next;
-             revHead=revHead.next;
+			head = head.next;
+			revHead = revHead.next;
 		}
 		return true;
 	}
-	
-	public static ListNode mergeSortedLinkeListWithSpaceO1(ListNode first,ListNode second) {
-		ListNode response=first;
-		if(first==null)
+
+	public static ListNode mergeSortedLinkeListWithSpaceO1(ListNode first, ListNode second) {
+		ListNode response = first;
+		if (first == null)
 			return second;
-		if(second==null)
+		if (second == null)
 			return first;
 		// make smallest first element list first
-		if(first.val>=second.val) {
+		if (first.val >= second.val) {
 			ListNode t = second;
-			second=first;
-			first=t;
-			response=first;
+			second = first;
+			first = t;
+			response = first;
 		}
-		ListNode curr=first;
-		while(first.next!=null && second!=null) {
+		ListNode curr = first;
+		while (first.next != null && second != null) {
 			curr = first.next;
-			if(curr!=null && curr.val>=second.val) {
+			if (curr != null && curr.val >= second.val) {
 //				System.out.println(first.val);
-				first.next=second;
-				ListNode t= second.next;
+				first.next = second;
+				ListNode t = second.next;
 				second.next = curr;
-				second=t;
+				second = t;
 			}
-			first=first.next;
+			first = first.next;
 		}
-		if(first.next==null)
-			first.next=second;
+		if (first.next == null)
+			first.next = second;
 		return response;
 	}
-	
-	
-	public static ListNode mergeInBetweenLinkedLists(ListNode list1,int a,int b,ListNode list2) {
-		
-		ListNode temp=list1,temp2=list2;
-		while(temp2.next!=null) {
+
+	public static ListNode mergeInBetweenLinkedLists(ListNode list1, int a, int b, ListNode list2) {
+
+		ListNode temp = list1, temp2 = list2;
+		while (temp2.next != null) {
 			temp2 = temp2.next;
 		}
 		System.out.println(temp2.val);
-		ListNode joinFrom=list1;
-		int count=0;
-		while(temp!=null && count<=b) {
-			if(count==a) {
-				System.out.println(count+" --"+" val ="+joinFrom.val);
+		ListNode joinFrom = list1;
+		int count = 0;
+		while (temp != null && count <= b) {
+			if (count == a) {
+				System.out.println(count + " --" + " val =" + joinFrom.val);
 				joinFrom.next = list2;
 			}
-			System.out.println("temp ="+temp.val+ " join="+joinFrom.val);
+			System.out.println("temp =" + temp.val + " join=" + joinFrom.val);
 			joinFrom = temp;
-		    temp = temp.next;
-		    count++;
+			temp = temp.next;
+			count++;
 		}
-		
+
 //		System.out.println(temp.val);
-		temp2.next=temp;
+		temp2.next = temp;
 		return list1;
 	}
-	
-	
+
 	public static ListNode reOrder(ListNode head) {
-		ListNode slow = head,fast=head;
-		while(fast!=null && fast.next!=null) {
-			slow=slow.next;
-			fast=fast.next.next;
+		ListNode slow = head, fast = head;
+		while (fast != null && fast.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
 		}
-		ListNode temp2=reverse(slow);
-		
-		ListNode temp1=head;
-		while(temp1!=null && temp2!=null && temp1.next!=temp2 ) {
-			ListNode c1=temp1.next;
-			ListNode c2=temp2.next;
-			temp1.next=temp2;
-			temp2.next=c1;
-			temp1=c1;
-			temp2=c2;
+		ListNode temp2 = reverse(slow);
+
+		ListNode temp1 = head;
+		while (temp1 != null && temp2 != null && temp1.next != temp2) {
+			ListNode c1 = temp1.next;
+			ListNode c2 = temp2.next;
+			temp1.next = temp2;
+			temp2.next = c1;
+			temp1 = c1;
+			temp2 = c2;
 		}
-		
+
 		System.out.println(print(head));
 		return null;
 	}
-	
-	
+
 	public static ListNode reverse(ListNode head) {
-		ListNode pre=null,curr=head,next=null;
-		while(curr!=null) {
-			next=curr.next;
-			curr.next=pre;
-			pre=curr;
-			curr=next;
+		ListNode pre = null, curr = head, next = null;
+		while (curr != null) {
+			next = curr.next;
+			curr.next = pre;
+			pre = curr;
+			curr = next;
 		}
 		return pre;
 	}
-	
-	public static ListNode reversePart2(ListNode head,int left,int right) {
-		ListNode joinSt=head,revSt=head,revEnd=head,joinEnd=null,temp=head;
-		int count=1;
-		while(temp!=null) {
-			if(count+1==left) {
-			   joinSt=temp;
-			   revSt=temp.next;
+
+	public static ListNode reversePart2(ListNode head, int left, int right) {
+		ListNode joinSt = head, revSt = head, revEnd = head, joinEnd = null, temp = head;
+		int count = 1;
+		while (temp != null) {
+			if (count + 1 == left) {
+				joinSt = temp;
+				revSt = temp.next;
 			}
-			if(count==right) {
-				revEnd=temp;
-				joinEnd=temp.next;
+			if (count == right) {
+				revEnd = temp;
+				joinEnd = temp.next;
 				break;
 			}
 			count++;
-			temp=temp.next;
+			temp = temp.next;
 		}
-		revEnd.next=null;
-		System.out.println("RevSt ="+revSt.val+" RevENd="+revEnd.val+" JoinSt ="+joinSt.val+" joinEnd="+joinEnd);
+		revEnd.next = null;
+		System.out.println(
+				"RevSt =" + revSt.val + " RevENd=" + revEnd.val + " JoinSt =" + joinSt.val + " joinEnd=" + joinEnd);
 		ListNode newHead = reverse(revSt);
-		
-		  joinSt.next=newHead;
-		  System.out.println();
-		
-		  revSt.next = joinEnd;
-		  if(revSt==joinSt)
-			  return newHead;
+
+		joinSt.next = newHead;
+		System.out.println();
+
+		revSt.next = joinEnd;
+		if (revSt == joinSt)
+			return newHead;
 		return head;
 	}
-	
-	
 
 	public static ListNode addNode(ListNode head, int val) {
 		ListNode temp = new ListNode(val);
@@ -873,6 +915,7 @@ class ListNode {
 	int val;
 	ListNode next;
 	ListNode random;
+	ListNode child;
 
 	ListNode() {
 	}
@@ -886,45 +929,45 @@ class ListNode {
 		this.next = next;
 	}
 }
- 
+
 class Solution {
-    
-    public static ListNode reverse(ListNode head){
-        ListNode pre = null,curr=head,next=null;
-        while(curr!=null){
-            next = curr.next;
-            curr.next=pre;
-            pre=curr;
-            curr=next;
-        }
-        return pre;
-    }
-    
-    public static ListNode findRightHead(int k,ListNode head){
-        int count=1;
-        ListNode temp=head;
-        while(count<k){
-            while(temp!=null && count++<k){
-                temp = temp.next;
-            }
-            if(temp==null)
-                temp=head;
-            
-        }
-        return temp;
-    }
-    
-    public static ListNode rotateRight(ListNode head, int k) {
-        ListNode temp=reverse(head);
-        ListNode right = findRightHead(k,head);
-    temp=reverse(head);
-        while(temp.next!=null){
-            temp=temp.next;
-        }
-        temp.next=head;
-        while(temp.next!=right)
-            temp=temp.next;
-        temp.next=null;
-        return right;
-    }
+
+	public static ListNode reverse(ListNode head) {
+		ListNode pre = null, curr = head, next = null;
+		while (curr != null) {
+			next = curr.next;
+			curr.next = pre;
+			pre = curr;
+			curr = next;
+		}
+		return pre;
+	}
+
+	public static ListNode findRightHead(int k, ListNode head) {
+		int count = 1;
+		ListNode temp = head;
+		while (count < k) {
+			while (temp != null && count++ < k) {
+				temp = temp.next;
+			}
+			if (temp == null)
+				temp = head;
+
+		}
+		return temp;
+	}
+
+	public static ListNode rotateRight(ListNode head, int k) {
+		ListNode temp = reverse(head);
+		ListNode right = findRightHead(k, head);
+		temp = reverse(head);
+		while (temp.next != null) {
+			temp = temp.next;
+		}
+		temp.next = head;
+		while (temp.next != right)
+			temp = temp.next;
+		temp.next = null;
+		return right;
+	}
 }
