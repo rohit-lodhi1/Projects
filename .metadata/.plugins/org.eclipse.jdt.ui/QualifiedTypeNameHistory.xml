@@ -44,7 +44,7 @@
     <fullyQualifiedTypeName name="com.dataStructure.linklist.PractLinkeList"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.dataStructure.linklist.Node"/>
-    <fullyQualifiedTypeName name="com.dataStructure.linklist.ListNode"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.dataStructure.linklist.ListNode"/>
 </qualifiedTypeNameHistroy>
