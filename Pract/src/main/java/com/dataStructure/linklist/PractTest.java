@@ -386,7 +386,7 @@ public class PractTest {
 		head2.next = new ListNode(3);
 		head2.next.next = new ListNode(5);
 		head2.next.next.next = new ListNode(6);
-//		head2.next.next.next.next = new ListNode(5);
+		head2.next.next.next.next = head2.next;
 //		head2.next.next.next.next.next = new ListNode(0);
 //		head = partition(head, 1);
 //	    head=reversePart2(head, 3,5 );
@@ -407,67 +407,94 @@ public class PractTest {
 //		System.out.println(print(sortLinkedList(head2)));
 //		System.out.println(print(mergeSortedLinkedList2(head,head2)));
 //		System.out.println(print(mergeSortWithLinkedList(head2)));
-		//System.out.println(binarySearchInLinkedList(head2, 9));
-	 
-			ListNode flatternList = new ListNode(5);
-			flatternList.child=new ListNode(7);
-			flatternList.child.child=new ListNode(8);
-			flatternList.child.child.child=new ListNode(30);
-			
-			flatternList.next = new ListNode(10);
-			flatternList.next.child = new ListNode(20);
-			
-			flatternList.next.next = new ListNode(19);
-			flatternList.next.next.child = new ListNode(22);
-			flatternList.next.next.child.child = new ListNode(50);
-			
-			flatternList.next.next.next = new ListNode(28);
-			flatternList.next.next.next.child = new ListNode(35);
-			flatternList.next.next.next.child.child = new ListNode(40);
-			flatternList.next.next.next.child.child.child = new ListNode(45);
-			System.out.println(print(flatten(flatternList)));
+		// System.out.println(binarySearchInLinkedList(head2, 9));
+
+//		ListNode flatternList = new ListNode(5);
+//		flatternList.child = new ListNode(7);
+//		flatternList.child.child = new ListNode(8);
+//		flatternList.child.child.child = new ListNode(30);
+//
+//		flatternList.next = new ListNode(10);
+//		flatternList.next.child = new ListNode(20);
+//
+//		flatternList.next.next = new ListNode(19);
+//		flatternList.next.next.child = new ListNode(22);
+//		flatternList.next.next.child.child = new ListNode(50);
+//
+//		flatternList.next.next.next = new ListNode(28);
+//		flatternList.next.next.next.child = new ListNode(35);
+//		flatternList.next.next.next.child.child = new ListNode(40);
+//		flatternList.next.next.next.child.child.child = new ListNode(45);
+//		System.out.println(print(flatten(flatternList)));
+System.out.println(print(removeCycle(head2)));
+	}
+	
+	public static ListNode removeCycle(ListNode head) {
+		ListNode slow=detectCycle(head);
+		if(slow==null)
+			return head;
+		ListNode temp=head;
+		while(temp.next!=slow.next) {
+			temp=temp.next;
+			slow=slow.next;
+		}
+		slow.next=null;
+		return head;
 	}
 
-	public static ListNode mergeSortedLinkedListForFlatten(ListNode first,ListNode second){
+	public static ListNode detectCycle(ListNode head) {
+		ListNode slow = head, fast = head;
+		while (fast != null && fast.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
+			if (slow == fast)
+				return slow;
+
+		}
+		return null;
+	}
+
+	// flatten linkedlist need all the list in the child notes in sorted order,
+	// that's why we merge it in child nodes.
+	public static ListNode mergeSortedLinkedListForFlatten(ListNode first, ListNode second) {
 		ListNode resp = first;
-          if(first==null)
-          return second;
-          if(second==null)
-          return first;
-          if(first.val>second.val){
-        	  ListNode t = second;
-              second=first;
-              resp=first=t;
-          }
-          ListNode curr=first;
-          while(first.child!=null && second!=null){
-              curr=first.child;
-              if(curr.val>second.val){
-            	  ListNode t = second.child;
-                  second.child=curr;
-                  first.child=second;
-                  second=t;
-              }
-              first=first.child;
-          }
-          if(first.child==null)
-            first.child=second;
-          return resp;
-      }
-  
-      public static ListNode flatten(ListNode head)
-      {
-  	   if (head == null )
-  			return head;
-  	 ListNode next = head.next;
-  	ListNode temp=head;
-  		while (temp != null) {
-  			temp.next = temp.child;
-  			temp = temp.next;
-  		}
-  		ListNode head2 = flatten(next);
-  		return mergeSortedLinkedListForFlatten(head, head2);
-      }
+		if (first == null)
+			return second;
+		if (second == null)
+			return first;
+		if (first.val > second.val) {
+			ListNode t = second;
+			second = first;
+			resp = first = t;
+		}
+		ListNode curr = first;
+		while (first.child != null && second != null) {
+			curr = first.child;
+			if (curr.val > second.val) {
+				ListNode t = second.child;
+				second.child = curr;
+				first.child = second;
+				second = t;
+			}
+			first = first.child;
+		}
+		if (first.child == null)
+			first.child = second;
+		return resp;
+	}
+
+	public static ListNode flatten(ListNode head) {
+		if (head == null)
+			return head;
+		ListNode next = head.next;
+		ListNode temp = head;
+		while (temp != null) {
+			temp.next = temp.child;
+			temp = temp.next;
+		}
+		ListNode head2 = flatten(next);
+		return mergeSortedLinkedListForFlatten(head, head2);
+	}
 
 	public static boolean binarySearchInLinkedList(ListNode head, int value) {
 		if (head == null)
