@@ -59,7 +59,7 @@ public class StackTest {
 			else
 				stack.pop();
 		}
-		return true;
+		return stack.isEmpty();
 	}
 
 	// delete middle element from stack ** make sure that stack is full **

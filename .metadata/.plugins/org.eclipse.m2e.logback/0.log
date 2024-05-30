@@ -22006,3 +22006,7 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2024-05-31 02:33:56,574 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
 2024-05-31 02:33:58,537 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
 2024-05-31 02:33:58,546 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-31 02:33:58,551 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
+2024-05-31 02:38:57,767 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-31 02:38:57,787 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2024-05-31 02:38:57,801 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.1.RELEASE\javaPrograms\Pract\src\test\resources
