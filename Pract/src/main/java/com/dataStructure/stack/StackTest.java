@@ -30,35 +30,64 @@ public class StackTest {
 //		stack.print1();
 //		stack.print2();
 
-		Stack stack = new Stack();
+		Stack<Integer> stack = new Stack<>(4);
 		stack.push(10);
 		stack.push(20);
 		stack.push(30);
 		stack.push(40);
-		stack.push(50);
+//		stack.push(50);
 		stack.print();
-		reverse(stack);
+//		reverse(stack);
+//		stack.print();
+//		System.out.println(reverseUsingStack("rohit"));
+		deleteMiddleElement(stack,0);
 		stack.print();
+	}
+	
+	// delete middle element from stack  **  make sure that stack is full  **
+	public static <T> void deleteMiddleElement(Stack<T> stack,int count) {
+		if(stack.isEmpty())
+			return ;
+		
+		if(count==stack.getSize()/2) {
+			stack.pop();
+			return ;
+		}
+		T value = stack.pop();
+		deleteMiddleElement(stack, ++count);
+	    stack.push(value);
+	}
 
+	// reverse string using stack
+	public static String reverseUsingStack(String s) {
+		Stack<Character> stack = new Stack<>(s.length());
+		String response = "";
+		for (int i = 0; i < s.length(); i++)
+			stack.push(s.charAt(i));
+
+		while (!stack.isEmpty())
+			response += stack.pop();
+		
+		return response;
 	}
 
 	// we will empty the stack and insert every element in bottom
-	public static void reverse(Stack stack) {
+	public static <T> void reverse(Stack<T> stack) {
 		if (stack.isEmpty())
 			return;
-		int val = stack.pop();
+		T val = stack.pop();
 		reverse(stack);
 		insertIntoBottom(stack, val);
 	}
 
 	// inserting element in bottom if stack is not empty then poping the element and
-	// after inserting putting the element back
-	public static void insertIntoBottom(Stack stack, int value) {
+	// after inserting, putting the element back
+	public static <T> void insertIntoBottom(Stack<T> stack, T value) {
 		if (stack.isEmpty()) {
 			stack.push(value);
 			return;
 		}
-		int val = stack.pop();
+		T val = stack.pop();
 		insertIntoBottom(stack, value);
 		stack.push(val);
 	}
