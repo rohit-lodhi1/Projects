@@ -40,22 +40,40 @@ public class StackTest {
 //		reverse(stack);
 //		stack.print();
 //		System.out.println(reverseUsingStack("rohit"));
-		deleteMiddleElement(stack,0);
-		stack.print();
+//		deleteMiddleElement(stack,0);
+//		stack.print();
+		System.out.println(balancedParanthesis("[{()()[[]]}]"));
 	}
-	
-	// delete middle element from stack  **  make sure that stack is full  **
-	public static <T> void deleteMiddleElement(Stack<T> stack,int count) {
-		if(stack.isEmpty())
-			return ;
-		
-		if(count==stack.getSize()/2) {
+
+	// check the balanced paranthysis
+	public static boolean balancedParanthesis(String value) {
+		Stack<Character> stack = new Stack<>();
+
+		for (int i = 0; i < value.length(); i++) {
+			char ch = value.charAt(i);
+			if (ch == '{' || ch == '[' || ch == '(')
+				stack.push(ch);
+			else if (ch == '}' && stack.peek() != '{' || ch == ']' && stack.peek() != '['
+					|| ch == ')' && stack.peek() != '(')
+				return false;
+			else
+				stack.pop();
+		}
+		return true;
+	}
+
+	// delete middle element from stack ** make sure that stack is full **
+	public static <T> void deleteMiddleElement(Stack<T> stack, int count) {
+		if (stack.isEmpty())
+			return;
+
+		if (count == stack.getSize() / 2) {
 			stack.pop();
-			return ;
+			return;
 		}
 		T value = stack.pop();
 		deleteMiddleElement(stack, ++count);
-	    stack.push(value);
+		stack.push(value);
 	}
 
 	// reverse string using stack
@@ -67,7 +85,7 @@ public class StackTest {
 
 		while (!stack.isEmpty())
 			response += stack.pop();
-		
+
 		return response;
 	}
 
