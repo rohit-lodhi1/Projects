@@ -1,9 +1,9 @@
 package com.dataStructure.stack;
 
-public class Stack {
+public class Stack<T> {
 	private int size=10;
 	private int top=-1;
-	private int stack[]=new int[size]; 
+	private T[] stack=(T[]) new Object[size]; 
 
 	public Stack(int size) {
 		this.size = size;
@@ -12,21 +12,21 @@ public class Stack {
 	public Stack() {}
 	
 	// push into stack
-	public void push(int data) {
+	public void push(T data) {
 		if(this.isFull()) 
 			throw new RuntimeException("Stack is full");
 		this.stack[++top]=data;
 	}
 	
 	// pop from stack
-	public int pop() {
+	public T pop() {
 		if(this.isEmpty())
 			throw new RuntimeException("Stack is Empty");
 		return this.stack[top--];
 	}
 	
 	// view top element of stack
-	public int peek() {
+	public T peek() {
 		if(this.isEmpty())
 			throw new RuntimeException("Stack is Empty");
 		return this.stack[top];
@@ -47,5 +47,13 @@ public class Stack {
 		for(int i=0;i<=top;i++)
 			System.out.print(stack[i]+" ");
 		System.out.println();
+	}
+	
+	public int getSize() {
+		return this.size;
+	}
+	
+	public int getTop() {
+		return this.top;
 	}
 }

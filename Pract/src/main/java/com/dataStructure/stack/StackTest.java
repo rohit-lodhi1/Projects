@@ -30,7 +30,7 @@ public class StackTest {
 //		stack.print1();
 //		stack.print2();
 
-		Stack stack = new Stack();
+		Stack<Integer> stack = new Stack<>();
 		stack.push(10);
 		stack.push(20);
 		stack.push(30);
@@ -39,26 +39,39 @@ public class StackTest {
 		stack.print();
 		reverse(stack);
 		stack.print();
+		System.out.println(reverseUsingStack("rohit"));
+	}
 
+	// reverse string using stack
+	public static String reverseUsingStack(String s) {
+		Stack<Character> stack = new Stack<>(s.length());
+		String response = "";
+		for (int i = 0; i < s.length(); i++)
+			stack.push(s.charAt(i));
+
+		while (!stack.isEmpty())
+			response += stack.pop();
+		
+		return response;
 	}
 
 	// we will empty the stack and insert every element in bottom
-	public static void reverse(Stack stack) {
+	public static <T> void reverse(Stack<T> stack) {
 		if (stack.isEmpty())
 			return;
-		int val = stack.pop();
+		T val = stack.pop();
 		reverse(stack);
 		insertIntoBottom(stack, val);
 	}
 
 	// inserting element in bottom if stack is not empty then poping the element and
 	// after inserting putting the element back
-	public static void insertIntoBottom(Stack stack, int value) {
+	public static <T> void insertIntoBottom(Stack<T> stack, T value) {
 		if (stack.isEmpty()) {
 			stack.push(value);
 			return;
 		}
-		int val = stack.pop();
+		T val = stack.pop();
 		insertIntoBottom(stack, value);
 		stack.push(val);
 	}
