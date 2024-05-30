@@ -13,10 +13,6 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-sealed class A permites B,C{
-	
-}
-
 
 
 // 
