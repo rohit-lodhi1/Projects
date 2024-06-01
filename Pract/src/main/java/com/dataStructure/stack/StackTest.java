@@ -53,8 +53,8 @@ public class StackTest {
 //		stack.print();
 //		sortStack(stack, Direction.DESC);
 //		stack.print();
-		System.out.println(Character.isAlphabetic('-'));
-		System.out.println(reverseOnlyLetters(""));
+//		System.out.println(Character.isAlphabetic('-'));
+		System.out.println(reverseOnlyLetters("a-bC-dEf-ghIj"));
 	}
 
 	// reverse only letter using stack ex: input - a-bC-dEf-ghIj ; output -
@@ -62,27 +62,23 @@ public class StackTest {
 	
 
 	public static String reverseOnlyLetters(String s) {
-//		if(s.length()==0)
-//			return s;
-		
-		String rev = "";
-		int i = 0;
-		while (i < s.length()) {
-			if (s.charAt(i) >= 65 && s.charAt(i) <= 90 || s.charAt(i) >= 97 && s.charAt(i) <= 122)
-				rev+=s.charAt(i);
-			i++;
+		int i=0,j=s.length()-1;
+		char arr[] = s.toCharArray();
+		while(i<j) {
+			if(!Character.isAlphabetic(arr[i]))
+				i++;
+			if(!Character.isAlphabetic(arr[j]))
+				j--;
+			if(Character.isAlphabetic(arr[i]) && Character.isAlphabetic(arr[j])) {
+				char ch = arr[i];
+				arr[i]=arr[j];
+				arr[j]=ch;
+				i++;
+				j--;
+			}	
+			
 		}
-		i=0;
-		String resp = "";
-		int j=rev.length()-1;
-		while (i <s.length()) {
-			if (s.charAt(i) >= 65 && s.charAt(i) <= 90 || s.charAt(i) >= 97 && s.charAt(i) <= 122)
-				resp += rev.charAt(j--);
-			else
-				resp += s.charAt(i);
-			i++;
-		}
-		return resp;
+		return new String(arr);
 	}
 
 	// push value in stack by sorting

@@ -274,6 +274,27 @@ public class Test {
 //		System.out.println(Arrays.toString(mergeSortAgain(arr,0,arr.length-1)));
 	}
 	
+	public static String reverseOnlyLetters2(String s) {
+		int i=0,j=s.length()-1;
+		char arr[] = s.toCharArray();
+		while(i<j) {
+			if(!Character.isAlphabetic(arr[i]))
+				i++;
+			if(!Character.isAlphabetic(arr[j]))
+				j--;
+			if(Character.isAlphabetic(arr[i]) && Character.isAlphabetic(arr[j])) {
+				char ch = arr[i];
+				arr[i]=arr[j];
+				arr[j]=ch;
+				i++;
+				j--;
+			}	
+			
+		}
+		return new String(arr);
+	}
+
+	
 	public static String reverseOnlyLetters(String s) {
 //		if(s.length()==0)
 //			return s;
