@@ -274,6 +274,8 @@ public class Test {
 //		System.out.println(Arrays.toString(mergeSortAgain(arr,0,arr.length-1)));
 	}
 	
+	// reverse only letter using stack ex: input - a-bC-dEf-ghIj ; output -
+		// j-Ih-gfE-dCba
 	public static String reverseOnlyLetters2(String s) {
 		int i=0,j=s.length()-1;
 		char arr[] = s.toCharArray();

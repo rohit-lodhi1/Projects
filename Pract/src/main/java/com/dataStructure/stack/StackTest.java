@@ -40,6 +40,7 @@ public class StackTest {
 		stack.push(80);
 		stack.push(20);
 		stack.push(40);
+
 //		stack.push(50);
 //		stack.print();
 //		reverse(stack);
@@ -54,31 +55,36 @@ public class StackTest {
 //		sortStack(stack, Direction.DESC);
 //		stack.print();
 //		System.out.println(Character.isAlphabetic('-'));
-		System.out.println(reverseOnlyLetters("a-bC-dEf-ghIj"));
+		System.out.println(checkRedundancy("((a+b))"));
 	}
 
-	// reverse only letter using stack ex: input - a-bC-dEf-ghIj ; output -
-	// j-Ih-gfE-dCba
-	
+	public static boolean isSymbol(Character cha) {
+		char ch = cha;
+		return ch == '/' || ch == '*' || ch == '-' || ch == '+';
+	}
 
-	public static String reverseOnlyLetters(String s) {
-		int i=0,j=s.length()-1;
-		char arr[] = s.toCharArray();
-		while(i<j) {
-			if(!Character.isAlphabetic(arr[i]))
-				i++;
-			if(!Character.isAlphabetic(arr[j]))
-				j--;
-			if(Character.isAlphabetic(arr[i]) && Character.isAlphabetic(arr[j])) {
-				char ch = arr[i];
-				arr[i]=arr[j];
-				arr[j]=ch;
-				i++;
-				j--;
-			}	
-			
+	// check redundant brackets
+	public static int checkRedundancy(String s) {
+		Stack<Character> stack = new Stack<>(s.length());
+		int i = 0;
+		while (i < s.length()) {
+			char ch = s.charAt(i);
+			// add non alphabetic character
+			stack.printFromBottom();
+			if (!Character.isAlphabetic(ch) && ch != ')')
+				stack.push(s.charAt(i));
+			else {
+				if (ch == ')' && isSymbol(stack.peek())) {
+					while (stack.peek() != '(')
+						stack.pop();
+					stack.pop();
+
+				} else if (ch == ')')
+					return 1;
+			}
+			i++;
 		}
-		return new String(arr);
+		return 0;
 	}
 
 	// push value in stack by sorting
