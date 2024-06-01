@@ -48,17 +48,38 @@ public class StackTest {
 		stack.print();
 	}
 
-	public static <T> void insertInBottom(Stack<T> stack,T value) {
-		 if(stack.isEmpty()) {
-    		 stack.push(value);
-    		 return ;
-    	 }
-    	 
-    	 T val = stack.pop();
-    	 insertInBottom(stack, value);
-    	 stack.push(val);
+	// push value in stack by sorting
+	public static <T> void pushBySort(Stack<Integer> stack, Integer data) {
+		if (stack.isEmpty() || stack.peek() >= data) {
+			stack.push(data);
+			return;
+		}
+		Integer value = stack.pop();
+		pushBySort(stack, data);
+		stack.push(value);
 	}
-	
+
+	// sort a stack
+	public static void sortStack(Stack<Integer> stack) {
+		if (stack.isEmpty())
+			return;
+		Integer value = stack.pop();
+		sortStack(stack);
+		pushBySort(stack, value);
+	}
+
+	// insert an element into bottom
+	public static <T> void insertInBottom(Stack<T> stack, T value) {
+		if (stack.isEmpty()) {
+			stack.push(value);
+			return;
+		}
+
+		T val = stack.pop();
+		insertInBottom(stack, value);
+		stack.push(val);
+	}
+
 	// check the balanced paranthysis
 	public static boolean balancedParanthesis(String value) {
 		Stack<Character> stack = new Stack<>();
@@ -77,7 +98,7 @@ public class StackTest {
 	}
 
 	// delete middle element from stack ** make sure that stack is full **
-	public static <T> void deleteMiddleElement(Stack<T> stack, int count,int size) {
+	public static <T> void deleteMiddleElement(Stack<T> stack, int count, int size) {
 		if (stack.isEmpty())
 			return;
 
@@ -86,7 +107,7 @@ public class StackTest {
 			return;
 		}
 		T value = stack.pop();
-		deleteMiddleElement(stack, ++count,size);
+		deleteMiddleElement(stack, ++count, size);
 		stack.push(value);
 	}
 
