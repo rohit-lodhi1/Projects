@@ -50,29 +50,60 @@ public class StackTest {
 //		System.out.println(balancedParanthesis("[{((((()))))}]"));
 //		stack.print();
 //		insertInBottom(stack, 5);
-		stack.print();
-		sortStack(stack,Direction.DESC);
-		stack.print();
+//		stack.print();
+//		sortStack(stack, Direction.DESC);
+//		stack.print();
+		System.out.println(Character.isAlphabetic('-'));
+		System.out.println(reverseOnlyLetters(""));
+	}
+
+	// reverse only letter using stack ex: input - a-bC-dEf-ghIj ; output -
+	// j-Ih-gfE-dCba
+	
+
+	public static String reverseOnlyLetters(String s) {
+//		if(s.length()==0)
+//			return s;
+		
+		String rev = "";
+		int i = 0;
+		while (i < s.length()) {
+			if (s.charAt(i) >= 65 && s.charAt(i) <= 90 || s.charAt(i) >= 97 && s.charAt(i) <= 122)
+				rev+=s.charAt(i);
+			i++;
+		}
+		i=0;
+		String resp = "";
+		int j=rev.length()-1;
+		while (i <s.length()) {
+			if (s.charAt(i) >= 65 && s.charAt(i) <= 90 || s.charAt(i) >= 97 && s.charAt(i) <= 122)
+				resp += rev.charAt(j--);
+			else
+				resp += s.charAt(i);
+			i++;
+		}
+		return resp;
 	}
 
 	// push value in stack by sorting
-	public static <T> void pushBySort(Stack<Integer> stack, Integer data,Direction order) {
-		if (stack.isEmpty() || order.equals(Direction.DESC) &&  stack.peek() >= data || order.equals(Direction.ASC) &&  stack.peek() <= data) {
+	public static <T> void pushBySort(Stack<Integer> stack, Integer data, Direction order) {
+		if (stack.isEmpty() || order.equals(Direction.DESC) && stack.peek() >= data
+				|| order.equals(Direction.ASC) && stack.peek() <= data) {
 			stack.push(data);
 			return;
 		}
 		Integer value = stack.pop();
-		pushBySort(stack, data,order);
+		pushBySort(stack, data, order);
 		stack.push(value);
 	}
 
 	// sort a stack
-	public static void sortStack(Stack<Integer> stack,Direction order) {
+	public static void sortStack(Stack<Integer> stack, Direction order) {
 		if (stack.isEmpty())
 			return;
 		Integer value = stack.pop();
-		sortStack(stack,order);
-		pushBySort(stack, value,order);
+		sortStack(stack, order);
+		pushBySort(stack, value, order);
 	}
 
 	// insert an element into bottom
