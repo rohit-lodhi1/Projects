@@ -274,6 +274,53 @@ public class Test {
 //		System.out.println(Arrays.toString(mergeSortAgain(arr,0,arr.length-1)));
 	}
 	
+	// reverse only letter using stack ex: input - a-bC-dEf-ghIj ; output -
+		// j-Ih-gfE-dCba
+	public static String reverseOnlyLetters2(String s) {
+		int i=0,j=s.length()-1;
+		char arr[] = s.toCharArray();
+		while(i<j) {
+			if(!Character.isAlphabetic(arr[i]))
+				i++;
+			if(!Character.isAlphabetic(arr[j]))
+				j--;
+			if(Character.isAlphabetic(arr[i]) && Character.isAlphabetic(arr[j])) {
+				char ch = arr[i];
+				arr[i]=arr[j];
+				arr[j]=ch;
+				i++;
+				j--;
+			}	
+			
+		}
+		return new String(arr);
+	}
+
+	
+	public static String reverseOnlyLetters(String s) {
+//		if(s.length()==0)
+//			return s;
+		
+		String rev = "";
+		int i = 0;
+		while (i < s.length()) {
+			if (s.charAt(i) >= 65 && s.charAt(i) <= 90 || s.charAt(i) >= 97 && s.charAt(i) <= 122)
+				rev+=s.charAt(i);
+			i++;
+		}
+		i=0;
+		String resp = "";
+		int j=rev.length()-1;
+		while (i <s.length()) {
+			if (s.charAt(i) >= 65 && s.charAt(i) <= 90 || s.charAt(i) >= 97 && s.charAt(i) <= 122)
+				resp += rev.charAt(j--);
+			else
+				resp += s.charAt(i);
+			i++;
+		}
+		return resp;
+	}
+
 
 	public static int[] mergeSortedArrayAgain(int arr1[], int arr2[]) {
 		int i = 0, j = 0, k = 0;

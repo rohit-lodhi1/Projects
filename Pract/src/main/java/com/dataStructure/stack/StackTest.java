@@ -40,6 +40,7 @@ public class StackTest {
 		stack.push(80);
 		stack.push(20);
 		stack.push(40);
+
 //		stack.push(50);
 //		stack.print();
 //		reverse(stack);
@@ -50,29 +51,61 @@ public class StackTest {
 //		System.out.println(balancedParanthesis("[{((((()))))}]"));
 //		stack.print();
 //		insertInBottom(stack, 5);
-		stack.print();
-		sortStack(stack,Direction.DESC);
-		stack.print();
+//		stack.print();
+//		sortStack(stack, Direction.DESC);
+//		stack.print();
+//		System.out.println(Character.isAlphabetic('-'));
+		System.out.println(checkRedundancy("((a+b))"));
+	}
+
+	public static boolean isSymbol(Character cha) {
+		char ch = cha;
+		return ch == '/' || ch == '*' || ch == '-' || ch == '+';
+	}
+
+	// check redundant brackets
+	public static int checkRedundancy(String s) {
+		Stack<Character> stack = new Stack<>(s.length());
+		int i = 0;
+		while (i < s.length()) {
+			char ch = s.charAt(i);
+			// add non alphabetic character
+			stack.printFromBottom();
+			if (!Character.isAlphabetic(ch) && ch != ')')
+				stack.push(s.charAt(i));
+			else {
+				if (ch == ')' && isSymbol(stack.peek())) {
+					while (stack.peek() != '(')
+						stack.pop();
+					stack.pop();
+
+				} else if (ch == ')')
+					return 1;
+			}
+			i++;
+		}
+		return 0;
 	}
 
 	// push value in stack by sorting
-	public static <T> void pushBySort(Stack<Integer> stack, Integer data,Direction order) {
-		if (stack.isEmpty() || order.equals(Direction.DESC) &&  stack.peek() >= data || order.equals(Direction.ASC) &&  stack.peek() <= data) {
+	public static <T> void pushBySort(Stack<Integer> stack, Integer data, Direction order) {
+		if (stack.isEmpty() || order.equals(Direction.DESC) && stack.peek() >= data
+				|| order.equals(Direction.ASC) && stack.peek() <= data) {
 			stack.push(data);
 			return;
 		}
 		Integer value = stack.pop();
-		pushBySort(stack, data,order);
+		pushBySort(stack, data, order);
 		stack.push(value);
 	}
 
 	// sort a stack
-	public static void sortStack(Stack<Integer> stack,Direction order) {
+	public static void sortStack(Stack<Integer> stack, Direction order) {
 		if (stack.isEmpty())
 			return;
 		Integer value = stack.pop();
-		sortStack(stack,order);
-		pushBySort(stack, value,order);
+		sortStack(stack, order);
+		pushBySort(stack, value, order);
 	}
 
 	// insert an element into bottom
