@@ -43,7 +43,17 @@ public class Stack<T> {
 	}
 	
 	public void print() {
-		
+		if(this.isEmpty()) {
+			System.out.println();
+			return ;			
+		}
+		T data = this.pop();
+		System.out.print(data+" ");
+		print();
+		this.push(data);
+	}
+	
+	public void printFromBottom() {
 		for(int i=0;i<=top;i++)
 			System.out.print(stack[i]+" ");
 		System.out.println();

@@ -1,5 +1,9 @@
 package com.dataStructure.stack;
 
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
+import org.springframework.data.domain.Sort.Order;
+
 public class StackTest {
 	public static void main(String[] args) {
 //        Stack stack = new Stack();
@@ -32,8 +36,9 @@ public class StackTest {
 
 		Stack<Integer> stack = new Stack<>();
 		stack.push(10);
-		stack.push(20);
 		stack.push(30);
+		stack.push(80);
+		stack.push(20);
 		stack.push(40);
 //		stack.push(50);
 //		stack.print();
@@ -43,29 +48,31 @@ public class StackTest {
 //		deleteMiddleElement(stack,0,stack.getTop());
 //		stack.print();
 //		System.out.println(balancedParanthesis("[{((((()))))}]"));
+//		stack.print();
+//		insertInBottom(stack, 5);
 		stack.print();
-		insertInBottom(stack, 5);
+		sortStack(stack,Direction.DESC);
 		stack.print();
 	}
 
 	// push value in stack by sorting
-	public static <T> void pushBySort(Stack<Integer> stack, Integer data) {
-		if (stack.isEmpty() || stack.peek() >= data) {
+	public static <T> void pushBySort(Stack<Integer> stack, Integer data,Direction order) {
+		if (stack.isEmpty() || order.equals(Direction.DESC) &&  stack.peek() >= data || order.equals(Direction.ASC) &&  stack.peek() <= data) {
 			stack.push(data);
 			return;
 		}
 		Integer value = stack.pop();
-		pushBySort(stack, data);
+		pushBySort(stack, data,order);
 		stack.push(value);
 	}
 
 	// sort a stack
-	public static void sortStack(Stack<Integer> stack) {
+	public static void sortStack(Stack<Integer> stack,Direction order) {
 		if (stack.isEmpty())
 			return;
 		Integer value = stack.pop();
-		sortStack(stack);
-		pushBySort(stack, value);
+		sortStack(stack,order);
+		pushBySort(stack, value,order);
 	}
 
 	// insert an element into bottom
