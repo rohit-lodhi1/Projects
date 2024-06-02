@@ -64,8 +64,59 @@ public class StackTest {
 //		System.out.println(minimumCostToMakeParenthesesValid("}}}}}{"));
 //		System.out.println(Arrays.toString(nextSmallerElement(new int[] {2 ,5 ,3 ,7 ,1 ,5 ,2 ,6 ,3 ,1})));
 //      System.out.println(Arrays.toString(previousSmallestElement(new int[] {1,3,2,1,4,2})));
-      System.out.println(largestAreaOfRectangleInHistogram(new int[] {1,3,2,1,4,2}));
+//      System.out.println(largestAreaOfRectangleInHistogram(new int[] {1,3,2,1,4,2}));
+		System.out.println(trappingRainWater(new int[] {2,1,0,1,0,1,0,2,0,3,1,2,1,0,1,2}));
 	}
+	
+	public static int previousLargest(int arr[],int i) {
+		int largest=i-1;
+		int value=arr[i];
+		i--;
+		while(i>=0) {
+			if(largest!=-1 && arr[i]>=arr[largest] )
+				largest=i;
+			if(value<arr[i])
+				break;
+			i--;
+		}
+		return largest;
+	}
+	
+	public static int minusFilledBlocks(int arr[],int st,int end,int value,int min) {
+		if(st<0)
+			return value;
+		System.out.println("st = "+st +" end="+end +" value="+value);
+		while(st<=end) {
+			value-=arr[st];
+			System.out.println("arr ="+arr[st]+" value="+value);
+		   arr[st]=min;
+			st++;
+		}
+		return value;
+	}
+	
+	//  Trapping Rain Water
+	public static int  trappingRainWater(int arr[]) {
+		int sum=0;
+		for(int i=0;i<arr.length;i++) {
+			int largest = previousLargest(arr,i);
+			
+			if(largest==-1)
+				continue;
+			int value=i-largest-1;
+			int minBlock=arr[largest];
+		   if(arr[i]<arr[largest])
+			   minBlock=arr[i];
+		   value=minBlock*value;
+		   sum+=minusFilledBlocks(arr, largest+1, i-1, value,minBlock);
+		   System.out.println("largest = "+largest+" i = "+i+" value = "+value+" sum = "+sum+" minBlock = "+minBlock);
+
+//		   arr[i]++;
+			
+		}
+		return sum;
+	}
+	
 	
 	// for largest area of rectangle in histogram
 		public static int[] prevSmallerElementIndex(int arr[]) {
