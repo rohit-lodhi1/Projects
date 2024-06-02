@@ -1,10 +1,14 @@
 package com.dataStructure.stack;
 
+import java.util.function.Predicate;
+
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.domain.Sort.Order;
 
 public class StackTest {
+	record Person() {}
+	
 	public static void main(String[] args) {
 //        Stack stack = new Stack();
 //        stack.push(10);
@@ -55,9 +59,60 @@ public class StackTest {
 //		sortStack(stack, Direction.DESC);
 //		stack.print();
 //		System.out.println(Character.isAlphabetic('-'));
-		System.out.println(checkRedundancy("((a+b))"));
+//		System.out.println(checkRedundancy("((a+b))"));
+		System.out.println(minimumCostToMakeParenthesesValid("}}}}}{"));
 	}
 
+	
+	// minimum cost to make parentheses string  valid
+	public static int minimumCostToMakeParenthesesValid(String s) {
+		if(s.length()%2!=0)
+			return -1;
+		int countA=0,countB=0,i=0;
+		Stack<Character> stack = new Stack<>();
+		while(i<s.length()) {
+			char ch = s.charAt(i);
+			if(ch=='{') {
+				stack.push(ch);
+				countA++;
+			}
+			else {
+				if(!stack.isEmpty() && ch=='}' && stack.peek()=='{') {
+					stack.pop();
+					countA--;
+				}else
+					countB++;
+			}
+			i++;
+		}
+		return ((countA+1)/2 + (countB+1)/2);
+	}
+	
+	
+	// minimum parentheses  add to make string valid ex.  input - "(((" , output - 3 
+	 public static int minAddToMakeValid(String s) {
+	        Stack<Character> stack = new Stack<>(s.length());
+	        int count=0,i=0;
+	        while(i<s.length()){
+	            char ch = s.charAt(i);
+	            if(ch=='('){
+	                stack.push(ch);
+	                count++;
+	            }
+	            else {
+	                
+	                if(!stack.isEmpty()&& stack.peek()=='('){
+	                    stack.pop();
+	                    count--;
+	                }else
+	                    count++;
+	                    
+	            }
+	            i++;
+	        }
+	        return count;
+	    }
+	
 	public static boolean isSymbol(Character cha) {
 		char ch = cha;
 		return ch == '/' || ch == '*' || ch == '-' || ch == '+';
