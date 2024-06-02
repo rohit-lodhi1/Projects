@@ -63,7 +63,65 @@ public class StackTest {
 //		System.out.println(checkRedundancy("((a+b))"));
 //		System.out.println(minimumCostToMakeParenthesesValid("}}}}}{"));
 //		System.out.println(Arrays.toString(nextSmallerElement(new int[] {2 ,5 ,3 ,7 ,1 ,5 ,2 ,6 ,3 ,1})));
-      System.out.println(Arrays.toString(previousSmallestElement(new int[] {1,3,2,1,4,2})));
+//      System.out.println(Arrays.toString(previousSmallestElement(new int[] {1,3,2,1,4,2})));
+      System.out.println(largestAreaOfRectangleInHistogram(new int[] {1,3,2,1,4,2}));
+	}
+	
+	// for largest area of rectangle in histogram
+		public static int[] prevSmallerElementIndex(int arr[]) {
+			Stack<Integer> stack= new Stack<>(arr.length);
+			int newArray[]=new int[arr.length];
+			stack.push(-1);
+			for(int i=0;i<arr.length;i++) {
+				int val=arr[i];
+				if(stack.peek()!=-1 && val>arr[stack.peek()])
+					newArray[i]=stack.peek();
+				else {
+					while(stack.peek()!=-1 && val<=arr[stack.peek()])
+						stack.pop();
+					newArray[i]=stack.peek();
+				}
+				stack.push(i);
+			}
+			return newArray;
+		}
+	
+	// for largest area of rectangle in histogram
+	public static int[] nextSmallerElementIndex(int arr[]) {
+		Stack<Integer> stack= new Stack<>(arr.length);
+		int newArray[]=new int[arr.length];
+		stack.push(-1);
+		for(int i=arr.length-1;i>=0;i--) {
+			int val=arr[i];
+			if(stack.peek()!=-1 && val>arr[stack.peek()])
+				newArray[i]=stack.peek();
+			else {
+				while(stack.peek()!=-1 && val<=arr[stack.peek()])
+					stack.pop();
+				newArray[i]=stack.peek();
+			}
+			stack.push(i);
+		}
+		return newArray;
+	}
+	
+	// largest area of rectangle for explanation leetcode ques. 82 - Largest Rectangle in Histogram
+	public static int largestAreaOfRectangleInHistogram(int arr[]) {
+		 int nextSmallerElements[] = nextSmallerElementIndex(arr);
+		 int prevSmallerElements[] = prevSmallerElementIndex(arr);
+		 int area=1;
+		 for(int i=0;i<arr.length;i++) {
+			 int length = arr[i];
+			 if(nextSmallerElements[i]==-1)
+				 nextSmallerElements[i]=arr.length;
+			 // width is the next and prev index between space like how much rectangle can take space
+			 int width =  nextSmallerElements[i]-prevSmallerElements[i]-1;
+			 // area = length*width
+			 int newArea = length*width;
+			 if(newArea>area)
+				 area=newArea;
+		 }
+		 return area;
 	}
 	
 	// previous smalles element
