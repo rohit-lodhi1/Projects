@@ -1,5 +1,6 @@
 package com.dataStructure.stack;
 
+import java.util.Arrays;
 import java.util.function.Predicate;
 
 import org.springframework.data.domain.Sort;
@@ -60,7 +61,49 @@ public class StackTest {
 //		stack.print();
 //		System.out.println(Character.isAlphabetic('-'));
 //		System.out.println(checkRedundancy("((a+b))"));
-		System.out.println(minimumCostToMakeParenthesesValid("}}}}}{"));
+//		System.out.println(minimumCostToMakeParenthesesValid("}}}}}{"));
+//		System.out.println(Arrays.toString(nextSmallerElement(new int[] {2 ,5 ,3 ,7 ,1 ,5 ,2 ,6 ,3 ,1})));
+      System.out.println(Arrays.toString(previousSmallestElement(new int[] {1,3,2,1,4,2})));
+	}
+	
+	// previous smalles element
+	public static int[] previousSmallestElement(int arr[]) {
+		Stack<Integer> stack = new Stack<>(arr.length);
+		stack.push(-1);
+		for(int i=0;i<arr.length;i++) {
+		    int val = arr[i];
+		    if(val>stack.peek()) {
+		    	arr[i]=stack.peek();
+		    }else {
+		    	while(val<=stack.peek()) {
+		    		stack.pop();
+		    	}
+		    	arr[i]=stack.peek();
+		    }
+		    stack.push(val);
+		}
+		return arr;
+	}
+	
+	// next smaller element
+	public static int[] nextSmallerElement(int arr[]) {
+		int i=arr.length-1,j=arr.length-1;
+		int newArray[]=new int[arr.length];
+		Stack<Integer> stack = new Stack<>(arr.length+1);
+		stack.push(-1);
+		while(i>=0) {
+			if(arr[i]>stack.peek())
+				newArray[j--]=stack.peek();
+			else {
+				
+				while(arr[i]<=stack.peek())
+					stack.pop();
+				newArray[j--]=stack.peek();
+			}
+			stack.push(arr[i]);
+			i--;
+		}
+		return newArray;
 	}
 
 	
