@@ -1,5 +1,6 @@
 package com.dataStructure.stack;
 
+import java.util.Arrays;
 import java.util.function.Predicate;
 
 import org.springframework.data.domain.Sort;
@@ -60,7 +61,158 @@ public class StackTest {
 //		stack.print();
 //		System.out.println(Character.isAlphabetic('-'));
 //		System.out.println(checkRedundancy("((a+b))"));
-		System.out.println(minimumCostToMakeParenthesesValid("}}}}}{"));
+//		System.out.println(minimumCostToMakeParenthesesValid("}}}}}{"));
+//		System.out.println(Arrays.toString(nextSmallerElement(new int[] {2 ,5 ,3 ,7 ,1 ,5 ,2 ,6 ,3 ,1})));
+//      System.out.println(Arrays.toString(previousSmallestElement(new int[] {1,3,2,1,4,2})));
+//      System.out.println(largestAreaOfRectangleInHistogram(new int[] {1,3,2,1,4,2}));
+		System.out.println(trappingRainWater(new int[] {2,1,0,1,0,1,0,2,0,3,1,2,1,0,1,2}));
+	}
+	
+	public static int previousLargest(int arr[],int i) {
+		int largest=i-1;
+		int value=arr[i];
+		i--;
+		while(i>=0) {
+			if(largest!=-1 && arr[i]>=arr[largest] )
+				largest=i;
+			if(value<arr[i])
+				break;
+			i--;
+		}
+		return largest;
+	}
+	
+	public static int minusFilledBlocks(int arr[],int st,int end,int value,int min) {
+		if(st<0)
+			return value;
+		System.out.println("st = "+st +" end="+end +" value="+value);
+		while(st<=end) {
+			value-=arr[st];
+			System.out.println("arr ="+arr[st]+" value="+value);
+		   arr[st]=min;
+			st++;
+		}
+		return value;
+	}
+	
+	//  Trapping Rain Water
+	public static int  trappingRainWater(int arr[]) {
+		int sum=0;
+		for(int i=0;i<arr.length;i++) {
+			int largest = previousLargest(arr,i);
+			
+			if(largest==-1)
+				continue;
+			int value=i-largest-1;
+			int minBlock=arr[largest];
+		   if(arr[i]<arr[largest])
+			   minBlock=arr[i];
+		   value=minBlock*value;
+		   sum+=minusFilledBlocks(arr, largest+1, i-1, value,minBlock);
+		   System.out.println("largest = "+largest+" i = "+i+" value = "+value+" sum = "+sum+" minBlock = "+minBlock);
+
+//		   arr[i]++;
+			
+		}
+		return sum;
+	}
+	
+	
+	// for largest area of rectangle in histogram
+		public static int[] prevSmallerElementIndex(int arr[]) {
+			Stack<Integer> stack= new Stack<>(arr.length);
+			int newArray[]=new int[arr.length];
+			stack.push(-1);
+			for(int i=0;i<arr.length;i++) {
+				int val=arr[i];
+				if(stack.peek()!=-1 && val>arr[stack.peek()])
+					newArray[i]=stack.peek();
+				else {
+					while(stack.peek()!=-1 && val<=arr[stack.peek()])
+						stack.pop();
+					newArray[i]=stack.peek();
+				}
+				stack.push(i);
+			}
+			return newArray;
+		}
+	
+	// for largest area of rectangle in histogram
+	public static int[] nextSmallerElementIndex(int arr[]) {
+		Stack<Integer> stack= new Stack<>(arr.length);
+		int newArray[]=new int[arr.length];
+		stack.push(-1);
+		for(int i=arr.length-1;i>=0;i--) {
+			int val=arr[i];
+			if(stack.peek()!=-1 && val>arr[stack.peek()])
+				newArray[i]=stack.peek();
+			else {
+				while(stack.peek()!=-1 && val<=arr[stack.peek()])
+					stack.pop();
+				newArray[i]=stack.peek();
+			}
+			stack.push(i);
+		}
+		return newArray;
+	}
+	
+	// largest area of rectangle for explanation leetcode ques. 82 - Largest Rectangle in Histogram
+	public static int largestAreaOfRectangleInHistogram(int arr[]) {
+		 int nextSmallerElements[] = nextSmallerElementIndex(arr);
+		 int prevSmallerElements[] = prevSmallerElementIndex(arr);
+		 int area=1;
+		 for(int i=0;i<arr.length;i++) {
+			 int length = arr[i];
+			 if(nextSmallerElements[i]==-1)
+				 nextSmallerElements[i]=arr.length;
+			 // width is the next and prev index between space like how much rectangle can take space
+			 int width =  nextSmallerElements[i]-prevSmallerElements[i]-1;
+			 // area = length*width
+			 int newArea = length*width;
+			 if(newArea>area)
+				 area=newArea;
+		 }
+		 return area;
+	}
+	
+	// previous smalles element
+	public static int[] previousSmallestElement(int arr[]) {
+		Stack<Integer> stack = new Stack<>(arr.length);
+		stack.push(-1);
+		for(int i=0;i<arr.length;i++) {
+		    int val = arr[i];
+		    if(val>stack.peek()) {
+		    	arr[i]=stack.peek();
+		    }else {
+		    	while(val<=stack.peek()) {
+		    		stack.pop();
+		    	}
+		    	arr[i]=stack.peek();
+		    }
+		    stack.push(val);
+		}
+		return arr;
+	}
+	
+	// next smaller element
+	public static int[] nextSmallerElement(int arr[]) {
+		int i=arr.length-1,j=arr.length-1;
+		int newArray[]=new int[arr.length];
+		Stack<Integer> stack = new Stack<>(arr.length+1);
+		stack.push(-1);
+		while(i>=0) {
+			if(arr[i]>stack.peek())
+				newArray[j--]=stack.peek();
+			else {
+				
+				while(arr[i]<=stack.peek())
+					stack.pop();
+				newArray[j--]=stack.peek();
+			}
+			stack.push(arr[i]);
+			i--;
+		}
+		return newArray;
 	}
 
 	
