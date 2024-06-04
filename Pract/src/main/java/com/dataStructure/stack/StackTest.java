@@ -65,10 +65,33 @@ public class StackTest {
 //		System.out.println(Arrays.toString(nextSmallerElement(new int[] {2 ,5 ,3 ,7 ,1 ,5 ,2 ,6 ,3 ,1})));
 //      System.out.println(Arrays.toString(previousSmallestElement(new int[] {1,3,2,1,4,2})));
 //      System.out.println(largestAreaOfRectangleInHistogram(new int[] {1,3,2,1,4,2}));
-		System.out.println(trappingRainWater(new int[] {2,1,0,1,0,1,0,2,0,3,1,2,1,0,1,2}));
+//		System.out.println(trappingRainWater(new int[] {2,1,0,1,0,1,0,2,0,3,1,2,1,0,1,2}));
+//		java.util.Stack<Integer> stackUtil = new java.util.Stack();
+//		stackUtil.push(1);
+//		stackUtil.push(1);
+		System.out.println(largestAreaOfMatrix(new int[][] {{1,1,1,1,1},{0,1,0,0,0}},5));
+	}
+	
+	// largest area of rectangle in binary matrix
+	public static int largestAreaOfMatrix(int arr[][],int n) {
+		int histogram[]= new int[arr[0].length];
+		int area=0;
+		for( int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[i].length ;j++) {
+				if(arr[i][j]!=0)
+					histogram[j]+=arr[i][j];
+				else
+					histogram[j]=arr[i][j];
+			}
+			 int newArea = largestAreaOfRectangleInHistogram(histogram);
+			 if(newArea>area)
+				 area=newArea;
+		}
+		return area;
 	}
 	
 	public static int previousLargest(int arr[],int i) {
+	
 		int largest=i-1;
 		int value=arr[i];
 		i--;
