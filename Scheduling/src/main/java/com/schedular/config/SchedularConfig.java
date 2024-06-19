@@ -14,4 +14,9 @@ public class SchedularConfig {
    public Schedular schedul() {
 	   return new Schedular();
    }
+	
+	@Bean
+ public	Rest restTemplate() {
+		
+	}
 }
